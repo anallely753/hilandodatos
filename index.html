@@ -9,6 +9,7 @@
 	<link rel="shortcut icon" href="./img/portada/gota.svg">
 	<link rel="stylesheet" href="./css/animation.css">
 	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/navegador.css">
 	<link rel="stylesheet" href="./css/portada.css">
 	<link rel="stylesheet" href="./css/portada_pregunta.css">
 	<link rel="stylesheet" href="./css/intro.css">
@@ -181,11 +182,24 @@
 
 			</div>
 		</div>
-
 	</div>
 
 	
 	<main>
+		<div class="navegador">
+			<span class="navegador_texto" id="nav_texto"></span>
+			<div class="navegador_guia"></div>
+			<a href="#intro" class="navegador_div navegador1" id="nav_intro">1</a>
+			<a href="#ciclo" class="navegador_div navegador2" id="nav_ciclo">2</a>
+			<a href="#produccion" class="navegador_div navegador3" id="nav_produccion">3</a>
+			<a href="#diseno" class="navegador_div navegador4" id="nav_diseno">4</a>
+			<a href="#manufactura" class="navegador_div navegador5" id="nav_manufactura">5</a>
+			<a href="#logistica" class="navegador_div navegador6" id="nav_logistica">6</a>
+			<a href="#nueva_vida" class="navegador_div navegador7" id="nav_nuevavida">7</a>
+			<a href="#uso_y_manufactura" class="navegador_div navegador8" id="nav_usoyman">8</a>
+		</div>
+
+
 		<div class="portada_pregunta-botones" id="botones-intro">
 			<button onclick="openNav()" id="full" href="" class="btn portada_btn-hilando btn-main">
 				<img src="./img/portada/logo_boton.png" alt="">
@@ -196,7 +210,8 @@
 			<a target="_blank" href="" class="btn portada_btn-contacto btn-main">Acerca de nosotros</a>
 		</div>
 
-		<section class="portada_pregunta">
+		<section class="portada_pregunta" >
+			<div class="aux_nav aux_pregunta1">1</div>
 			<div class="portada_pregunta_texto">
 				<div class="portada_pregunta_sticky" id="portada_pregunta_sticky">
 					<div class="portada_pregunta_centro">
@@ -212,9 +227,14 @@
 			</div>
 		</section>
 
-		<section class="intro">
+		<section class="intro" >
+			<div class="aux_nav aux_nav_intro1">1</div>
+			<div class="aux_nav aux_nav_intro2">2</div>
+			<div class="aux_nav aux_nav_intro3">3</div>
+			<div class="aux_nav aux_nav_intro4">4</div>
+			<div class="aux_nav aux_nav_intro5">5</div>
 			<div class="intro1" id="intro1">
-				<div class="intro1_planeta">
+				<div class="intro1_planeta" >
 					<img class="intro1_planeta_arriba" src="./img/intro/colllage_70agua.png" alt="">
 					<img src="./img/intro/intro1_ovalo_azul1.png" alt="" class="ovalo1">
 					<img src="./img/intro/ovalo_blanco.png" alt="" class="ovalo_blanco">
@@ -222,7 +242,7 @@
 					<!-- <img class="intro1_planeta_arriba" src="./img/intro/Mundo-arriba.png" alt=""> -->
 					<img class="intro1_planeta_abajo" src="./img/intro/planeta_mitad_abajo.png" alt="">
 					<!-- <img class="intro1_planeta_abajo" src="./img/intro/Mundo-abajo.png" alt=""> -->
-					<img class="intro1_planeta_ballena" src="./img/intro/planeta1_ballena.png" alt="">
+					<img class="intro1_planeta_ballena" id="intro" src="./img/intro/planeta1_ballena.png" alt="">
 					<img class="intro1_planeta_nuestro" src="./img/intro/nuestro_planeta_1.png" alt="">
 					<img  class="intro1_planeta_gota" src="./img/portada/gota.svg" alt="">
 					<div class="intro1_texto" >
@@ -309,213 +329,229 @@
 		</section>
 
 		<section class="section_ciclo" id="section_ciclo">
-			<div class="section_ciclo_sticky">
-				<div class="kaleidos_div">
-					<img class="ciclo_circulo" src="./img/ciclo/ciclo_de_vida.png" alt="">
-					<div class="circulo_grande"></div>
-					<div class="circulo_grande circulo_grande2"></div>
-
+			
+			<div class="ciclo1" id="ciclo">
+				<div class="ciclo_aux ciclo1_aux1">1</div>
+				<div class="ciclo_aux ciclo1_aux2">2</div>
+				<div class="ciclo1_container">
 					<div class="ciclo_texto_intro">
-						<p class="fs-09T ciclo_texto_intro_p">Para realmente comprender el impacto ambiental y social que tiene cada prenda, hemos analizado cada etapa de su ciclo de vida.</p>
-						<p class="fs-09T ciclo_texto_intro_lima">Veamos los descubrimientos</p>
-					</div>
-
-					<svg class="rotor_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 632.8 632.79">
-						<defs>
-							<style></style>
-						</defs>
-						<g id="Capa_2" data-name="Capa 2">
-							<g id="Elementos">
-								<path class="cls-1" d="M74.23,323.18A243.63,243.63,0,0,1,79,268.92"/>
-								<path class="cls-1" d="M188.46,523.74a245.52,245.52,0,0,1-61-54.27"/>
-								<path class="cls-1" d="M459.11,515.28a241.25,241.25,0,0,1-48.49,27.23"/>
-								<path class="cls-1" d="M559.43,297a242.63,242.63,0,0,1-24.28,128.29"/>
-								<path class="cls-1" d="M404.14,90.49A244.74,244.74,0,0,1,505.21,163.4"/>
-								<path class="cls-1" d="M215.21,96.88a243.73,243.73,0,0,1,97.52-22.35"/>
-								<g class="g_etapa g_produccion" fill="#000" id="g_produccion">
-									<text class="cls-2" transform="translate(83.23 265.03) rotate(-76.44)">P</text>
-									<text class="cls-2" transform="matrix(0.28, -0.96, 0.96, 0.28, 86.03, 253.66)">R</text>
-									<text class="cls-2" transform="matrix(0.34, -0.94, 0.94, 0.34, 89.59, 241.79)">O</text>
-									<text class="cls-2" transform="translate(94.35 228.68) rotate(-67.15)">D</text>
-									<text class="cls-2" transform="matrix(0.44, -0.9, 0.9, 0.44, 99.58, 216.49)">U</text>
-									<text class="cls-2" transform="translate(105.28 204.96) rotate(-61.02)">C</text>
-									<text class="cls-2" transform="translate(111.25 194.3) rotate(-58.1)">C</text>
-									<text class="cls-2" transform="translate(117.91 183.81) rotate(-55.76)">I</text>
-									<text class="cls-2" transform="translate(121.94 177.85) rotate(-53.23)">Ó</text>
-									<text class="cls-2" transform="matrix(0.64, -0.77, 0.77, 0.64, 130.35, 166.75)">N</text>
-									<text class="cls-2" transform="translate(138.9 156.76) rotate(-47.67)"> </text>
-									<text class="cls-2" transform="translate(143 152.23) rotate(-45.34)">D</text>
-									<text class="cls-2" transform="matrix(0.74, -0.67, 0.67, 0.74, 152.43, 142.83)">E</text>
-									<text class="cls-2" transform="translate(160.64 135.46) rotate(-40.33)"> </text>
-									<text class="cls-2" transform="translate(165.32 131.49) rotate(-38.27)">F</text>
-									<text class="cls-2" transform="translate(173.93 124.81) rotate(-36.08)">I</text>
-									<text class="cls-2" transform="translate(179.74 120.58) rotate(-33.77)">B</text>
-									<text class="cls-2" transform="translate(189.7 114) rotate(-30.81)">R</text>
-									<text class="cls-2" transform="translate(200.5 107.63) rotate(-27.78)">A</text>
-								</g>
-								<text class="cls-3" transform="translate(211.28 102.07) rotate(-25.64)">	</text>
-								<text class="cls-3" transform="translate(217.81 99) rotate(-23.92)">	</text>
-								<text class="cls-3" transform="translate(238.43 90.82) rotate(-19.16)">	</text>
-								<text class="cls-3" transform="translate(259.65 84.54) rotate(-13.41)">	</text>
-								<text class="cls-3" transform="translate(281.39 80.25) rotate(-8.09)"> </text>
-								<text class="cls-3" transform="translate(287.48 79.42) rotate(-6.61)"> </text>
-								<text class="cls-3" transform="translate(293.58 78.75) rotate(-5.12)"> </text>
-								<text class="cls-3" transform="translate(299.73 78.24) rotate(-3.63)"> </text>
-								<text class="cls-3" transform="translate(305.87 77.88) rotate(-2.15)"> </text>
-								<text class="cls-3" transform="translate(312.01 77.69) rotate(-0.66)"> </text>
-								<text class="cls-3" transform="translate(318.17 77.65) rotate(0.83)"> </text>
-								<g class="g_etapa g_dis" id="g_dis">
-									<text class="cls-4" transform="matrix(1, 0.06, -0.06, 1, 324.3, 77.72)">D</text>
-									<text class="cls-4" transform="matrix(1, 0.1, -0.1, 1, 337.54, 78.58)">I</text>
-									<text class="cls-4" transform="translate(344.71 79.31) rotate(7.84)">S</text>
-									<text class="cls-4" transform="matrix(0.98, 0.18, -0.18, 0.98, 355.56, 80.86)">E</text>
-									<text class="cls-4" transform="translate(366.37 82.91) rotate(13.39)">Ñ</text>
-									<text class="cls-4" transform="matrix(0.96, 0.29, -0.29, 0.96, 379.12, 86.01)">O</text>
-								</g>
-								<text class="cls-4" transform="translate(392.46 90.14) rotate(19.03)">	</text>
-								<text class="cls-4" transform="matrix(0.91, 0.4, -0.4, 0.91, 411.43, 97.44)">	</text>
-								<text class="cls-4" transform="matrix(0.87, 0.49, -0.49, 0.87, 431.33, 107.2)">	</text>
-								<text class="cls-4" transform="translate(450.22 118.73) rotate(34.46)">	</text>
-								<text class="cls-4" transform="translate(467.98 131.98) rotate(39.77)">	</text>
-								<text class="cls-4" transform="matrix(0.71, 0.71, -0.71, 0.71, 484.44, 146.81)">	</text>
-								<text class="cls-4" transform="translate(499.44 163.1) rotate(50.45)"> </text>
-								<g class="g_etapa g_manufactura" id="g_manufactura">
-									<text class="cls-4" transform="matrix(0.6, 0.8, -0.8, 0.6, 503.36, 167.77)">M</text>
-									<text class="cls-4" transform="translate(512.75 180.49) rotate(56.53)">A</text>
-									<text class="cls-4" transform="matrix(0.51, 0.86, -0.86, 0.51, 519.6, 190.96)">N</text>
-									<text class="cls-4" transform="translate(526.18 202.34) rotate(62.76)">U</text>
-									<text class="cls-4" transform="matrix(0.41, 0.91, -0.91, 0.41, 531.99, 213.83)">F</text>
-									<text class="cls-4" transform="translate(536.12 223.01) rotate(68.21)">A</text>
-									<text class="cls-4" transform="translate(540.58 234.36) rotate(70.84)">C</text>
-									<text class="cls-4" transform="translate(544.53 246.08) rotate(73.83)">T</text>
-									<text class="cls-4" transform="translate(547.57 256.71) rotate(76.68)">U</text>
-									<text class="cls-4" transform="translate(550.46 269.26) rotate(79.73)">R</text>
-									<text class="cls-4" transform="translate(552.63 281.6) rotate(82.74)">A</text>
-								</g>
-								<text class="cls-4" transform="translate(554.06 293.65) rotate(84.89)">	</text>
-								<text class="cls-4" transform="translate(554.88 305.04) rotate(87.65)">	</text>
-								<text class="cls-4" transform="translate(554.91 327.2) rotate(93.02)">	</text>
-								<text class="cls-4" transform="translate(552.88 349.23) rotate(98.36)">	</text>
-								<text class="cls-4" transform="translate(548.8 371) rotate(103.69)">	</text>
-								<text class="cls-4" transform="translate(542.72 392.29) rotate(108.99)">	</text>
-								<text class="cls-4" transform="translate(534.7 412.94) rotate(114.28)"> </text>
-								<text class="cls-4" transform="translate(532.13 418.54) rotate(115.75)"> </text>
-								<text class="cls-4" transform="translate(529.43 424.06) rotate(117.22)"> </text>
-								<g class="g_etapa g_logistica" id="g_logistica">
-									<text class="cls-4" transform="translate(526.62 429.52) rotate(119.24)">L</text>
-									<text class="cls-4" transform="translate(521.55 438.54) rotate(122.09)">O</text>
-									<text class="cls-4" transform="matrix(-0.58, 0.82, -0.82, -0.58, 514.07, 450.3)">G</text>
-									<text class="cls-4" transform="translate(506.47 460.83) rotate(127.72)">Í</text>
-									<text class="cls-4" transform="translate(502.05 466.51) rotate(129.89)">S</text>
-									<text class="cls-4" transform="matrix(-0.68, 0.74, -0.74, -0.68, 495, 474.86)">T</text>
-									<text class="cls-4" transform="matrix(-0.7, 0.71, -0.71, -0.7, 487.47, 482.94)">I</text>
-									<text class="cls-4" transform="translate(482.39 488.06) rotate(137.09)">C</text>
-									<text class="cls-4" transform="matrix(-0.77, 0.64, -0.64, -0.77, 473.26, 496.46)">A</text>	
-								</g>
-								<text class="cls-4" transform="translate(463.89 504.15) rotate(142.26)">	</text>
-								<text class="cls-4" transform="matrix(-0.83, 0.56, -0.56, -0.83, 450.73, 513.78)">	</text>
-								<text class="cls-4" transform="translate(431.86 525.36) rotate(151.55)">	</text>
-								<text class="cls-4" transform="translate(411.98 535.13) rotate(156.87)"> </text>
-								<text class="cls-4" transform="translate(406.31 537.52) rotate(158.34)"> </text>
-								<g class="g_etapa g_uso" id="g_uso">
-									<text class="cls-4" transform="matrix(-0.94, 0.33, -0.33, -0.94, 400.62, 539.79)">U</text>
-									<text class="cls-4" transform="translate(388.43 543.99) rotate(163.4)">S</text>
-									<text class="cls-4" transform="translate(377.96 547.08) rotate(166.35)">O</text>
-									<text class="cls-4" transform="matrix(-0.98, 0.2, -0.2, -0.98, 364.35, 550.25)"> </text>
-									<text class="cls-4" transform="translate(358.85 551.36) rotate(170.91)">Y</text>
-									<text class="cls-4" transform="matrix(-0.99, 0.12, -0.12, -0.99, 346.6, 553.22)"> </text>
-									<text class="cls-4" transform="translate(340.54 554) rotate(175.73)">M</text>
-									<text class="cls-4" transform="matrix(-1, 0.01, -0.01, -1, 324.77, 555.05)">A</text>
-									<text class="cls-4" transform="matrix(-1, -0.04, 0.04, -1, 312.24, 555.17)">N</text>
-									<text class="cls-4" transform="translate(299.13 554.56) rotate(-174.82)">T</text>
-									<text class="cls-4" transform="translate(288.13 553.5) rotate(-172.16)">E</text>
-									<text class="cls-4" transform="translate(277.23 551.95) rotate(-169.25)">N</text>
-									<text class="cls-4" transform="matrix(-0.97, -0.23, 0.23, -0.97, 264.32, 549.38)">I</text>
-									<text class="cls-4" transform="translate(257.31 547.78) rotate(-164.05)">M</text>
-									<text class="cls-4" transform="translate(242.17 543.27) rotate(-161.3)">I</text>
-									<text class="cls-4" transform="translate(235.33 540.94) rotate(-159.11)">E</text>
-									<text class="cls-4" transform="translate(225.07 536.98) rotate(-156.23)">N</text>
-									<text class="cls-4" transform="translate(213.09 531.61) rotate(-153.35)">T</text>
-									<text class="cls-4" transform="matrix(-0.87, -0.49, 0.49, -0.87, 203.54, 526.79)">O</text>
-								</g>
-								<text class="cls-4" transform="translate(191.47 519.79) rotate(-148.06)"> </text>
-								<text class="cls-4" transform="translate(186.25 516.49) rotate(-146.59)"> </text>
-								<text class="cls-4" transform="translate(181.14 513.08) rotate(-145.12)"> </text>
-								<text class="cls-4" transform="matrix(-0.81, -0.59, 0.59, -0.81, 176.12, 509.54)"> </text>
-								<text class="cls-4" transform="matrix(-0.79, -0.61, 0.61, -0.79, 171.17, 505.85)"> </text>
-								<text class="cls-4" transform="matrix(-0.77, -0.63, 0.63, -0.77, 166.33, 502.05)"> </text>
-								<text class="cls-4" transform="matrix(-0.76, -0.65, 0.65, -0.76, 161.61, 498.14)"> </text>
-								<text class="cls-4" transform="matrix(-0.74, -0.67, 0.67, -0.74, 156.96, 494.08)"> </text>
-								<text class="cls-4" transform="matrix(-0.72, -0.69, 0.69, -0.72, 152.43, 489.91)"> </text>
-								<text class="cls-4" transform="matrix(-0.7, -0.71, 0.71, -0.7, 148, 485.63)"> </text>
-								<text class="cls-4" transform="translate(143.69 481.23) rotate(-133.29)"> </text>
-								<text class="cls-4" transform="translate(139.5 476.74) rotate(-131.81)"> </text>
-								<text class="cls-4" transform="matrix(-0.65, -0.76, 0.76, -0.65, 135.43, 472.13)"> </text>
-								<text class="cls-4" transform="translate(131.48 467.42) rotate(-128.84)"> </text>
-								<text class="cls-4" transform="matrix(-0.61, -0.79, 0.79, -0.61, 127.64, 462.6)"> </text>
-								<g class="g_etapa g_nueva" id="g_nueva">
-									<text class="cls-4" transform="matrix(-0.57, -0.82, 0.82, -0.57, 123.91, 457.74)">N</text>
-									<text class="cls-4" transform="translate(116.45 446.95) rotate(-121.87)">U</text>
-									<text class="cls-4" transform="translate(109.73 435.96) rotate(-118.99)">E</text>
-									<text class="cls-4" transform="translate(104.43 426.29) rotate(-116.2)">V</text>
-									<text class="cls-4" transform="matrix(-0.4, -0.92, 0.92, -0.4, 99.49, 416.18)">A</text>
-									<text class="cls-4" transform="translate(94.76 405) rotate(-111.33)"> </text>
-									<text class="cls-4" transform="matrix(-0.33, -0.94, 0.94, -0.33, 92.52, 399.29)">D</text>
-									<text class="cls-4" transform="matrix(-0.28, -0.96, 0.96, -0.28, 88.27, 386.71)">E</text>
-									<text class="cls-4" transform="matrix(-0.24, -0.97, 0.97, -0.24, 85.28, 376.08)"> </text>
-									<text class="cls-4" transform="translate(83.89 370.61) rotate(-102.06)">V</text>
-									<text class="cls-4" transform="translate(81.45 358.68) rotate(-99.73)">I</text>
-									<text class="cls-4" transform="matrix(-0.13, -0.99, 0.99, -0.13, 80.23, 351.59)">D</text>
-									<text class="cls-4" transform="matrix(-0.07, -1, 1, -0.07, 78.66, 338.78)">A</text>
-								</g>
-							</g>
-						</g>
-					</svg>
-					<div class="ciclo_hidden">
-
-						<div id="k_circle_1" class="k_circle_1"></div>
-						<div id="k_circle_2" class="k_circle_2"></div>
-						<div id="k_circle_F3" class="k_circle_F3"></div>
-						<div id="k_circle_4" class="k_circle_4"></div>
-						<div id="cuadro1" class="cuadro cuadro1"></div>
-						<div id="cuadro2" class="cuadro cuadro2"></div>
-						<div class="slices">
-							<div id="slice1" class="slice slice1">
-								<span class="span1"></span>
-								<span class="span2"></span>
-							</div>
-							<div id="slice2" class="slice slice2">
-								<span class="span1"></span>
-								<span class="span2"></span>
-							</div>
-							<div id="slice3" class="slice slice3">
-								<span class="span1"></span>
-								<span class="span2"></span>
-							</div>
+						<div class="ciclo_texto_intro_div">
+							<p class="fs-09T ciclo_texto_intro_p">Para comprender a profundidad el impacto ambiental y social que tiene cada prenda, </p>
+							<p class="fs-2-3 ciclo_texto_intro_titulo">hemos analizado cada etapa de su ciclo de vida</p>
+							<p class="fs-09T ciclo_texto_intro_lima">Veamos los descubrimientos</p>
 						</div>
 					</div>
-					<div class="kaleidoscope"></div>
-				</div>
-
-				<div class="ciclo_texto">
-					<p class="ciclo_texto_titulo fs-07">Producción de fibra</p>
-					<p id="ciclo_p" class="ciclo_texto_p fs-07">Para realmente comprender el impacto ambiental y social que tiene cada prenda, hemos analizado cada etapa de su ciclo de vida</p>
-					<p class="ciclo_lima_abajo fs-07">Veamos los descubrimientos</p>
-					<a href="" class="btn ciclo_texto_btn fs-07">IR</a>
+					<img src="./img/ciclo/mostrador.png" alt="" class="ciclo1_mostrador">
 				</div>
 			</div>
-			<div class="ciclo_aux ciclo_aux_ciclo" id="ciclo_aux_ciclo">ciclo</div>
-			<div class="ciclo_aux ciclo_aux_rotate" id="ciclo_aux_rotate">rotate</div>
-			<div class="ciclo_aux ciclo_aux_opacity" id="ciclo_aux_opacity">opacity</div>
-			<div class="ciclo_aux ciclo_aux_fibra" id="ciclo_aux_fibra">fibra</div>
-			<div class="ciclo_aux ciclo_aux_dis" id="ciclo_aux_dis">diseño</div>
-			<div class="ciclo_aux ciclo_aux_manufactura" id="ciclo_aux_manufactura">manufactura</div>
-			<div class="ciclo_aux ciclo_aux_logistica" id="ciclo_aux_logistica">logistica</div>
-			<div class="ciclo_aux ciclo_aux_uso" id="ciclo_aux_uso">uso</div>
-			<div class="ciclo_aux ciclo_aux_nuevavida" id="ciclo_aux_nuevavida">nuevavida</div>
+			<div class="ciclo2">
+				<div class="aux_nav aux_nav_ciclo1">1</div>
+				<div class="aux_nav aux_nav_ciclo2">2</div>
+				<div class="aux_nav aux_nav_ciclo3">3</div>
+				<div class="ciclo2_container">
+					<div class="ciclo2_helper">
+						<img src="./img/ciclo/click_para.png" alt="" class="ciclo2_helper_img">
+						<p class="fs-07">Click para explorar cada etapa</p>
+					</div>
+					<div class="kaleidos_div">
+						<img class="ciclo_circulo" src="./img/ciclo/ciclo_de_vida.png" alt="">
+						<div class="circulo_grande"></div>
+						<div class="circulo_grande circulo_grande2"></div>
+						<svg class="rotor_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 632.8 632.79">
+							<defs>
+								<style></style>
+							</defs>
+							<g id="Capa_2" data-name="Capa 2">
+								<g id="Elementos">
+									<path class="cls-1" d="M74.23,323.18A243.63,243.63,0,0,1,79,268.92"/>
+									<path class="cls-1" d="M188.46,523.74a245.52,245.52,0,0,1-61-54.27"/>
+									<path class="cls-1" d="M459.11,515.28a241.25,241.25,0,0,1-48.49,27.23"/>
+									<path class="cls-1" d="M559.43,297a242.63,242.63,0,0,1-24.28,128.29"/>
+									<path class="cls-1" d="M404.14,90.49A244.74,244.74,0,0,1,505.21,163.4"/>
+									<path class="cls-1" d="M215.21,96.88a243.73,243.73,0,0,1,97.52-22.35"/>
+									<g class="g_etapa g_produccion" fill="#000" id="g_produccion">
+										<text class="cls-2" transform="translate(83.23 265.03) rotate(-76.44)">P</text>
+										<text class="cls-2" transform="matrix(0.28, -0.96, 0.96, 0.28, 86.03, 253.66)">R</text>
+										<text class="cls-2" transform="matrix(0.34, -0.94, 0.94, 0.34, 89.59, 241.79)">O</text>
+										<text class="cls-2" transform="translate(94.35 228.68) rotate(-67.15)">D</text>
+										<text class="cls-2" transform="matrix(0.44, -0.9, 0.9, 0.44, 99.58, 216.49)">U</text>
+										<text class="cls-2" transform="translate(105.28 204.96) rotate(-61.02)">C</text>
+										<text class="cls-2" transform="translate(111.25 194.3) rotate(-58.1)">C</text>
+										<text class="cls-2" transform="translate(117.91 183.81) rotate(-55.76)">I</text>
+										<text class="cls-2" transform="translate(121.94 177.85) rotate(-53.23)">Ó</text>
+										<text class="cls-2" transform="matrix(0.64, -0.77, 0.77, 0.64, 130.35, 166.75)">N</text>
+										<text class="cls-2" transform="translate(138.9 156.76) rotate(-47.67)"> </text>
+										<text class="cls-2" transform="translate(143 152.23) rotate(-45.34)">D</text>
+										<text class="cls-2" transform="matrix(0.74, -0.67, 0.67, 0.74, 152.43, 142.83)">E</text>
+										<text class="cls-2" transform="translate(160.64 135.46) rotate(-40.33)"> </text>
+										<text class="cls-2" transform="translate(165.32 131.49) rotate(-38.27)">F</text>
+										<text class="cls-2" transform="translate(173.93 124.81) rotate(-36.08)">I</text>
+										<text class="cls-2" transform="translate(179.74 120.58) rotate(-33.77)">B</text>
+										<text class="cls-2" transform="translate(189.7 114) rotate(-30.81)">R</text>
+										<text class="cls-2" transform="translate(200.5 107.63) rotate(-27.78)">A</text>
+									</g>
+									<text class="cls-3" transform="translate(211.28 102.07) rotate(-25.64)">	</text>
+									<text class="cls-3" transform="translate(217.81 99) rotate(-23.92)">	</text>
+									<text class="cls-3" transform="translate(238.43 90.82) rotate(-19.16)">	</text>
+									<text class="cls-3" transform="translate(259.65 84.54) rotate(-13.41)">	</text>
+									<text class="cls-3" transform="translate(281.39 80.25) rotate(-8.09)"> </text>
+									<text class="cls-3" transform="translate(287.48 79.42) rotate(-6.61)"> </text>
+									<text class="cls-3" transform="translate(293.58 78.75) rotate(-5.12)"> </text>
+									<text class="cls-3" transform="translate(299.73 78.24) rotate(-3.63)"> </text>
+									<text class="cls-3" transform="translate(305.87 77.88) rotate(-2.15)"> </text>
+									<text class="cls-3" transform="translate(312.01 77.69) rotate(-0.66)"> </text>
+									<text class="cls-3" transform="translate(318.17 77.65) rotate(0.83)"> </text>
+									<g class="g_etapa g_dis" id="g_dis">
+										<text class="cls-4" transform="matrix(1, 0.06, -0.06, 1, 324.3, 77.72)">D</text>
+										<text class="cls-4" transform="matrix(1, 0.1, -0.1, 1, 337.54, 78.58)">I</text>
+										<text class="cls-4" transform="translate(344.71 79.31) rotate(7.84)">S</text>
+										<text class="cls-4" transform="matrix(0.98, 0.18, -0.18, 0.98, 355.56, 80.86)">E</text>
+										<text class="cls-4" transform="translate(366.37 82.91) rotate(13.39)">Ñ</text>
+										<text class="cls-4" transform="matrix(0.96, 0.29, -0.29, 0.96, 379.12, 86.01)">O</text>
+									</g>
+									<text class="cls-4" transform="translate(392.46 90.14) rotate(19.03)">	</text>
+									<text class="cls-4" transform="matrix(0.91, 0.4, -0.4, 0.91, 411.43, 97.44)">	</text>
+									<text class="cls-4" transform="matrix(0.87, 0.49, -0.49, 0.87, 431.33, 107.2)">	</text>
+									<text class="cls-4" transform="translate(450.22 118.73) rotate(34.46)">	</text>
+									<text class="cls-4" transform="translate(467.98 131.98) rotate(39.77)">	</text>
+									<text class="cls-4" transform="matrix(0.71, 0.71, -0.71, 0.71, 484.44, 146.81)">	</text>
+									<text class="cls-4" transform="translate(499.44 163.1) rotate(50.45)"> </text>
+									<g class="g_etapa g_manufactura" id="g_manufactura">
+										<text class="cls-4" transform="matrix(0.6, 0.8, -0.8, 0.6, 503.36, 167.77)">M</text>
+										<text class="cls-4" transform="translate(512.75 180.49) rotate(56.53)">A</text>
+										<text class="cls-4" transform="matrix(0.51, 0.86, -0.86, 0.51, 519.6, 190.96)">N</text>
+										<text class="cls-4" transform="translate(526.18 202.34) rotate(62.76)">U</text>
+										<text class="cls-4" transform="matrix(0.41, 0.91, -0.91, 0.41, 531.99, 213.83)">F</text>
+										<text class="cls-4" transform="translate(536.12 223.01) rotate(68.21)">A</text>
+										<text class="cls-4" transform="translate(540.58 234.36) rotate(70.84)">C</text>
+										<text class="cls-4" transform="translate(544.53 246.08) rotate(73.83)">T</text>
+										<text class="cls-4" transform="translate(547.57 256.71) rotate(76.68)">U</text>
+										<text class="cls-4" transform="translate(550.46 269.26) rotate(79.73)">R</text>
+										<text class="cls-4" transform="translate(552.63 281.6) rotate(82.74)">A</text>
+									</g>
+									<text class="cls-4" transform="translate(554.06 293.65) rotate(84.89)">	</text>
+									<text class="cls-4" transform="translate(554.88 305.04) rotate(87.65)">	</text>
+									<text class="cls-4" transform="translate(554.91 327.2) rotate(93.02)">	</text>
+									<text class="cls-4" transform="translate(552.88 349.23) rotate(98.36)">	</text>
+									<text class="cls-4" transform="translate(548.8 371) rotate(103.69)">	</text>
+									<text class="cls-4" transform="translate(542.72 392.29) rotate(108.99)">	</text>
+									<text class="cls-4" transform="translate(534.7 412.94) rotate(114.28)"> </text>
+									<text class="cls-4" transform="translate(532.13 418.54) rotate(115.75)"> </text>
+									<text class="cls-4" transform="translate(529.43 424.06) rotate(117.22)"> </text>
+									<g class="g_etapa g_logistica" id="g_logistica">
+										<text class="cls-4" transform="translate(526.62 429.52) rotate(119.24)">L</text>
+										<text class="cls-4" transform="translate(521.55 438.54) rotate(122.09)">O</text>
+										<text class="cls-4" transform="matrix(-0.58, 0.82, -0.82, -0.58, 514.07, 450.3)">G</text>
+										<text class="cls-4" transform="translate(506.47 460.83) rotate(127.72)">Í</text>
+										<text class="cls-4" transform="translate(502.05 466.51) rotate(129.89)">S</text>
+										<text class="cls-4" transform="matrix(-0.68, 0.74, -0.74, -0.68, 495, 474.86)">T</text>
+										<text class="cls-4" transform="matrix(-0.7, 0.71, -0.71, -0.7, 487.47, 482.94)">I</text>
+										<text class="cls-4" transform="translate(482.39 488.06) rotate(137.09)">C</text>
+										<text class="cls-4" transform="matrix(-0.77, 0.64, -0.64, -0.77, 473.26, 496.46)">A</text>	
+									</g>
+									<text class="cls-4" transform="translate(463.89 504.15) rotate(142.26)">	</text>
+									<text class="cls-4" transform="matrix(-0.83, 0.56, -0.56, -0.83, 450.73, 513.78)">	</text>
+									<text class="cls-4" transform="translate(431.86 525.36) rotate(151.55)">	</text>
+									<text class="cls-4" transform="translate(411.98 535.13) rotate(156.87)"> </text>
+									<text class="cls-4" transform="translate(406.31 537.52) rotate(158.34)"> </text>
+									<g class="g_etapa g_uso" id="g_uso">
+										<text class="cls-4" transform="matrix(-0.94, 0.33, -0.33, -0.94, 400.62, 539.79)">U</text>
+										<text class="cls-4" transform="translate(388.43 543.99) rotate(163.4)">S</text>
+										<text class="cls-4" transform="translate(377.96 547.08) rotate(166.35)">O</text>
+										<text class="cls-4" transform="matrix(-0.98, 0.2, -0.2, -0.98, 364.35, 550.25)"> </text>
+										<text class="cls-4" transform="translate(358.85 551.36) rotate(170.91)">Y</text>
+										<text class="cls-4" transform="matrix(-0.99, 0.12, -0.12, -0.99, 346.6, 553.22)"> </text>
+										<text class="cls-4" transform="translate(340.54 554) rotate(175.73)">M</text>
+										<text class="cls-4" transform="matrix(-1, 0.01, -0.01, -1, 324.77, 555.05)">A</text>
+										<text class="cls-4" transform="matrix(-1, -0.04, 0.04, -1, 312.24, 555.17)">N</text>
+										<text class="cls-4" transform="translate(299.13 554.56) rotate(-174.82)">T</text>
+										<text class="cls-4" transform="translate(288.13 553.5) rotate(-172.16)">E</text>
+										<text class="cls-4" transform="translate(277.23 551.95) rotate(-169.25)">N</text>
+										<text class="cls-4" transform="matrix(-0.97, -0.23, 0.23, -0.97, 264.32, 549.38)">I</text>
+										<text class="cls-4" transform="translate(257.31 547.78) rotate(-164.05)">M</text>
+										<text class="cls-4" transform="translate(242.17 543.27) rotate(-161.3)">I</text>
+										<text class="cls-4" transform="translate(235.33 540.94) rotate(-159.11)">E</text>
+										<text class="cls-4" transform="translate(225.07 536.98) rotate(-156.23)">N</text>
+										<text class="cls-4" transform="translate(213.09 531.61) rotate(-153.35)">T</text>
+										<text class="cls-4" transform="matrix(-0.87, -0.49, 0.49, -0.87, 203.54, 526.79)">O</text>
+									</g>
+									<text class="cls-4" transform="translate(191.47 519.79) rotate(-148.06)"> </text>
+									<text class="cls-4" transform="translate(186.25 516.49) rotate(-146.59)"> </text>
+									<text class="cls-4" transform="translate(181.14 513.08) rotate(-145.12)"> </text>
+									<text class="cls-4" transform="matrix(-0.81, -0.59, 0.59, -0.81, 176.12, 509.54)"> </text>
+									<text class="cls-4" transform="matrix(-0.79, -0.61, 0.61, -0.79, 171.17, 505.85)"> </text>
+									<text class="cls-4" transform="matrix(-0.77, -0.63, 0.63, -0.77, 166.33, 502.05)"> </text>
+									<text class="cls-4" transform="matrix(-0.76, -0.65, 0.65, -0.76, 161.61, 498.14)"> </text>
+									<text class="cls-4" transform="matrix(-0.74, -0.67, 0.67, -0.74, 156.96, 494.08)"> </text>
+									<text class="cls-4" transform="matrix(-0.72, -0.69, 0.69, -0.72, 152.43, 489.91)"> </text>
+									<text class="cls-4" transform="matrix(-0.7, -0.71, 0.71, -0.7, 148, 485.63)"> </text>
+									<text class="cls-4" transform="translate(143.69 481.23) rotate(-133.29)"> </text>
+									<text class="cls-4" transform="translate(139.5 476.74) rotate(-131.81)"> </text>
+									<text class="cls-4" transform="matrix(-0.65, -0.76, 0.76, -0.65, 135.43, 472.13)"> </text>
+									<text class="cls-4" transform="translate(131.48 467.42) rotate(-128.84)"> </text>
+									<text class="cls-4" transform="matrix(-0.61, -0.79, 0.79, -0.61, 127.64, 462.6)"> </text>
+									<g class="g_etapa g_nueva" id="g_nueva">
+										<text class="cls-4" transform="matrix(-0.57, -0.82, 0.82, -0.57, 123.91, 457.74)">N</text>
+										<text class="cls-4" transform="translate(116.45 446.95) rotate(-121.87)">U</text>
+										<text class="cls-4" transform="translate(109.73 435.96) rotate(-118.99)">E</text>
+										<text class="cls-4" transform="translate(104.43 426.29) rotate(-116.2)">V</text>
+										<text class="cls-4" transform="matrix(-0.4, -0.92, 0.92, -0.4, 99.49, 416.18)">A</text>
+										<text class="cls-4" transform="translate(94.76 405) rotate(-111.33)"> </text>
+										<text class="cls-4" transform="matrix(-0.33, -0.94, 0.94, -0.33, 92.52, 399.29)">D</text>
+										<text class="cls-4" transform="matrix(-0.28, -0.96, 0.96, -0.28, 88.27, 386.71)">E</text>
+										<text class="cls-4" transform="matrix(-0.24, -0.97, 0.97, -0.24, 85.28, 376.08)"> </text>
+										<text class="cls-4" transform="translate(83.89 370.61) rotate(-102.06)">V</text>
+										<text class="cls-4" transform="translate(81.45 358.68) rotate(-99.73)">I</text>
+										<text class="cls-4" transform="matrix(-0.13, -0.99, 0.99, -0.13, 80.23, 351.59)">D</text>
+										<text class="cls-4" transform="matrix(-0.07, -1, 1, -0.07, 78.66, 338.78)">A</text>
+									</g>
+								</g>
+							</g>
+						</svg>
+						<div class="ciclo_hidden">
+							<div id="k_circle_1" class="k_circle_1"></div>
+							<div id="k_circle_2" class="k_circle_2"></div>
+							<div id="k_circle_F3" class="k_circle_F3"></div>
+							<div id="k_circle_4" class="k_circle_4"></div>
+							<div id="cuadro1" class="cuadro cuadro1"></div>
+							<div id="cuadro2" class="cuadro cuadro2"></div>
+							<div class="slices">
+								<div id="slice1" class="slice slice1">
+									<span class="span1"></span>
+									<span class="span2"></span>
+								</div>
+								<div id="slice2" class="slice slice2">
+									<span class="span1"></span>
+									<span class="span2"></span>
+								</div>
+								<div id="slice3" class="slice slice3">
+									<span class="span1"></span>
+									<span class="span2"></span>
+								</div>
+							</div>
+						</div>
+						<div class="kaleidoscope"></div>
+					</div>
+
+					<div class="ciclo_texto">
+						<p class="ciclo_texto_titulo fs-07">Producción de fibra</p>
+						<p id="ciclo_p" class="ciclo_texto_p fs-07">Para realmente comprender el impacto ambiental y social que tiene cada prenda, hemos analizado cada etapa de su ciclo de vida</p>
+						<p class="ciclo_lima_abajo fs-07">Veamos los descubrimientos</p>
+						<a href="" class="btn ciclo_texto_btn fs-07">IR</a>
+					</div>
+				</div>
+				<div class="ciclo_aux ciclo_aux_fibra" id="ciclo_aux_fibra">fibra</div>
+				<div class="ciclo_aux ciclo_aux_dis" id="ciclo_aux_dis">diseño</div>
+				<div class="ciclo_aux ciclo_aux_manufactura" id="ciclo_aux_manufactura">manusfactura</div>
+				<div class="ciclo_aux ciclo_aux_logistica" id="ciclo_aux_logistica">logistica</div>
+				<div class="ciclo_aux ciclo_aux_uso" id="ciclo_aux_uso">uso</div>
+				<div class="ciclo_aux ciclo_aux_nuevavida" id="ciclo_aux_nuevavida">nuevavida</div>
+			</div>
+			
+			
 		</section>
 
-		<section class="section_produccion">
+		<section class="section_produccion" >
 			<div class="aux aux_fibra1">aux1</div>
 			<div class="aux aux_fibra1_2">aux1-2</div>
 			<div class="aux aux_fibra2">aux2</div>
@@ -529,7 +565,7 @@
 			<div class="produccion1">
 				<div class="produccion1_container">
 					<div class="produccion1_texto">
-						<h2 class="produccion1_texto_h2 fs-2">Producción <span>de fibra</span></h2>
+						<h2 class="produccion1_texto_h2 fs-2" id="produccion">Producción <span>de fibra</span></h2>
 						<p class="produccion1_texto_p fs-09T">El comportamiento ambiental y social de las diferentes materias primas utilizadas en la moda depende de cada tipo de material, cómo surge y qué procesos sigue hasta convertirse en fibra preparada para hilar. Es por eso que generalizamos. </p><br>
 						<p class="produccion1_texto_p fs-09T">Esta etapa te invita a pensar acerca de cómo los niveles de producción de la fibras han aumentaso así como en los diferentes impactos que existen.</p>
 					</div>
@@ -815,7 +851,7 @@
 			</div>
 		</section>
 
-		<section class="section_diseno">
+		<section class="section_diseno" id="diseno">
 			<div class="dis_aux dis_aux1">1</div>
 			<div class="dis_aux dis_aux12">12</div>
 			<div class="dis_aux dis_aux2">2</div>
@@ -1060,14 +1096,14 @@
 			</div>
 		</section>
 
-		<section class="section_manufactura">
+		<section class="section_manufactura" >
 			<div class="man1">
 				<div class="aux_man aux_man1_1">1</div>
 				<div class="aux_man aux_man1_2">2</div>
 				<div class="man1_container">
-					<h2 class="man1_titulo fs-2-5">Manufactura</h2>
+					<h2 class="man1_titulo fs-2-5" id="manufactura">Manufactura</h2>
 					<div class="man1_texto">
-						<p class="fs-09TT">Aquí los procesos con los cuales se fabrican las prendas reflejan problemas muy significantes para el medio ambiente y la sociedad. Sobretodo hablando de el tema de el agua, por ejemplo:</p>
+						<p class="fs-09TT" >Aquí los procesos con los cuales se fabrican las prendas reflejan problemas muy significantes para el medio ambiente y la sociedad. Sobretodo hablando de el tema de el agua, por ejemplo:</p>
 					</div>
 				</div>
 			</div>
@@ -1088,8 +1124,6 @@
 				<div class="aux_man aux_man3_1">1</div>
 				<div class="aux_man aux_man3_2">2</div>
 				<div class="aux_man aux_man3_3">3</div>
-				<div class="aux_man aux_man3_4">4</div>
-				<div class="aux_man aux_man3_5">5</div>
 
 				<div class="man3_container">
 					<div class="man3_texto1">
@@ -1117,37 +1151,269 @@
 				<div class="aux_man aux_man4_2">2</div>
 				<div class="aux_man aux_man4_3">3</div>
 				<div class="aux_man aux_man4_4">4</div>
-				<div class="aux_man aux_man4_5">5</div>
+				<!-- <div class="aux_man aux_man4_5">5</div>
+				<div class="aux_man aux_man4_6">6</div>
+				<div class="aux_man aux_man4_7">7</div>
+				<div class="aux_man aux_man4_8">8</div>
+				<div class="aux_man aux_man4_9">9</div> -->
 				<div class="man4_container">
 					<div class="man4_texto1">
 						<p class="fs-09 man4_texto1_titulo">Por otro lado...</p>
 						<p>Las condiciones laborales de los trabajadores que afrontan problemas como:</p>
 					</div>
 					<div class="man4_main">
+						<span class="man4_main2_num man4_main2_1 fs-07">
+							<span class="num1">1</span>
+							<span class="num2">2</span>
+							<span class="num3">3</span>
+						</span>
 						<div class="man4_main_div">
 							<div class="man4_main_img1">
-								<img src="./img/manufactura/monedas.png" alt="">
+								<img class="moneda" src="./img/manufactura/monedas.png" alt="">
+								<img class="reloj" src="./img/manufactura/relojes.png" alt="">
 							</div>
 							<div class="man4_main_img2">
-								<img src="./img/manufactura/costurera_arco.png" alt="">
+								
+								<img src="./img/manufactura/costurera_manufactura.png" alt="">
 							</div>
 							<div class="man4_main_img3">
-								<img src="./img/manufactura/monedas.png" alt="">
+								<img class="moneda" src="./img/manufactura/monedas.png" alt="">
+								<img class="reloj" src="./img/manufactura/relojes.png" alt="">
+
 							</div>
 						</div>
-						<div class="man4_main_texto">
-							<p class="fs-09 man4_texto1_titulo">Salario mínimo</p>
-							<p>Entre el 1 y 2% de costo va a la trabajadora que ha confeccionado.Equivale una camiseta cuesta 8 euros, la trabajadora recibe 16 céntimos</p>
+						<div class="man4_main_texto_div">
+							<div class="man4_main_texto1 man4_main_textoX">
+								<div class="man4_main_texto_40">
+									<p class="fs-09 man4_texto1_titulo">Salario mínimo</p>
+									<p class="fs-08">Entre el 1 y 2% de costo va a la trabajadora que ha confeccionado. Equivale una camiseta cuesta 8 euros, la trabajadora recibe 16 céntimos</p>
+								</div>
+							</div>
+							<div class="man4_main_texto2 man4_main_textoX">
+								<div class="man4_main_texto_40">
+									<p class="fs-09 man4_texto1_titulo">Jornadas interminables</p>
+									<p>La industria de la confección las jornadas se alargan hasta las 12 o 14 horas en las fábricas no auditadas y 96 horas por semana</p>
+								</div>
+							</div>
+							<div class="man4_main_texto3 man4_main_textoX">
+								<div class="man4_main_texto_40">
+									<p class="fs-09 man4_texto1_titulo">Condiciones de insalubridad e inseguridad</p>
+									<p class="fs-08">Las condiciones de los espacios de trbajo son bastantes insolubres y tenemos que añadir la inseguridad, la falta de medidas de seguridad acaban en castatrofes un ejemplo de eso es Rana Plaza tal como muestra línea del tiempo</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="man5">
+				<div class="aux_man aux_man5_1">1</div>
+				<div class="aux_man aux_man5_2">2</div>
+				<div class="aux_man aux_man5_3">3</div>
+				<div class="aux_man aux_man5_4">4</div>
+				<div class="aux_man aux_man5_5">5</div>
+				<div class="aux_man aux_man5_6">6</div>
+				<div class="man5_container">
+					<div class="man5_marcador"></div>
+					<div class="man5_textos_div">
+						<div class="man5_total">
+							<div class="man5_total_circle">
+								<p class="fs-08 man5_total_circle1">Total</p>
+								<p class="man5_total_circle2" id="man5_counter">0</p>
+								<p class="fs-08 man5_total_circle3">muertes</p>
+							</div>
+							<p class="fs-07 man5_total_year" id="man5_total_year">De el 2005 hasta la fecha</p>
+						</div>
+						<div class="man5_textos_linea_div">
+							<div class="man5_grafica man5_grafica1">
+								<p class="fs-08"><span class="fs-2-3">64 </span>muertes</p>
+								<div class="man5_grafica_barra barra1"></div>
+							</div>
+							<div class="man5_grafica man5_grafica2">
+								<p class="fs-08"><span class="fs-2-3">21 </span>muertes</p>
+								<div class="man5_grafica_barra barra2"></div>
+							</div>
+							<div class="man5_grafica man5_grafica3">
+								<p class="fs-08"><span class="fs-2-3">0 </span>muertes</p>
+								<div class="man5_grafica_barra barra3"></div>
+							</div>
+							<div class="man5_grafica man5_grafica4">
+								<p class="fs-08"><span class="fs-2-3">0 </span>muertes</p>
+								<div class="man5_grafica_barra barra4"></div>
+							</div>
+							<div class="man5_grafica man5_grafica5">
+								<p class="fs-08"><span class="fs-2-3">112 </span>muertes</p>
+								<div class="man5_grafica_barra barra5"></div>
+							</div>
+							<div class="man5_grafica man5_grafica6">
+								<p class="fs-08"><span class="fs-2-3">1,138 </span>muertes</p>
+								<div class="man5_grafica_barra barra6"></div>
+							</div>
+						</div>
+						<div class="man5_texto man5_texto1">
+							<h2 class="man5_titulo fs-2-3">El colapso de Spectrum</h2>
+							<p class="fs-09TT man5_texto_p1">Con 64 muertes 80 trabajadores y llamó la atención sobre la pésima situación de seguridad en las fábricas textiles de Bangladesh. </p>
+							<p class="fs-08 man5_texto_p2">Llevó a un aumento de las auditorías centradas en la seguridad de los edificios para investigar la seguridad de los trabajadores. Aunque no se logró mucho.</p>
+						</div>
+						<div class="man5_texto man5_texto2">
+							<h2 class="man5_titulo fs-2-3">Un incendio en Garib & Garib</h2>
+							<p class="fs-09TT man5_texto_p1">Proveedor de H&M, Teddy y LC Waikiki, en Dhaka, costó la vida 21 trabajadores. </p>
+							<p class="fs-08 man5_texto_p2">A raíz del incendio, las organizaciones internacionales de derechos laborales desarrollaron Puntos de acción de salud y seguridad para compradores</p>
+						</div>
+						<div class="man5_texto man5_texto3">
+							<h2 class="man5_titulo fs-2-3">Protestas salariales y arrestos</h2>
+							<p class="fs-09TT man5_texto_p1">Los trabajadores de la confección de Ashulia (Dhaka)  protestaron por sus bajos salarios.</p>
+							<p class="fs-08 man5_texto_p2">Se basaron en décadas de oleadas de protestas constantes contra los salarios de pobreza que caracterizaban al sector textil en Bangladesh. </p>
+						</div>
+						<div class="man5_texto man5_texto4">
+							<h2 class="man5_titulo fs-2-3">Firmando la seguridad</h2>
+							<p class="fs-09TT man5_texto_p1">Los activistas desarrollaron una propuesta llamada Memorando de Entendimiento </p>
+							<p class="fs-08 man5_texto_p2">Se trata de inspecciones de construcción, capacitación sobre los derechos de los trabajadores, divulgación pública y una revisión muy esperada de las normas de seguridad. </p>
+						</div>
+						<div class="man5_texto man5_texto5">
+							<h2 class="man5_titulo fs-2-3">Fuego de Tazreen Fashion’s</h2>
+							<p class="fs-09TT man5_texto_p1">Mató a 112 trabajadores e hirió a muchos más. Los trabajadores quedaron atrapados detrás de salidas cerradas y ventanas con barrotes.</p>
+							<p class="fs-08 man5_texto_p2">Este horrible incendio demostró una vez más cómo la falta de acción de las marcas en una industria textil manifiestamente insegura seguía costando vidas a los trabajadores.</p>
+						</div>
+						<div class="man5_texto man5_texto6">
+							<h2 class="man5_titulo fs-2-3">Colapso de Rana Plaza</h2>
+							<p class="fs-09TT man5_texto_p1">El edificio se derrumbó, matando a 1.138 personas. El incidente podría haber sido completamente evitable.</p>
+							<p class="fs-08 man5_texto_p2">Los propietarios de 5 fábricas de ropa en los pisos superiores ignoraron las advertencias de evitar el uso del edificio. Se ordenó a los trabajadores de la confección que regresaran a trabajar al día siguiente.</p>
+						</div>
+						<img class="man5_textos_img man5_textos_img1" src="./img/manufactura/spectrum.png" alt="">
+						<img class="man5_textos_img man5_textos_img2" src="./img/manufactura/protestas.png" alt="">
+						<img class="man5_textos_img man5_textos_img3" src="./img/manufactura/seguridad.png" alt="">
+						<img class="man5_textos_img man5_textos_img4" src="./img/manufactura/fuego.png" alt="">
+						<img class="man5_textos_img man5_textos_img5" src="./img/manufactura/colapso.png" alt="">
+						
+					</div>
+					<div class="man5_lineas_div">
+						<div class="man5_lineas_div_metro">
+							<div class="metro metro1"></div>
+							<div class="metro metro2">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="metro metro3">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="metro metro4">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="metro metro5">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="metro metro6">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="metro metro7"></div>
+						</div>
+						<div class="man5_lineas_div_textos">
+							<div class="man5_fechas_div">
+								<div class="man5_lineas_fechas fechas1">
+									<p class="fs-09">2005</p>
+									<p class="fs-08">11 de abril</p>
+								</div>
+								<div class="man5_lineas_fechas fechas2">
+									<p class="fs-09">2010</p>
+									<p class="fs-08">25 de febrero</p>
+								</div>
+								<div class="man5_lineas_fechas fechas3">
+									<p class="fs-09">2010</p>
+									<p class="fs-08">13 de agosto</p>
+								</div>
+								<div class="man5_lineas_fechas fechas4">
+									<p class="fs-09">2012</p>
+									<p class="fs-08">21 de marzo</p>
+								</div>
+								<div class="man5_lineas_fechas fechas5">
+									<p class="fs-09">2012</p>
+									<p class="fs-08">24 de noviembre</p>
+								</div>
+								<div class="man5_lineas_fechas fechas6">
+									<p class="fs-09">2013</p>
+									<p class="fs-08">24 de abril</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="man6">
+				<div class="aux_man aux_man6_1">1</div>
+				<div class="aux_man aux_man6_2">2</div>
+				<div class="man6_container">
+					<div class="man6_texto">
+						<h2 class="man6_titulo fs-2-3">Acuerdo Bangladesh</h2>
+						<p class="fs-08">Un Acuerdo legalmente vinculante sobre seguridad contra incendios y edificios en Bangladesh entre marcas de ropa y sindicatos globales ha realizado un trabajo muy importante desde el colapso del Rana Plaza para hacer que las fábricas sean más seguras para los trabajadores </p>
+					</div>
+					<img src="./img/manufactura/contract.png" alt="" class="man6_contract contract1">
+					<img src="./img/manufactura/contract.png" alt="" class="man6_contract contract2">
+					<img src="./img/manufactura/contract.png" alt="" class="man6_contract contract3">
+					<img src="./img/manufactura/contract.png" alt="" class="man6_contract contract4">
+					<img src="./img/manufactura/contract.png" alt="" class="man6_contract contract5">
+					<img src="./img/manufactura/contract.png" alt="" class="man6_contract contract6">
+				</div>
+			</div>
 		</section>
 
-		<section class="section_logistica">
+		<section class="section_logistica" >
 			<div class="section_logistica_div logistica1">
 				<div class="log1_texto">
-					<h2 class="log1_titulo fs-2-5">Logística y distribución</h2>
+					<h2 class="log1_titulo fs-2-5" id="logistica">Logística y distribución</h2>
 					<p class="fs-09TT">Para esta etapa se realizó un análisis de la contaminación que ocasionan diversos medios de transporte a través de indicadores como energía consumida y emisiones CO2</p>
 					<br>
 					<p class="fs-09TT">Los mapas del trayecto refleja el trancurso de una prenda en una ruta internacinonal y el segundo una ruta local, ambas muestran el transcurso desde la fabricación hasta el aparador.</p>
@@ -1336,10 +1602,10 @@
 
 		
 
-		<section class="section_nuevavida">
+		<section class="section_nuevavida" >
 			<div class="nuevavida_1">
 				<div class="nv1_texto">
-					<h2 class="nv1_titulo fs-2-3">Fin de <span>vida</span><br>o segunda vida</h2>
+					<h2 class="nv1_titulo fs-2-3" id="nueva_vida">Fin de <span>vida</span><br>o segunda vida</h2>
 					<p class="p-09TT">El <span>fast fashion</span> más que un estilo, es un modelo de producción rápida que sigue las microtendencias, lo cual ha provocado un <span>sobreproducción</span>. Y que se nos condiciona a comprar piezas una y otra vez. Entonces</p>
 					<p class="p-09TT">¿Qué pasa con estas prendas?</p>
 					<p class="p-09TT p-lima">Te daremos un contexto</p>
@@ -1898,13 +2164,13 @@
 			</div>
 		</section>
 
-		<section class="section_usoyman">
+		<section class="section_usoyman" >
 			<div class="usoyman_1">
 				<div class="aux_uym aux_uym1_1">1</div>
 				<div class="usoyman1_container">
 					<img src="./img/usoYman/fondo_uso_y_man.png" alt="" class="uym1_fondo">
 					<div class="uym1_texto">
-						<h2 class="uym1_titulo fs-2-5">Uso <br>y mantenimiento</h2>
+						<h2 class="uym1_titulo fs-2-5" id="uso_y_manufactura">Uso <br>y mantenimiento</h2>
 						<p>Cuando una prenda finalmente es adquirida por el usuario, su tiempo de vida útil dependerá de su mantenimiento.</p><br>
 						<p>De no hacerse de manera responsable, tendrá un impacto en nuestras prendas y en el medio ambiente</p>
 					</div>
@@ -2172,7 +2438,9 @@
 
 	<script src="./js/kaleidoscope.js"></script>
 	<script src="./js/index.js"></script>
+	<script src="./js/navegador.js"></script>
 	<script src="./js/gsap-portada.js"></script>
+	<script src="./js/gsap_navegador.js"></script>
 	<script src="./js/gsap-intro.js"></script>
 	<script src="./js/gsap-ciclo.js"></script>
 	<script src="./js/ciclo.js"></script>

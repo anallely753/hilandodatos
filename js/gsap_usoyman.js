@@ -4,7 +4,7 @@ const uym1_1 = gsap.timeline({
     start: 'top center', 
     end:'top top',
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 uym1_1.to('.uym1_texto', {
@@ -17,7 +17,7 @@ const uym2_01 = gsap.timeline({
     start: 'top center', 
     end:'top top',
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 uym2_01.to('.uym2_lavadora_img', {
@@ -30,7 +30,7 @@ const uym2_1 = gsap.timeline({
     start: 'top center', 
     end:'top top',
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 uym2_1.to('.uym2_texto1', {
@@ -43,7 +43,7 @@ const uym2_2 = gsap.timeline({
     start: 'top center', 
     end:'top top',
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 uym2_2.to('.uym2_ropasucia1', {
@@ -61,7 +61,7 @@ const uym2_3 = gsap.timeline({
     start: 'top center', 
     end:'top top',
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 uym2_3.to('.uym2_texto2', {
@@ -74,7 +74,7 @@ const uym2_4 = gsap.timeline({
     start: 'top center', 
     end:'top top',
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 uym2_4.to('.uym2_lavadora_abierta_img', {
@@ -90,7 +90,7 @@ const uym2_5 = gsap.timeline({
     start: 'top center', 
     end:'top top',
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 uym2_5.to('.uym2_particulas1', {
@@ -136,7 +136,7 @@ const uym4_1 = gsap.timeline({
     start: 'top 5%', 
     end:'top top',
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 uym4_1.to('.uym2_lavadora_div', {
@@ -150,7 +150,7 @@ const uym4_2 = gsap.timeline({
     start: 'top center', 
     end:'top top',
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 uym4_2.to('.uym2_particulas', {
@@ -166,7 +166,7 @@ const uym4_3 = gsap.timeline({
     start: 'top center', 
     end:'top top',
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 uym4_3.to('.uym4_texto', {
@@ -179,7 +179,7 @@ const uym4_4 = gsap.timeline({
     start: 'top bottom', 
     end:'top top',
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 // Define an array of class names for the botellas
@@ -224,7 +224,7 @@ const uym5_1 = gsap.timeline({
     start: 'top center', 
     end:'top top',
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 uym5_1.to('.uym5_plancha', {
@@ -238,7 +238,7 @@ const uym5_2 = gsap.timeline({
     start: 'top center', 
     end:'top top',
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 uym5_2.to('.uym5_texto', {
@@ -252,7 +252,7 @@ const uym5_3 = gsap.timeline({
     start: 'top center', 
     end:'top top',
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 uym5_3.to('.uym5_texto', {
@@ -266,7 +266,7 @@ const uym5_4 = gsap.timeline({
     start: 'top center', 
     end:'top top',
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 uym5_4.to('.uym5_verde', {

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Diseño
 
-    document.getElementById("g_dis").addEventListener("click", function() {
+    document.getElementById("g_dis").addEventListener("mouseover", function() {
         
         document.getElementById('ciclo_aux_dis').scrollIntoView({ behavior: 'smooth' });
         sectionCiclo.style.backgroundImage = 'url(./img/fondos/textura-azul.png)';
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Manufactura
-    document.getElementById("g_manufactura").addEventListener("click", function() {
+    document.getElementById("g_manufactura").addEventListener("mouseover", function() {
         
         document.getElementById('ciclo_aux_manufactura').scrollIntoView({ behavior: 'smooth' });
         sectionCiclo.style.backgroundImage = 'url(./img/fondos/fondo_lima.png)';
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Logística
-    document.getElementById("g_logistica").addEventListener("click", function() {
+    document.getElementById("g_logistica").addEventListener("mouseover", function() {
 
         document.getElementById('ciclo_aux_logistica').scrollIntoView({ behavior: 'smooth' });
         sectionCiclo.style.backgroundImage = 'url(./img/fondos/textura_gris.png)';
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Uso y M
-    document.getElementById("g_uso").addEventListener("click", function() {
+    document.getElementById("g_uso").addEventListener("mouseover", function() {
 
         document.getElementById('ciclo_aux_uso').scrollIntoView({ behavior: 'smooth' });
         sectionCiclo.style.backgroundImage = 'url(./img/fondos/textura_naranja.png)';
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Nueva Vida
-    document.getElementById("g_nueva").addEventListener("click", function() {
+    document.getElementById("g_nueva").addEventListener("mouseover", function() {
 
         document.getElementById('ciclo_aux_nuevavida').scrollIntoView({ behavior: 'smooth' });
         sectionCiclo.style.backgroundImage = 'url(./img/fondos/textura_azulDos.png)';
@@ -68,7 +68,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
   };
 
   const checkVisibilityAndChangeBackground = () => {
-    const ciclo_aux_ciclo = document.querySelector('.ciclo_aux_ciclo');
     const ciclo_aux_fibra = document.querySelector('.ciclo_aux_fibra');
     const ciclo_aux_dis = document.querySelector('.ciclo_aux_dis');
     const ciclo_aux_manufactura = document.querySelector('.ciclo_aux_manufactura');
@@ -77,24 +76,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const ciclo_aux_nuevavida = document.querySelector('.ciclo_aux_nuevavida');
     const section_ciclo = document.querySelector('.section_ciclo');
 
-    if(isElementVisible(ciclo_aux_ciclo)){
-        // document.querySelector('.ciclo_texto_titulo').style.display = 'none';
-        // document.querySelector('.ciclo_texto_btn').style.display = 'none';
-        // document.querySelector('.ciclo_lima_abajo').style.display = 'block';
-        // document.querySelector('.ciclo_texto_p').innerText = 'Para realmente comprender el impacto ambiental y social que tiene cada prenda, hemos analizado cada etapa de su ciclo de vida.';
-
-        // document.querySelectorAll('.g_etapa text').forEach((element) => {
-        //     element.style.opacity = '.43';
-        //     element.style.fontFamily='FilsonProRegular'
-        // });
-
-        // document.querySelector('.btn-main img').style.filter = 'invert(0%)';
-        // document.querySelector('.portada_btn-xdata img').style.filter = 'invert(0%)';
-        // document.querySelector('.btn-main').style.color = '#fff';
-        document.querySelector('.ciclo_texto').style.opacity = '0';
-
-    }
-    else if (isElementVisible(ciclo_aux_fibra)) {
+   
+    if (isElementVisible(ciclo_aux_fibra)) {
         document.querySelector('.ciclo_texto').style.opacity = '1';
 
         section_ciclo.style.backgroundImage = 'url(./img/fondos/fondo_verde.png)';

@@ -10,6 +10,12 @@ const nv1 = gsap.timeline({
 nv1.to('.nv1_texto', {
    top:0
 }, '<');
+nv1.to('.btn-main img, .portada_btn-xdata img', {
+    filter: 'invert(0%)',
+}, '<');
+nv1.to('.btn-main', {
+    color:'#fff',
+}, '<');
 
 const nv2 = gsap.timeline({
   scrollTrigger: {
@@ -107,7 +113,7 @@ const nv31 = gsap.timeline({
     start: 'top center', 
     end:'top top',
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 nv31.to('.nv3_camion_img', {
@@ -127,7 +133,7 @@ const nv32 = gsap.timeline({
     start: 'top center', 
     end:'top top',
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 nv32.to('.nv3_texto_92', {
@@ -140,7 +146,7 @@ const nv33 = gsap.timeline({
     start: 'top center', 
     end:'top top',
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 nv33.to('.nv3_texto_1', {
@@ -156,7 +162,7 @@ const nv34 = gsap.timeline({
     start: 'top center', 
     end:'top top',
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 nv34.to('.nv3_texto_2', {
@@ -171,7 +177,7 @@ const nv4 = gsap.timeline({
     trigger: '.nuevavida_4_container',  
     start: 'top top', 
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 nv4.to('.nv4_texto', {
@@ -183,7 +189,7 @@ const nv5 = gsap.timeline({
     trigger: '.nuevavida_5',  
     start: 'top bottom', 
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 nv5.to('.nv4_texto', {
@@ -196,7 +202,7 @@ const nv6 = gsap.timeline({
     trigger: '.nv5_aux1',  
     start: 'top center', 
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 nv6.to('.nv5_texto', {
@@ -208,7 +214,7 @@ const nv7 = gsap.timeline({
     trigger: '.nv5_aux2',  
     start: 'top center', 
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 nv7.to('.nv5_azul', {
@@ -221,7 +227,7 @@ const nv8 = gsap.timeline({
     trigger: '.nv5_aux3',  
     start: 'top center', 
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 nv8.to('.nv5_fondo', {
@@ -234,7 +240,7 @@ const nv9 = gsap.timeline({
     start: 'top 30%', 
     end: 'top top', 
     scrub: true,    
-    markers: true, 
+    markers: false, 
   },
 });
 // nv9.to('.nv6_texto', {
