@@ -134,17 +134,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
             element.style.bottom = "3.5%";
         });
 
-        document.querySelector('.ciclo_texto_titulo').style.display = 'block';
         document.querySelector('.ciclo_texto_btn').style.display = 'block';
-        document.querySelector('.ciclo_lima_abajo').style.display = 'none';
 
         document.querySelector(".ciclo_texto").style.color="#fff";
         document.querySelector(".ciclo_texto_titulo").style.color="var(--lima)";
         document.querySelector(".ciclo_texto_btn").style.color="var(--lima)";
         document.querySelector(".ciclo_texto_btn").style.backgroundColor="rgba(206,241,115,.19)";
 
-        document.querySelector('.ciclo_texto_titulo').innerText = 'Producción de Fibra';
-        document.querySelector('.ciclo_texto_p').innerText = 'En un inicio es esencial decidir que tipo de fibra existen realizamos un análisis acerca de las fibras más producidas y de las principales su impacto ambiental';
 
         document.querySelectorAll('.cls-1').forEach((element) => {
             element.style.stroke="#d4ec6b";
@@ -165,6 +161,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelector(".k_circle_4").style.borderColor="var(--lima)";
 
         document.querySelector(".ciclo_circulo").src = "./img/ciclo/ciclo_de_vida.png";
+
+        document.querySelector('.ciclo_texto_titulo').innerText = 'Producción de Fibra';
+        document.querySelector('.ciclo_texto_p').innerText = 'En un inicio es esencial decidir que tipo de fibra existen realizamos un análisis acerca de las fibras más producidas y de las principales su impacto ambiental';
 
     } else if (isElementVisible(ciclo_aux_dis)){
         section_ciclo.style.backgroundImage = 'url(./img/fondos/textura-azul.png)';
@@ -218,7 +217,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
 
         document.querySelector('.ciclo_texto_titulo').innerText = 'Diseño';
-        document.querySelector('.ciclo_texto_p').innerText = 'Aquí se engloban todas las etapas, ya que su concepto, materiales, producción y distribución dependen de ella. ¿Quieres saber más de una prenda sostenible?';
+        document.querySelector('.ciclo_texto_p').innerText = 'En esta fase se abarcan todas las etapas del proceso ya que su concepto, materiales, producción y distribución dependen de ella. ¿Te gustaría descubrir más acerca de prendas sostenibles?';
 
         document.querySelectorAll('.cls-1').forEach((element) => {
             element.style.stroke="#d4ec6b";
@@ -310,7 +309,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelector(".k_circle_4").style.borderColor="var(--verde)";
 
         document.querySelector('.ciclo_texto_titulo').innerText = 'Manufactura';
-        document.querySelector('.ciclo_texto_p').innerText = 'El recorrido continua con la produccíon de la prendas. ¿Quieres saber acerca de los impactos naturales y sociales que conlleva crearla? Un suceso te lo mostrará';
+        document.querySelector('.ciclo_texto_p').innerText = 'El recorrido continúa con la producción de las prendas. Descubre los impactos naturales y sociales que conlleva su fabricación. Te mostramos un evento revelador.';
     }
     else if (isElementVisible(ciclo_aux_logistica)){
         section_ciclo.style.backgroundImage = 'url(./img/fondos/textura_gris.png)';
@@ -332,7 +331,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
         document.querySelector('.ciclo_texto_titulo').innerText = 'Logística y distribución';
-        document.querySelector('.ciclo_texto_p').innerText = 'Una vez realizada la prenda, es necesario distribuirla, los medios de transporte son esencial para ello. Te enseñamos la mejor ruta para adquirirlas.';
+        document.querySelector('.ciclo_texto_p').innerText = 'Una vez que la prenda está terminada, su distribución es esencial, y los medios de transporte juegan un papel fundamental en este proceso. Te mostramos la ruta que atraviesan tus prendas hasta llegar a ti.';
 
         document.querySelector(".circulo_grande").style.borderColor = "#9192c2";
         document.querySelector(".circulo_grande2").style.borderColor = "#9192c2";
@@ -399,7 +398,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
           element.style.backgroundImage = 'url(./img/ciclo/uso.png)';
         });
         document.querySelector('.ciclo_texto_titulo').innerText = 'Uso y Mantenimiento';
-        document.querySelector('.ciclo_texto_p').innerText = '¡La hora ha llegado! ¿Quieres parar este desenfrenado impacto? Puedes alargar la vida de tu prenda, con un cuidado adecuado y evitar tirarla con un consumo consiente';
+        document.querySelector('.ciclo_texto_p').innerText = '¡Es el momento de actuar! ¿Quieres frenar este impacto desenfrenado? Puedes alargar la vida de tu prenda con un cuidado adecuado, y evitar desecharla mediante un consumo consciente.';
 
         document.querySelector('.btn-main img').style.filter = 'invert(0%)';
         document.querySelector('.portada_btn-xdata img').style.filter = 'invert(0%)';
@@ -469,7 +468,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
           element.style.backgroundImage = 'url(./img/ciclo/nueva_vida.png)';
         });
         document.querySelector('.ciclo_texto_titulo').innerText = 'Nueva vida';
-        document.querySelector('.ciclo_texto_p').innerText = 'Siempre hay una solución para tus prendas, desde aprovecharlas para hacer nuevas, hasta venderlas, haz pensado en que adquirir ropa de segunda mano.';
+        document.querySelector('.ciclo_texto_p').innerText = 'Siempre hay una alternativa para tus prendas: desde transformarlas en nuevas creaciones hasta venderlas. Adquirir ropa de segunda mano, es una excelente manera de extender el ciclo de vida de las prendas y contribuir a reducir el impacto ambiental de la industria de la moda. Te mostramos varias opciones.';
 
         document.querySelector('.btn-main img').style.filter = 'invert(0%)';
         document.querySelector('.portada_btn-xdata img').style.filter = 'invert(0%)';

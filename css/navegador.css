@@ -3,9 +3,9 @@ main{
 }
 .navegador{
 	position: fixed;
-	width: 155px;
-	height: 155px;
-	border: solid #fff;
+	width: 125px;
+	height: 125px;
+	/*border: solid #fff;*/
 	bottom: 4vh;
 	left: 4vh;
 	z-index: 10000;
@@ -117,3 +117,45 @@ main{
 .aux_nav_ciclo1{
 	top: 290vh;
 }
+
+
+@media (min-width: 576px) {
+
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+	
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+	.navegador{
+		width: 135px;
+		height: 135px;
+	}
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1700px) {
+	.navegador{
+		width: 145px;
+		height: 145px;
+	}
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 2000px) {
+	
+}
+

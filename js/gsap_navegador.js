@@ -32,6 +32,16 @@ gsapIntro2.to('.navegador', {
   opacity:1,
   onUpdate: function(){
     document.getElementById('nav_texto').textContent = 'intro';
+    var elementos = document.querySelectorAll(".navegador_div");
+
+    // Loop through each element
+    elementos.forEach(function(elemento) {
+        // Add event listener to each element
+        elemento.addEventListener("mouseover", function() {
+            // Set background color of the hovered element
+            this.style.backgroundColor = 'var(--verde)';
+        });
+    });
   },
 },);
 gsapIntro2.to('.navegador_div', {

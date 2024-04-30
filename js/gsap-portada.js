@@ -10,10 +10,11 @@ const portada = gsap.timeline({
     markers: false, 
     pinSpacing:false,
     pinSpacer: false,
-    snap: {
-        duration: { min: 0.2, max: 3 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
-        delay: 0.8, // wait 0.2 seconds from the last scroll event before doing the snapping
-      },
+    // snap: {
+    //     // duration: { min: 0.2, max: 3 }, // the snap animation should be at least 0.2 seconds, but no more than 3 seconds (determined by velocity)
+    //     // delay: 0.8, // wait 0.2 seconds from the last scroll event before doing the snapping
+    //     1
+    // },
   },
 });
 portada.to('.portada_ropa', {
@@ -92,7 +93,7 @@ portada.to('.portada_escondida_pulsera2', {
 
 portada.to('.portada_pregunta_sticky', {
   opacity:1, 
-  duration:.08
+  duration:.01
 }, );
 
 portada.to('.portada_escondida_tenis1', {
@@ -174,7 +175,14 @@ portada.to('.portada_escondida', {
   opacity:0
 });
 portada.to('.gota1', {
-  scale:50
+  top:'115%',
+  scale:.2
+},'<');
+portada.to('.gota1', {
+  top:'125%',
+  scale:40,
+  transformOrigin:'center',
+
 });
 portada.to('.portada_pregunta', {
   backgroundImage:'none',

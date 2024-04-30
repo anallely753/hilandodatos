@@ -7,11 +7,12 @@
 
 	max-width: 100%;
 	/*border: solid white;*/
-	overflow: hidden;
+	overflow: hidden; 
 }
 .portada_lima{
 	background-image: url('../img/fondos/fondo_lima.png');
 	background-size: 70%;
+	background-repeat: repeat;
 	height: 90%;
 	position: relative;
 }

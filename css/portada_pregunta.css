@@ -42,12 +42,16 @@
 	color: var(--lima);
 	line-height: 2;
 }
+.portada_pregunta_centro{
+	position: relative;
+}
 .gota1{
 	position: absolute;
 	left: 42%;
-	top: 110%;
+	top: 85%;
 	width: 16%;
-	transform-origin: center;
+	transform-origin: top;
+	transform: scale(.000001);
 }
 .portada_pregunta_extra{
 	background-image: url('../img/fondos/fondo_lima.png');
@@ -72,12 +76,7 @@
 		width: 80%;
 		margin: 0 auto;
 	}
-	.gota1{
-		position: absolute;
-		left: 45%;
-		top: 115%;
-		width: 10%;
-	}
+	
 }
 
 /*// Medium devices (tablets, 768px and up)*/
@@ -87,12 +86,7 @@
 		width: 18rem;
 		max-width: unset;
 	}
-	.gota1{
-		position: absolute;
-		left: 47%;
-		top: 115%;
-		width: 6%;
-	}
+	
 	.portada_pregunta{
 		height: 300vh;
 	}
@@ -114,12 +108,7 @@
 		margin-bottom: 4rem;
 		width: 23rem;
 	}
-	.gota1{
-		position: absolute;
-		left: 48%;
-		top: 120%;
-		width: 4%;
-	}
+	
 }
 
 /*// X-Large devices (large desktops, 1200px and up)*/
@@ -127,11 +116,7 @@
 	.portada_pregunta_titulo{
 		width: 68%;
 	}
-	.gota1{
-		position: absolute;
-		left: 48.5%;
-		width: 3%;
-	}	
+		
 }
 
 /*// XX-Large devices (larger desktops, 1400px and up)*/

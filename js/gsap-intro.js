@@ -21,16 +21,21 @@ const intro1 = gsap.timeline({
   }, '<');
   // 1
   intro1.to('.intro1_planeta_nuestro', {
-    top: '13%',
-    left: '-15%',
+    top: '20%',
+    left: '-16%',
     transform: 'rotate(-5deg)',
     duration: totalScrollDuration * 0.1
   }, );
+  intro1.to('.sombra', {
+    bottom:'19%', 
+    left:'-17%',
+    duration: totalScrollDuration * 0.1
+  }, '<');
   // 2
  
    intro1.to('.intro1_texto', {
     opacity:1,
-    left: '-40%',
+    left: '-38%',
     duration: totalScrollDuration * 0.1
   });
 
@@ -80,6 +85,7 @@ const intro1 = gsap.timeline({
     top:'-50%',
     duration: totalScrollDuration * 0.1
   },'<');
+  
   intro1.to('.intro1_texto', {
     top:'60%',
     left:'30%',
@@ -91,7 +97,10 @@ const intro1 = gsap.timeline({
     backgroundColor:'var(--azul)',
     duration: totalScrollDuration * 0.1
   });
-
+  intro1.to('.sombra', {
+    opacity:0,
+    duration: 0
+  },'<');
   intro1.to('.intro1_planeta_gota', {
     transform:'scale(4.5)',
     top:'12%',
@@ -107,7 +116,7 @@ const intro1 = gsap.timeline({
   },'<');
   intro1.to('.ovalo_blanco', {
     transform:'scale(1.8)',
-    bottom:'78%',
+    bottom:'79.2%',
     duration: totalScrollDuration * 0.1
   },'<');
   intro1.to('.btn-main img, .portada_btn-xdata img', {
@@ -124,6 +133,11 @@ const intro1 = gsap.timeline({
     top:'20%',
     duration: totalScrollDuration * 0.1
   },);
+  intro1.to('.intro', {
+    backgroundImage:'url("./img/intro/textura-planeta.png")',
+    backgroundSize:'100%',
+    backgroundAttachment:'fixed',
+  });
   intro1.to('.intro1', {
     backgroundColor:'var(--lima)',
     // duration: totalScrollDuration * 0.1
@@ -151,11 +165,7 @@ const intro1 = gsap.timeline({
     backgroundColor:'transparent',
     duration:1
   },'<');
-  intro1.to('.intro', {
-    backgroundImage:'url("./img/intro/textura-planeta.png")',
-    backgroundSize:'cover',
-    backgroundAttachment:'fixed',
-  },'<');
+  
   intro1.to('.intro1_planeta_gota', {
     display:'none',
   },'<');

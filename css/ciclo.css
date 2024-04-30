@@ -3,8 +3,7 @@
 		height: 100%;
 		background-image: url('../img/fondos/fondo_verde.png');
 		background-attachment: fixed;
-		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: 100%;
 		transition: all 2s ease;
 		position: relative;
 		 transition: all 1s ease;
@@ -17,7 +16,7 @@
 	.ciclo1{
 		height: 200vh;
 		position: relative;
-		border: solid red;
+		/*border: solid red;*/
 	}
 	.ciclo1_aux1{
 		top: 50vh;
@@ -31,7 +30,7 @@
 		top: 0;
 	}
 	.ciclo_texto_intro_div{
-		border: solid;
+		/*border: solid;*/
 		position: absolute;
 		/*border: solid;*/
 		width: 50%;
@@ -61,7 +60,8 @@
 
 /* 2 */
 	.ciclo2{
-		height: 800vh;
+		height: 600vh;
+		 border: solid var(--lima);
 		position: relative;
 	}
 	.ciclo2_container{
@@ -73,8 +73,8 @@
 	}
 	.ciclo2_helper{
 		position: absolute;
-		top: 40%;
-		left: 8%;
+		bottom: 10%;
+		left: 12%;
 		text-align: center;
 	}
 	.ciclo2_helper_img{
@@ -399,21 +399,21 @@
 			top: 70vh;
 		}
 		.ciclo_aux_dis{
-			top: 170vh;
+			top: 140vh;
 		}
 
 		.ciclo_aux_manufactura{
-			top: 300vh;
+			top: 210vh;
 		}
 		.ciclo_aux_logistica{
-			top: 400vh;
+			top: 280vh;
 		}
 
 		.ciclo_aux_uso{
-			top: 500vh;
+			top: 350vh;
 		}
 		.ciclo_aux_nuevavida{
-			top: 600vh;
+			top: 420vh;
 		}
 
 	
