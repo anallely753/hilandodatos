@@ -10,15 +10,16 @@
 .section_logistica{
 	height: 100vh;
 	/*background-color: pink;*/
-	/*border: solid red;*/
 }
 
 /* Horizontal scrolling */
 	.container {
 		width: 600%;
 		height: 100vh;
+		min-height: 900px;
 		display: flex;
 		flex-wrap: nowrap;
+		position: relative;
 	}
 
 	.panel{
@@ -27,6 +28,10 @@
 		position: relative;
 		/*background-color: var(--azul);*/
 		/*background-image: url('../img/fondos/textura-azul.png');*/
+	}
+	.panel_ultimo{
+		margin-right: 50vw;
+		width: 100vw;
 	}
 
 	.lastContainer {
@@ -66,31 +71,31 @@
 		left: 50%;
 		background-color: lightgreen;
 		z-index: 20;
-		visibility: hidden;
+		/*visibility: hidden;*/
 	}
 	.dis_aux1{
-		top: 32vh;
+		top: 25vw;
 	}
 	.dis_aux12{
-		top: 90vh;
+		top: 80vw;
 	}
 	.dis_aux2{
-		top: 150vh;
+		top: 200vw;
 	}
 	.dis_aux3{
-		top: 220vh;
+		top: 300vw;
 	}
 	.dis_aux32{
-		top: 300vh;
+		top: 350vw;
 	}
 	.dis_aux4{
-		top: 360vh;
+		top: 450vw;
 	}
 	.dis_aux42{
-		top: 410vh;
+		top: 520vw;
 	}
 	.dis_aux5{
-		top: 470vh;
+		top: 580vw;
 	}
 	
 
@@ -159,14 +164,16 @@
 		color: var(--lima);
 		font-family: 'FilsonProBold', sans-serif;
 		margin-top: 1rem;
+		margin-bottom: 2rem;
 		/*color: transparent;*/
 		color: var(--lima);
 	}
 	.dis1_variedad{
 		color: #fff;
-		width: 80%;
+		width: 70%;
 		line-height: 1.4;
-		margin-top: 15%;
+		margin-bottom: 1.5rem;
+		max-width: 550px;
 	}
 
 /* Section 2 */
@@ -238,7 +245,7 @@
 		top: 0%;
 		padding: 1.5rem 2rem;
 		border-radius: 1rem;
-		box-shadow: 7px 8px 13px rgba(0, 0, 0, 0.75);
+		/*box-shadow: 7px 8px 13px rgba(0, 0, 0, 0.75);*/
 		opacity: 0;
 		transition: opacity 0.5s ease;
 		max-width: 700px;
@@ -287,11 +294,9 @@
 		transition: opacity 0.5s ease;
 		background-color: var(--gris);
 		border-radius: 1rem;
-		box-shadow: 7px 8px 13px rgba(0, 0, 0, 0.75);
 	}
 	.dis_reveal_titulo{
 		font-family: 'FilsonProBold', sans-serif;
-		text-align: center;
 	}
 	.dis_col{
 		position: relative;
@@ -342,6 +347,15 @@
 		height: 3rem;
 		border-radius: 50%;
 		animation: pulse-animation 2s infinite;
+		z-index: 100;
+	}
+	.dis_panel_button_etiquetado{
+		cursor: pointer;
+		position: absolute;
+		border: none;
+		width: 3rem;
+		height: 3rem;
+		border-radius: 50%;
 		z-index: 100;
 	}
 	.span_panel_numero{
@@ -423,6 +437,7 @@
 			padding: 1.5rem .5rem;
 			color: #000;
 			width: 100%;
+			z-index: 400;
 		}
 		.dis4_reveal1 img{
 			width: 100%;
@@ -433,6 +448,7 @@
 			padding: 1.5rem .5rem;
 			color: #000;
 			width: 100%;
+			z-index: 400;
 		}
 		.dis4_reveal2 img{
 			width: 100%;
@@ -478,7 +494,7 @@
 		top: 25%;
 		left: 0%;
 		width: 55%;
-		stroke-width: 6;
+		stroke-width: 3;
 	}
 
 	.dis_hilo path {
@@ -490,7 +506,7 @@
 		right: -35%;
 		width:60%;
 		transform: rotate(-85deg);
-		stroke-width: 6;
+		stroke-width: 5;
 	}
 	
 	.dis_hilo2{
@@ -498,20 +514,20 @@
 		top: 38% ;
 		width: 40%;
 		transform: rotate(-75deg) scale(1.4);
-		stroke-width: 6;
+		stroke-width: 3.5;
 	}
 
 	.dis_hilo3{
 		left:40%;
 		top: 30% ;
 		width: 20%;
-		stroke-width: 8;
+		stroke-width: 4;
 	}
 	.dis_hilo32{
 		right:-5%;
 		top: 35% ;
 		width: 25%;
-		stroke-width: 7;
+		stroke-width: 3;
 	}
 	
 	.dis_hilo4{
@@ -519,21 +535,21 @@
 		top: 32%;
 		left: 40%;
 		z-index: 10;
-		stroke-width: 6;
+		stroke-width: 3;
 	}
 	.dis_hilo42{
 		z-index: 0;
 		width: 30%;
 		top: 25%;
 		right: -15%;
-		stroke-width: 6;
+		stroke-width: 3;
 	}
 	.dis_hilo5{
 		z-index: 0;
 		width: 30%;
 		top: 25%;
 		left: 40%;
-		stroke-width: 6;
+		stroke-width: 3;
 	}
 
 
@@ -679,66 +695,59 @@
 			/*border: solid lightgreen;*/
 		}
 		.dis_hilo1{
-			stroke-width: 6;
+			/*stroke-width: 4;*/
 		}
 		.dis_hilo12{
 			top: 50%;
 			right: -25%;
 			width:45%;
 			transform: rotate(-75deg);
-			stroke-width: 7;
 		}
 		.dis_hilo2{
 			left: 65%;
 			top: 35% ;
 			width: 35%;
 			transform: rotate(-60deg) scale(1.4);
-			stroke-width: 7;
 		}
 		.dis_hilo3{
 			left:42%;
 			top: 25% ;
 			width: 20%;
-			stroke-width: 8;
 		}
 		.dis_hilo32{
 			right:-8%;
 			top: 30% ;
 			width: 30%;
-			stroke-width: 7;
 		}	
 		.dis_hilo4{
 			width: 25%;
 			top: 38%;
 			left: 40%;
 			z-index: 10;
-			stroke-width: 7;
 		}
 		.dis_hilo42{
 			z-index: 0;
 			width: 30%;
 			top: 18%;
 			right: -15%;
-			stroke-width: 7;
 		}
 		.dis_hilo5{
 			z-index: 0;
 			width: 25%;
 			top: 30%;
 			left: 35%;
-			stroke-width: 8;
 			transform: rotate(15deg);
 		}
 
 	/* Aux */
-		.dis_aux1{
-			top: 42vh;
+		/*.dis_aux1{
+			top: 32vh;
 		}
 		.dis_aux12{
-			top: 100vh;
+			top: 90vh;
 		}
 		.dis_aux2{
-			top: 160vh;
+			top: 270vh;
 		}
 		.dis_aux3{
 			top: 230vh;
@@ -755,7 +764,7 @@
 		
 		.dis_aux5{
 			top: 510vh;
-		}
+		}*/
 }
 
 @media (min-width: 1200px) {
@@ -764,59 +773,52 @@
 			/*border: solid violet;*/
 		}
 		.dis_hilo1{
-			stroke-width: 6;
+			/*stroke-width: 4;*/
 		}
 		.dis_hilo12{
 			top: 40%;
 			right: -15%;
 			width:30%;
 			transform: rotate(-75deg);
-			stroke-width: 9;
 		}
 		.dis_hilo2{
 			left: 62%;
 			top: 25% ;
 			width: 40%;
 			transform: rotate(-55deg) scale(1.4);
-			stroke-width: 5;
 		}
 		.dis_hilo3{
 			left:38%;
 			top: 25% ;
 			width: 20%;
-			stroke-width: 7;
 		}
 		.dis_hilo32{
 			right:-10%;
 			top: 32% ;
 			width: 32%;
-			stroke-width: 5;
 		}
 		.dis_hilo4{
 			width: 20%;
 			top: 40%;
 			left: 40%;
 			z-index: 10;
-			stroke-width: 7;
 		}
 		.dis_hilo42{
 			z-index: 0;
 			width: 35%;
 			top: 18%;
 			right: -18%;
-			stroke-width: 5;
 		}
 		.dis_hilo5{
 			z-index: 0;
 			width: 30%;
 			top: 30%;
 			left: 32%;
-			stroke-width: 7;
 			transform: rotate(5deg);
 		}
 
 	/* Aux */
-		.dis_aux1{
+		/*.dis_aux1{
 			top: 62vh;
 			stroke-width: 8;
 		}
@@ -824,7 +826,7 @@
 			top: 120vh;
 		}
 		.dis_aux2{
-			top: 180vh;
+			top: 220vh;
 		}
 		.dis_aux3{
 			top: 300vh;
@@ -841,7 +843,7 @@
 		
 		.dis_aux5{
 			top: 600vh;
-		}
+		}*/
 
 	/* 2 */
 		.dis2_tela_div{
@@ -855,8 +857,9 @@
 		}
 		.dis2_reveal{
 			width: 80%;
-			left: 30%;
+			left: 25%;
 			padding: 3rem;
+			top: 10%;
 		}
 
 	/* Panels */
@@ -949,7 +952,7 @@
 			top: 10%;
 			left: 0%;
 			width: 56%;
-			stroke-width: 5;
+			/*stroke-width: 4;*/
 		}
 		.dis_hilo12{
 			top: 42%;
@@ -967,25 +970,23 @@
 			right:-12%;
 			top: 33% ;
 			width: 38%;
-			stroke-width: 5;
 		}
 		.dis_hilo4{
 			width: 28%;
 			top: 35%;
 			left: 36%;
 			z-index: 10;
-			stroke-width: 5;
 		}
 
 	/* Aux */
-		.dis_aux1{
+		/*.dis_aux1{
 			top: 62vh;
 		}
 		.dis_aux12{
 			top: 120vh;
 		}
 		.dis_aux2{
-			top: 220vh;
+			top: 280vh;
 		}
 		.dis_aux3{
 			top: 330vh;
@@ -1002,7 +1003,7 @@
 		
 		.dis_aux5{
 			top: 700vh;
-		}
+		}*/
 }
 
 @media (min-width: 1700px) {
@@ -1026,55 +1027,49 @@
 			top: 22% ;
 			width: 40%;
 			transform: rotate(-50deg) scale(1.4);
-			stroke-width: 4.5;
 		}
 		.dis_hilo3{
 			left:40%;
 			top: 25% ;
 			width: 22%;
-			stroke-width: 5;
 		}
 		.dis_hilo32{
 			right:-15%;
 			top: 32% ;
 			width: 35%;
-			stroke-width: 5;
 		}
 		.dis_hilo4{
 			width: 25%;
 			top: 35%;
 			left: 40%;
 			z-index: 10;
-			stroke-width: 5;
 		}
 		.dis_hilo42{
-			z-index: 0;
+			z-index: 300;
 			width: 38%;
 			top: 18%;
 			right: -20%;
-			stroke-width: 4;
 		}
 		.dis_hilo5{
 			z-index: 0;
 			width: 28%;
 			top: 30%;
 			left: 32%;
-			stroke-width: 6;
 			transform: rotate(5deg);
 		}
 
 	/* Aux */
-		.dis_aux1{
-			top: 82vh;
+		/*.dis_aux1{
+			top: 50vw;
 		}
 		.dis_aux12{
-			top: 160vh;
+			top: 100vw;
 		}
 		.dis_aux2{
-			top: 240vh;
+			top: 190vw;
 		}
 		.dis_aux3{
-			top: 420vh;
+			top: 290vw;
 		}
 		.dis_aux32{
 			top: 490vh;
@@ -1088,7 +1083,7 @@
 		
 		.dis_aux5{
 			top: 860vh;
-		}
+		}*/
 }
 
 @media (min-width: 2000px) {
@@ -1100,27 +1095,23 @@
 			top: 0%;
 			left: 0%;
 			width: 56%;
-			stroke-width: 4;
 		}
 		.dis_hilo12{
 			top: 34%;
 			right: -10%;
 			width:24%;
 			transform: rotate(-65deg);
-			stroke-width: 8;
 		}
 		.dis_hilo2{
 			left: 65%;
 			top: 20% ;
 			width: 40%;
 			transform: rotate(-50deg) scale(1.4);
-			stroke-width: 3.5;
 		}
 		.dis_hilo3{
 			left:38%;
 			top: 23% ;
 			width: 25%;
-			stroke-width: 4;
 		}
 		.dis_hilo32{
 			stroke-width: 3.5;
@@ -1130,7 +1121,6 @@
 			top: 20%;
 			left: 36%;
 			z-index: 10;
-			stroke-width: 4;
 		}
 		.dis_hilo42{
 			stroke-width: 3;
@@ -1140,12 +1130,11 @@
 			width: 30%;
 			top: 28%;
 			left: 32%;
-			stroke-width:4;
 			transform: rotate(5deg);
 		}
 
 	/* Aux */
-		.dis_aux1{
+	/*	.dis_aux1{
 			top: 52vh;
 		}
 		.dis_aux12{
@@ -1169,7 +1158,7 @@
 		
 		.dis_aux5{
 			top: 1000vh;
-		}
+		}*/
 
 }
 

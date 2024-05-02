@@ -5,8 +5,8 @@
 const disAux1 = gsap.timeline({
   scrollTrigger: {
     trigger: '.dis_aux1',  
-    start: 'top center',
-    end:'top 15%',  
+    start: 'top bottom',
+    end:'top 35%',  
     scrub: 1,    
     markers: false, 
   },

@@ -97,17 +97,7 @@ document.querySelector('.dis5_button1').addEventListener('mouseout', function() 
     document.querySelector('.dis5_button1').style.opacity='1';
 });
 
-document.querySelector('.dis5_button2').addEventListener('mouseover', function() {
-    document.querySelector('#dis5_reveal2').style.animation = 'scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both';
-    document.querySelector('.dis5_button2').style.animationName='none';
-    document.querySelector('.dis5_button2').style.opacity='0';
-});
 
-document.querySelector('.dis5_button2').addEventListener('mouseout', function() {
-    document.querySelector('#dis5_reveal2').style.animation = 'scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both';
-    document.querySelector('.dis5_button2').style.animationName='pulse-animation';
-    document.querySelector('.dis5_button2').style.opacity='1';
-});
 
 //  pop up
 
