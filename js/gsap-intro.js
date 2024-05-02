@@ -512,7 +512,6 @@ const intro4 = gsap.timeline({
   intro4.to('.intro4_del_agua, .intro4_texto', {
     opacity:'1',
       duration: totalScrollDuration4 * 0.1
-
   });
 
   intro4.to('.intro4_del_agua', {

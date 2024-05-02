@@ -41,6 +41,10 @@ gsapIntro2.to('.navegador', {
             // Set background color of the hovered element
             this.style.backgroundColor = 'var(--verde)';
         });
+        elemento.addEventListener("mouseout", function() {
+            // Set background color of the hovered element
+            this.style.backgroundColor = 'transparent';
+        });
     });
   },
 },);
@@ -50,7 +54,7 @@ gsapIntro2.to('.navegador_div', {
 gsapIntro2.to('.navegador1', {
   backgroundColor:'var(--verde)',
 },'<');
-gsapIntro2.to('.navegador_texto', {
+gsapIntro2.to('#nav_texto', {
   color:'var(--verde)',
 },'<');
 
@@ -63,7 +67,7 @@ const gsapIntro3 = gsap.timeline({
     markers: false, 
   },
 });
-gsapIntro3.to('.navegador_texto', {
+gsapIntro3.to('#nav_texto', {
   color:'var(--lima)',
 },'<');
 gsapIntro3.to('.navegador_div', {
@@ -88,7 +92,7 @@ gsapIntro4.to('.navegador_div', {
 gsapIntro4.to('.navegador1', {
   backgroundColor:'var(--verde)',
 },'<');
-gsapIntro4.to('.navegador_texto', {
+gsapIntro4.to('#nav_texto', {
   color:'var(--verde)',
 },'<');
 
@@ -101,7 +105,7 @@ const gsapIntro5 = gsap.timeline({
     markers: false, 
   },
 });
-gsapIntro5.to('.navegador_texto', {
+gsapIntro5.to('#nav_texto', {
   color:'var(--lima)',
 },'<');
 gsapIntro5.to('.navegador_div', {
@@ -127,7 +131,7 @@ gsapIntro6.to('.navegador_div', {
 gsapIntro6.to('.navegador1', {
   backgroundColor:'var(--verde)',
 },'<');
-gsapIntro6.to('.navegador_texto', {
+gsapIntro6.to('#nav_texto', {
   color:'var(--verde)',
 },'<');
 
@@ -140,7 +144,7 @@ const gsapIntro7 = gsap.timeline({
     markers: false, 
   },
 });
-gsapIntro7.to('.navegador_texto', {
+gsapIntro7.to('#nav_texto', {
   color:'var(--lima)',
 },'<');
 gsapIntro7.to('.navegador_div', {

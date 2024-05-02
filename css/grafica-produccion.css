@@ -2,6 +2,7 @@
 /* ticks */
 .svg_produccion_container{
 	/*border: solid palegoldenrod;*/
+	position: relative;
 }
 .axis:nth-child(4) line{
 	stroke: transparent;
@@ -69,18 +70,31 @@ opacity: 1;
 .tooltip {
 	color: #fff;
 	font-family: FilsonProMedium, sans-serif;
-	font-size: 110%;
+	font-size: 130%;
+	opacity: 1;
+	position:  absolute;
 }
 
 /* POINTS */
 .point {
-	stroke: none;
+	z-index: 500;
+	/*stroke: none;*/
+	cursor: pointer;
 	fill: #9c9c9c;
-}
+	display: block;
+	transform-origin: center center;
 
+}
+#line01 > circle:nth-child(23){
+	animation: blink-1 2s infinite;
+}
 .domain{
 	visibility: hidden !important;
 }
-#line-01 .point{
-	opacity: 0 !important;
+#line01 .point2{
+	display: none;
 }
+#line02 .point2{
+	display: none;
+}
+

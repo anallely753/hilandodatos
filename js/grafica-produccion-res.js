@@ -2,7 +2,7 @@
 //-----------------------------SVG------------------------------//
 const width = 900;
 const height = 400;
-const margin = 10;
+const margin = 0;
 const padding = 0;
 const adj = 55;
 // we are appending SVG first
@@ -13,10 +13,8 @@ const svg = d3.select("div#produccion_container_grafica").append("svg")
   + adj + " "
   + (width + adj *3) + " "
   + (height + adj*3))
-.style("padding-left", 50)
-.style("margin-left", margin)
-.style("position", 'relative')
-// .style("stroke", 'white')
+.style("padding", padding)
+.style("margin", margin)
 .classed("svg-content", true);
 
 //  Poner fondo
@@ -54,16 +52,6 @@ dataset.then(function(data) {
         };
     });
 
-const formatValue = d3.format(".2s"); // Define format function
-
-function formatYAxis(number) {
-  if (number === 0) {
-    return "0"; // Return "0" if the number is zero
-  } else {
-    return formatValue(number / 1000) + " T"; // Convert to "T" format for non-zero values
-  }
-}
-
 //----------------------------SCALES----------------------------//
 const years = [1975, 1980, 1985, 1990, 1995, 2000, 2005, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021];
 
@@ -71,14 +59,13 @@ const years = [1975, 1980, 1985, 1990, 1995, 2000, 2005, 2007, 2008, 2009, 2010,
     const xScale = d3.scaleBand()
     .domain(years)
         .range([0, width]); // Assuming 'width' is defined elsewhere
-    const yScale = d3.scaleLinear().rangeRound([height, 0]);
+        const yScale = d3.scaleLinear().rangeRound([height, 0]);
         yScale.domain([0, 110000]);
 
 //-----------------------------AXES-----------------------------//
 const yaxis = d3.axisLeft()
 .ticks((slices[0].values).length/4)
-.scale(yScale)
-.tickFormat(formatYAxis);
+.scale(yScale);
 
 const xaxis = d3.axisBottom()
 .tickValues(years)
@@ -111,7 +98,7 @@ svg.append("g")
 //---------------------------TOOLTIP----------------------------//
 const tooltip = d3.select("body").append("div")
 .attr("class", "tooltip")
-.style("opacity", 1)
+.style("opacity", 0)
 .style("position", "absolute");
 
 
@@ -168,9 +155,6 @@ lines.selectAll("points")
 .style("stroke", "#fff")
 .style("stroke-width", "1.5")
 .style("fill", "transparent")
-.style("cursor", "pointer")
-.style("z-index", "4000")
-// .style("animation", "heartbeat 1s infinite");
 
 lines.selectAll("points")
 .data(function(d) {return d.values})
@@ -180,13 +164,10 @@ lines.selectAll("points")
 .attr("cy", function(d) { return yScale(d.measurement); })    
 .attr("r", 10)
 .attr("class","point2")
-.style("opacity", 1)
+.style("opacity", 0)
 .style("stroke", "transparent")
 .style("stroke-width", "3")
 .style("fill", "transparent")
-// .style("z-index", "2000")
-.style("cursor", "pointer")
-
 
 lines.selectAll("#line01 .point")
 .style("opacity", 0)
@@ -199,71 +180,93 @@ lines.selectAll("#line02 .point")
 
 
 //---------------------------EVENTS-----------------------------// 
-// lines.selectAll("circles")
-// .data(function(d) { return(d.values); } )
-// .enter()
-// .append("circle")
-// .attr("cx", function(d) { return xScale(d.date); })      
-// .attr("cy", function(d) { return xScale(d.date); })    
-// .attr('r', 10)
-// .style("opacity", 0)
+lines.selectAll("circles")
+.data(function(d) { return(d.values); } )
+.enter()
+.append("circle")
+.attr("cx", function(d) { return xScale(d.date); })      
+.attr("cy", function(d) { return yScale(d.measurement); })    
+.attr('r', 10)
+.style("opacity", 0)
 
 
 lines.selectAll("#line01 .point2")
-.on('mouseover', function(event,d) {
-
-
-    d3.select(this)
-    .style("cursor", "pointer")
-    .style("stroke", "#ca7650")
-    .style("fill","transparent")
+.on('mouseover', function(d) {
+    tooltip.transition()
+    .style("opacity", 1);
 
     const formatNumber = d3.format(",");
-    // alert(event.pageX)
-    tooltip
-    .style("opacity", 1)
-    .html(formatNumber(d.measurement) + " T")
-    .style("left", (event.pageX - 45) + "px")
-    .style("top", (event.pageY - 55) + "px");
-})     
 
-.on("mouseout", function(d) {  
-    d3.select(this)
-    .style("cursor", "pointer")
-    .style("stroke", "transparent")
-    .style("fill","transparent")
+    tooltip.html(formatNumber(d.measurement) + " T")
+    .style("left", (d3.event.pageX - 45) + "px")
+    .style("top", (d3.event.pageY - 55) + "px");
 
+            //add this        
+            const selection = d3.select(this).raise();
+
+            selection
+            .transition()
+            .delay("0")
+            .duration("0")
+            .attr("r", 10)
+            .style("opacity", 1)
+            .style("stroke", "#ca7650")
+            .style("fill","transparent")
+        })     
+
+.on("mouseout", function(d) {      
     tooltip.transition()        
     .style("opacity", 0);  
 
-});
+            //add this        
+            const selection = d3.select(this);
+
+            selection
+            .transition()
+            .delay("0")
+            .duration("0")
+            .attr("r", 10)
+            .style("opacity", 0);
+        });
 
 lines.selectAll("#line02 .point2")
-.on('mouseover', function(event, d) {
-    d3.select(this)
-    .style("cursor", "pointer")
-    .style("stroke", "#cde35f")
+.on('mouseover', function(d) {
+    tooltip.transition()
+    .style("opacity", 1);
 
     const formatNumber = d3.format(",");
-    // alert(event.pageX)
-    tooltip
-    .style("opacity", 1)
-    .html(formatNumber(d.measurement) + " T")
-    .style("left", (event.pageX - 45) + "px")
-    .style("top", (event.pageY - 55) + "px");
-    
-})     
-    
 
-.on("mouseout", function(d) {  
-    d3.select(this)
-    .style("cursor", "pointer")
-    .style("stroke", "transparent")
-    .style("fill","transparent")    
-   
-     tooltip.transition()        
+    tooltip.html(formatNumber(d.measurement) + " T")
+    .style("left", (d3.event.pageX - 45) + "px")
+    .style("top", (d3.event.pageY - 55) + "px");
+
+            //add this        
+            const selection = d3.select(this).raise();
+
+            selection
+            .transition()
+            .delay("0")
+            .duration("0")
+            .attr("r", 10)
+            .style("opacity", 1)
+            .style("stroke", "#cde35f")
+            .style("fill","transparent")
+        })     
+
+.on("mouseout", function(d) {      
+    tooltip.transition()        
     .style("opacity", 0);  
-});
+
+            //add this        
+            const selection = d3.select(this);
+
+            selection
+            .transition()
+            .delay("0")
+            .duration("0")
+            .attr("r", 10)
+            .style("opacity", 0);
+        });
 
 });
 

@@ -1,15 +1,3 @@
-// const lenis = new Lenis()
-
-// lenis.on('scroll', (e) => {
-//   console.log(e)
-// })
-
-// function raf(time) {
-//   lenis.raf(time)
-//   requestAnimationFrame(raf)
-// }
-
-// requestAnimationFrame(raf)
 
 // Efecto para que la gota se vea que caiga un poco antes de hacerse grande
 function handleScroll() {
@@ -91,6 +79,14 @@ function closeNav() {
  enableScroll();
 }
 
+function openNavTroquer() {
+  document.getElementById("myNavTroquer").style.height = "100%";
+}
+
+/* Close */
+function closeNavTroquer() {
+  document.getElementById("myNavTroquer").style.height = "0%";
+}
 function disableScroll() {
     // Get the current page scroll position
     scrollTop =

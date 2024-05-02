@@ -202,7 +202,13 @@
 		</div>
 	</div>
 
-	
+	<div id="myNavTroquer" class="overlayTroquer">
+	  <a href="javascript:void(0)" class="closebtnTroquer" onclick="closeNavTroquer()">&times;</a>
+	  <div class="overlayTroquer-content">
+	    <div class="typeform_form" data-tf-live="01HVSC8S9T1W1RSKJAK7NKK3SC"></div><script src="//embed.typeform.com/next/embed.js"></script>
+	  </div>
+	</div>
+
 	<main>
 		<div class="navegador">
 			<span class="navegador_texto" id="nav_texto"></span>
@@ -233,7 +239,11 @@
 			<div class="portada_pregunta_texto">
 				<div class="portada_pregunta_sticky" id="portada_pregunta_sticky">
 					<div class="portada_pregunta_centro">
-						<img loading="lazy" class="logos" src="./img/portada/logos-troquer-xdata.png" alt="Logos Troquer y X-DATA">
+						<!-- <img loading="lazy" class="logos" src="./img/portada/logos-troquer-xdata.png" alt="Logos Troquer y X-DATA"> -->
+						<div class="portadapregunta_logos">
+							<img onmouseover="openNavTroquer()" id="logo_troquer" loading="lazy" class="logos logo_troquer" src="./img/portada/troquer_logo.png" alt="Logo Troquer">
+							<img loading="lazy" class="logos logo_xdata" src="./img/portada/xdata_logo.png" alt="Logo X-DATA">
+						</div>
 						<h2 class="fs-2 portada_pregunta_titulo">¿Sabes cómo afecta el fast fashion a nuestro planeta?</h2>
 						<div class="portada_pregunta_p">
 							<p class="fs-07">Por: Aremi Manrique</p>
@@ -270,8 +280,6 @@
 						<p class="fs-09">de la superficie está cubierta de agua</p>
 					</div>
 				</div>
-
-
 			</div>
 			<div class="intro2" id="intro2">
 				<div class="intro2_planeta">
@@ -292,7 +300,6 @@
 
 
 				</div>
-
 			</div>
 			<div class="intro3">
 				<p class="intro3_p_float fs-09">Dentro de este 2.5%</p>
@@ -319,12 +326,11 @@
 					</div>
 					<img loading="lazy" class="intro3_gotaverde" id="intro3_gotaverde" src="./img/intro/intro4_gotaverde.svg" alt="">
 				</div>
-
 			</div>
 			<div class="intro4">
 				<div class="intro4_planeta">
-					<img loading="lazy"  src="./img/intro/agua_residual@2x.png" alt="" class="intro4_agua">
-					<img loading="lazy" src="./img/intro/trazo_verde.png" alt="" class="intro4_azul">
+					<img loading="lazy"  src="./img/intro/trazado_persona.png" alt="" class="intro4_agua">
+					<img loading="lazy" src="./img/intro/trazado_verde.png" alt="" class="intro4_azul">
 					<img loading="lazy"  src="./img/intro/trazo_abajo_azul.png" alt="" class="intro4_verde">
 					<p class="intro4_del_agua fs-09">De esta mínima cantidad de agua disponible en nuestro planeta</p>
 					<div class="intro4_texto intro4_texto2">
@@ -334,11 +340,10 @@
 					</div>
 
 				</div>
-
 			</div>
 			<div class="intro5">
 				<div class="intro5_planeta">
-					<div class="intro5_texto" >
+					<div class="intro5_texto">
 						<p class="intro5_inicio fs-09">Este es el inicio...</p>
 						<p class="intro5_impacto fs-2-3">del impacto de los productos textiles que consumimos</p>
 						<p class="intro5_huella fs-09T">Nuestra huella ecológica se relaciona directamente con la huella ecólogica de dichos productos.</p>
@@ -350,7 +355,7 @@
 
 		<section class="section_ciclo" id="section_ciclo">
 			
-			<div class="ciclo1" id="ciclo">
+			<div class="ciclo1">
 				<div class="ciclo_aux ciclo1_aux1">1</div>
 				<div class="ciclo_aux ciclo1_aux2">2</div>
 				<div class="ciclo1_container">
@@ -364,7 +369,7 @@
 					<img loading="lazy" src="./img/ciclo/mostrador.png" alt="" class="ciclo1_mostrador">
 				</div>
 			</div>
-			<div class="ciclo2">
+			<div class="ciclo2"  id="ciclo">
 				<div class="aux_nav aux_nav_ciclo1">1</div>
 				<div class="aux_nav aux_nav_ciclo2">2</div>
 				<div class="aux_nav aux_nav_ciclo3">3</div>
@@ -565,67 +570,65 @@
 				<div class="ciclo_aux ciclo_aux_logistica" id="ciclo_aux_logistica">logistica</div>
 				<div class="ciclo_aux ciclo_aux_uso" id="ciclo_aux_uso">uso</div>
 				<div class="ciclo_aux ciclo_aux_nuevavida" id="ciclo_aux_nuevavida">nuevavida</div>
-			</div>
-			
-			
+			</div>	
 		</section>
 
 		<section class="section_produccion" >
-			<div class="aux aux_fibra1">aux1</div>
-			<div class="aux aux_fibra1_2">aux1-2</div>
-			<div class="aux aux_fibra2">aux2</div>
+			<!-- <div class="aux aux_fibra2">aux2</div>
 			<div class="aux aux_fibra2Texto">aux2Texto</div>
 			<div class="aux aux_fibra3">aux3</div>
 			<div class="aux aux_fibra3Texto">aux3Texto</div>
 			<div class="aux aux_fibra4">aux4</div>
 			<div class="aux aux_fibra5">aux5</div>
 			<div class="aux aux_fibra6">aux6</div>
-			<div class="aux aux_fibra7">aux7</div>
+			<div class="aux aux_fibra7">aux7</div> -->
 			<div class="produccion1">
-				<div class="produccion1_container">
-					<div class="produccion1_texto">
-						<h2 class="produccion1_texto_h2 fs-2" id="produccion">Producción <span>de fibra</span></h2>
-						<p class="produccion1_texto_p fs-09T">El comportamiento ambiental y social de las diferentes materias primas utilizadas en la moda depende de cada tipo de material, cómo surge y qué procesos sigue hasta convertirse en fibra preparada para hilar. Es por eso que generalizamos. </p><br>
-						<p class="produccion1_texto_p fs-09T">Esta etapa te invita a pensar acerca de cómo los niveles de producción de la fibras han aumentaso así como en los diferentes impactos que existen.</p>
+				<div class="aux aux_fibra1">aux1</div>
+				<div class="aux aux_fibra11">aux11</div>
+				<div class="aux aux_fibra112">aux112</div>
+				<div class="aux aux_fibra113">aux113</div>
+				<div class="aux aux_fibra114">aux114</div>
+				<div class="aux aux_fibra115">aux115</div>
+				<div class="aux aux_fibra116">aux116</div>
+				<div class="aux aux_fibra117">aux117</div>
+				<div class="produccion1_container" id="produccion">
+					<img src="./img/fibra/fondo_hilos.png" alt="" class="produccion1_hilos">
+					<div class="produccion1_texto_div">
+						<h2 class="fs-2-3 produccion1_titulo">Producción <br><span>de fibra</span></h2>
+						<p class="produccion1_texto fs-09TT">El comportamiento ambiental y social de las diferentes materias primas utilizadas en la moda, está completamente ligado a cada tipo de material: su origen y los procesos que atraviesa hasta transformarse en fibra lista para ser hilada.</p>
+						<p class="produccion1_texto fs-09TT">Esta etapa del ciclo de vida te anima a reflexionar sobre el aumento en los niveles de producción de las fibras y los múltiples impactos asociados a ello.</p>
 					</div>
-					<div class="produccion-mano">
-						<img loading="lazy" class="produccion1_img produccion1_img_mano" src="./img/fibra/mano.png" alt="Mano humana">
-						<img loading="lazy" class="produccion1_img produccion1_img_wraist" src="./img/fibra/hilo-wraist.png" alt="Hilo">
-						<img loading="lazy" class="produccion1_img produccion1_img_vertical" src="./img/fibra/hilo-vertical.png" alt="Hilo">
+					<div class="produccion12_texto_div">
+						<h2 class="fs-2-3 produccion12_titulo">¿Sabías qué...</h2>
+						<p class="produccion12_texto fs-09TT">Las fibras se clasifican, según su origen, como fibras artificiales, fibras sintéticas y fibras naturales?</p>
 					</div>
-					<img loading="lazy" class="produccion1_fondo" src="./img/fibra/hilo-fibra1.png" alt="Hilo">
-				</div>
-			</div>
-
-			<div class="produccion2">
-				<div class="produccion2_container">
-					<div id="produccion-texto1" class="produccion2_texto">
-						<h3 id="momento" class="produccion2_texto_h3">Ha llegado el momento...</h3>
-						<div class="produccion-p">
-							<p id="produccion-texto2" class="produccion2_texto_p fs-09T">Las fibras se clasifican según su origenes como fibras artificiales, fibras sinteticas y fibras naturales. <br> En esta visualización muestra su producción.</p>
-							<p id="produccion-texto3" class="produccion2_texto_p fs-09T">Las fibras artificiales han tenido un incremento considerable hasta el 2021 en contraposición con las naturales.</p>
-							<p id="produccion-texto4" class="produccion2_texto_p fs-09T">Esta demanda de producción es debido a que al diseñar ropa la elección de cada fibra se piensa más en la funcionalidad y estética. Para ahondar en sus diversos impactos se realizo el siguiente análisis.</p>
-						</div>
-					</div>
+					<p class="produccion1_texto_div1 fs-09TT">En el mundo las fibras artificiales se ha más que duplicado en los últimos 20 años. En 2020, las fibras sintéticas representaron aproximadamente el 62% de la producción mundial de fibras.</p>
+					<!-- grafica -->
+					<p class="produccion1_texto_artificiales fs-09TT">Esta creciente demanda de producción se debe a que, al diseñar prendas de vestir, nos enfocamos más en la funcionalidad y la estética. Y aunque esto responde a una necesidad, también forma parte de la sobreproducción y consumo. </p>
+					<p class="produccion1_texto_naturales fs-09TT">La producción de fibra va en aumento y es necesario reconocer la necesidad de un consumo más responsable de recursos</p>
+					<!-- <p class="toneladas fs-09T">en 1.000 toneladas métricas</p> -->
 					<div class="produccion_grafica">
-						<div id="produccion_container_grafica" class="svg_produccion_container">
-							<div class="produccion_grafica_leyendas">
-								<div class="produccion_leyendas_div artificial ">
-									<div class="produccion-dot"></div>
-									<p class="fs-09T">Fibras artificiales</p>
+						<div class="produccion_grafica_div">
+							<div id="produccion_container_grafica" class="svg_produccion_container">
+								<img src="./img/fibra/mil_toneladas.png" alt="" class="produccion_grafica_mil">
+								<div class="produccion_grafica_leyendas">
+									<div class="produccion_leyendas_div artificial ">
+										<div class="produccion-dot"></div>
+										<p class="">Fibras artificiales</p>
+									</div>
+									<div class="produccion_leyendas_div natural">
+										<div class="produccion-dot"></div>
+										<p class="">Fibras naturales</p>
+									</div>
 								</div>
-								<div class="produccion_leyendas_div natural">
-									<div class="produccion-dot"></div>
-									<p class="fs-09T">Fibras naturales</p>
-								</div>
+								<img loading="lazy" src="./img/fibra/aguja.png" alt="" class="aguja aguja_left">
+								<img loading="lazy" src="./img/fibra/aguja.png" alt="" class="aguja aguja_right">
 							</div>
-							<p class="toneladas fs-09T">en 1.000 toneladas métricas</p>
-							<img loading="lazy" src="./img/fibra/aguja.png" alt="" class="aguja aguja_left">
-							<img loading="lazy" src="./img/fibra/aguja.png" alt="" class="aguja aguja_right">
 						</div>
 					</div>
 				</div>
 			</div>
+			
 			<div class="produccion3">
 				<div class="aux aux_prod3_1">1</div>
 				<div class="aux aux_prod3_2">2</div>
@@ -635,11 +638,12 @@
 				<div class="aux aux_prod3_6">6</div>
 				<div class="aux aux_prod3_7">7</div>
 				<div class="aux aux_prod3_8">8</div>
-				<div class="aux aux_prod3_9">9</div>
-				<div class="aux aux_prod3_10">10</div>
-				<div class="aux aux_prod3_11">11</div>
 				<div class="produccion3_container">
-					<p class="produccion3_p fs-09T">Como lo notas, es necesario tomar en cuenta qué tipo de material utilizaremos</p>
+					<div class="produccion3_texto_div">
+						<h2 class="produccion3_texto_titulo fs-2-3">Hicimos este estudio</h2>
+						<p class="fs-09TT">Para adentrarnos en las particularidades, donde analizamos los diversos impactos de las fibras en el planeta.</p>
+						<p class="fs-09TT">Centramos el análisis en 6 fibras principales, evaluando el consumo de energía, de agua y las emisiones de gases de efecto invernadero como principales parámetros.</p>
+					</div>
 					<div class="produccion3_main">
 						<img loading="lazy" src="./img/fibra/hilar_der.png" alt="" class="produccion3_hilar hilar_der">
 						<img loading="lazy" src="./img/fibra/hilar_izq.png" alt="" class="produccion3_hilar hilar_izq">
@@ -648,7 +652,7 @@
 							<img loading="lazy" src="./img/fibra/fondo_lineas.png" alt="" class="fondo_lineas">
 						</div>
 						<div class="produccion3_principal">
-							<p class="prod_texto_lateral lateral_fibra fs-07T">Producción de fibra</p>
+							<p class="prod_texto_lateral lateral_fibra fs-07T">Producción de fibra anual <br>en millones de toneladas</p>
 							<p class="prod_texto_lateral lateral_ambiental fs-07T">Impacto ambiental</p>
 							<div class="produccion3_div_art">
 								<div class="produccion3_art produccion3_titulos">
@@ -663,7 +667,6 @@
 										<div class="lineas_horizontales">
 											<div class="horizontal"></div>
 											<div class="horizontal"></div>
-											<div class="horizontal"></div>
 										</div>
 									</div>
 									<div class="produccion3_lineas_nat"></div>
@@ -676,19 +679,12 @@
 										<p class="produccion3_numeroM fs-09">54 <span class="fs-07">M</span></p>
 										<p class="produccion3_tipo_material fs-07">Poliester</p>
 									</div>
-									<div class="produccion_tipos_div" id="tipos_algodon">
-										<div class="row_img">
-											<img loading="lazy" class="oval2" src="./img/fibra/hoja2.png" alt="">
-										</div>
-										<p class="produccion3_numeroM fs-09">27 <span class="fs-07">M</span></p>
-										<p class="produccion3_tipo_material fs-07">Algodón</p>
-									</div>
 									<div class="produccion_tipos_div" id="tipos_celulosas">
 										<div class="row_img">
 											<img loading="lazy" class="oval3" src="./img/fibra/hoja3.png" alt="">
 										</div>
 										<p class="produccion3_numeroM fs-09">7 <span class="fs-07">M</span></p>
-										<p class="produccion3_tipo_material fs-07">Celulosas</p>
+										<p class="produccion3_tipo_material fs-07">Celulosas de algodonosas</p>
 									</div>
 									<div class="produccion_tipos_div" id="tipos_poliamida">
 										<div class="row_img">
@@ -700,9 +696,9 @@
 								</div>
 								<div class="produccion3_impacto_art">
 									<div class="impacto_div_img">
-										<img loading="lazy" src="./img/fibra/rayo.png" alt="">
-										<img loading="lazy" src="./img/fibra/gota.png" alt="">
-										<img loading="lazy" src="./img/fibra/nube.png" alt="">
+										<img loading="lazy" class="impacto_rayo" src="./img/fibra/rayo.png" alt="">
+										<img loading="lazy" class="impacto_gota" src="./img/fibra/gota.png" alt="">
+										<img loading="lazy" class="impacto_nube" src="./img/fibra/nube.png" alt="">
 									</div>
 									<div>
 										<div class="oval_div" id="oval108">
@@ -721,21 +717,7 @@
 									<div>
 										<div class="oval_div" id="oval48">
 											<div class="impacto_oval oval48"></div>
-											<div class="impacto_num fs-07">48 kWh</div>
-										</div>
-										<div class="oval_div" id="oval1559">
-											<div class="impacto_oval oval1559"></div>
-											<div class="impacto_num fs-07">1,559 l</div>
-										</div>
-										<div class="oval_div" id="oval222">
-											<div class="impacto_oval oval222"></div>
-											<div class="impacto_num fs-07">2.2 kg</div>
-										</div>
-									</div>
-									<div>
-										<div class="oval_div" id="oval85">
-											<div class="impacto_oval oval85"></div>
-											<div class="impacto_num fs-07">85 kWhh</div>
+											<div class="impacto_num fs-07">85 kWh</div>
 										</div>
 										<div class="oval_div" id="oval92">
 											<div class="impacto_oval oval92"></div>
@@ -747,19 +729,20 @@
 										</div>
 									</div>
 									<div>
-										<div class="oval_div" id="oval160">
-											<div class="impacto_oval oval160"></div>
+										<div class="oval_div" id="oval85">
+											<div class="impacto_oval oval85"></div>
 											<div class="impacto_num fs-07">160 kWh</div>
 										</div>
-										<div class="oval_div" id="oval40">
-											<div class="impacto_oval oval40"></div>
+										<div class="oval_div" id="oval40P">
+											<div class="impacto_oval oval40P"></div>
 											<div class="impacto_num fs-07">40 l</div>
 										</div>
-										<div class="oval_div" id="oval83">
-											<div class="impacto_oval oval83"></div>
+										<div class="oval_div" id="oval83P">
+											<div class="impacto_oval oval83P"></div>
 											<div class="impacto_num fs-07">8.3 kg</div>
 										</div>
 									</div>
+									
 								</div>
 							</div>
 							<div class="produccion3_div_nat">
@@ -794,6 +777,13 @@
 										<p class="produccion3_numeroM fs-09">0.09 <span class="fs-07">M</span></p>
 										<p class="produccion3_tipo_material fs-07">Cañamo</p>
 									</div>
+									<div class="produccion_tipos_div" id="tipos_algodon_nat">
+										<div class="row_img">
+											<img loading="lazy" class="oval27A" src="./img/fibra/hoja6.png" alt="">
+										</div>
+										<p class="produccion3_numeroM fs-09">27 <span class="fs-07">M</span></p>
+										<p class="produccion3_tipo_material fs-07">Algodón</p>
+									</div>
 								</div>
 								<div class="produccion3_impacto_nat">
 									<div>
@@ -823,6 +813,21 @@
 											<div class="impacto_oval oval31"></div>
 											<div class="impacto_num fs-07">3.1 kg</div>
 										</div>
+									</div>
+									<div>
+										<div class="oval_div" id="oval48A">
+											<div class="impacto_oval oval48A"></div>
+											<div class="impacto_num fs-07">48 kWh</div>
+										</div>
+										<div class="oval_div" id="oval1559">
+											<div class="impacto_oval oval1559"></div>
+											<div class="impacto_num fs-07">1,559 l</div>
+										</div>
+										<div class="oval_div" id="oval222">
+											<div class="impacto_oval oval222"></div>
+											<div class="impacto_num fs-07">2.2 kg</div>
+										</div>
+										
 									</div>
 								</div>
 							</div>
@@ -854,10 +859,12 @@
 				</div>
 			</div>
 			<div class="produccion4">
+				<div class="aux aux_prod4_1">1</div>
 				<div class="produccion4_container">
 					<div class="produccion4_texto">
-						<p class="fs-09T">Como lo notas es necesario tomar en cuenta qué tipo de material utilizaremos o eligiremos ya que tendrá consecuencias en nuestro planeta, pero no hay que olvidar  que ninguna fibra, es la solución al impacto de la industria tan intensiva. </p>
-						<p class="fs-09T produccion4_texto2">Es necesario atender diversos impactos que se producen a lo largo de todo el ciclo de vida de un producto como lo veremos en las siguientes etapas.</p>
+						<p class="fs-09T">Como puedes observar, es clave pensar en el tipo de material que elegimos y usamos para vestir, ¡porque sí que importa para nuestro planeta!</p>
+						<p class="fs-09T produccion4_texto2">Pero ojo, utilizar (o no) alguna fibra, no puede resolver todos los problemas de una industria tan intensiva como esta. Es necesario estar pendientes de los diferentes impactos que surgen a lo largo del ciclo de vida de una prenda.</p>
+						<p class="fs-09T produccion4_texto2">Descubramos más en las próximas etapas.</p>
 					</div>
 					<img loading="lazy" src="./img/fibra/campo_flores.png" alt="" class="produccion4_campo">
 					<img loading="lazy" src="./img/fibra/flor333.png" alt="" class="produccion4_flor1">
@@ -1621,6 +1628,272 @@
 
 		
 
+		
+
+		<section class="section_usoyman" >
+			<div class="usoyman_1">
+				<div class="aux_uym aux_uym1_1">1</div>
+				<div class="usoyman1_container">
+					<img loading="lazy" src="./img/usoYman/fondo_uso_y_man.png" alt="" class="uym1_fondo">
+					<div class="uym1_texto">
+						<h2 class="uym1_titulo fs-2-5" id="uso_y_manufactura">Uso <br>y mantenimiento</h2>
+						<p>Cuando una prenda finalmente es adquirida por el usuario, su tiempo de vida útil dependerá de su mantenimiento.</p><br>
+						<p>De no hacerse de manera responsable, tendrá un impacto en nuestras prendas y en el medio ambiente</p>
+					</div>
+				</div>
+			</div>
+			<div class="usoyman_2">
+				<div class="aux_uym aux_uym2_01">01</div>
+				<div class="aux_uym aux_uym2_1">1</div>
+				<div class="aux_uym aux_uym2_2">2</div>
+				<div class="aux_uym aux_uym2_3">3</div>
+				<div class="aux_uym aux_uym2_4">4</div>
+				<div class="aux_uym aux_uym2_5">5</div>
+				<div class="aux_uym aux_uym4_1">1</div>
+				<div class="aux_uym aux_uym4_2">2</div>
+				<div class="aux_uym aux_uym4_3">3</div>
+				<div class="aux_uym aux_uym4_4">4</div>
+				<div class="usoyman2_container">
+					<div class="uym2_texto1">
+						<p class="fs-09TT">En cada lavada todas las telas producen <span>microfibras</span> que van a las </p>
+						<h3 class="fs-2-3">aguas residuales</h3>
+					</div>
+					<div class="uym2_lavadora_div">
+						<img loading="lazy" class="uym2_lavadora_img" src="./img/usoYman/lavadora.png" alt="">
+						<img loading="lazy" class="uym2_lavadora_abierta_img" src="./img/usoYman/lavadora_abierta.png" alt="">
+						<img loading="lazy" class="uym2_ropasucia1" src="./img/usoYman/ropa_sucia.png" alt="">
+						<img loading="lazy" class="uym2_ropasucia2" src="./img/usoYman/ropa_sucia.png" alt="">
+						<img loading="lazy" class="uym2_ropasucia_adentro" src="./img/usoYman/ropa_sucia_adentro.png" alt="">
+						
+					</div>
+					<div class="uym2_texto2">
+						<p class="fs-09TT">Las plantas de tratamiento de agua pueden filtrar algunas pero el resto</p>
+						<h3 class="fs-2-3">llega a ríos y mares</h3>
+					</div>
+
+					<img loading="lazy" src="./img/usoYman/particulas.png" alt="" class="uym2_particulas uym2_particulas1">
+					<img loading="lazy" src="./img/usoYman/particulas.png" alt="" class="uym2_particulas uym2_particulas2">
+					<img loading="lazy" src="./img/usoYman/particulas.png" alt="" class="uym2_particulas uym2_particulas3">
+					<img loading="lazy" src="./img/usoYman/particulas.png" alt="" class="uym2_particulas uym2_particulas4">
+					<img loading="lazy" src="./img/usoYman/particulas.png" alt="" class="uym2_particulas uym2_particulas5">
+					<img loading="lazy" src="./img/usoYman/piedra.svg" alt="" class="uym2_piedra">
+
+				</div>
+				<div class="usoyman4_container">
+					<div class="uym4_container_container">
+						<img loading="lazy" src="./img/usoYman/fondo_oceano.png" alt="" class="uym4_fondo_img">
+						<div class="uym4_texto">
+							<p class="fs-09TT">Cada año se liberan <span>500 mil toneladas</span><br>de microfibras al océano, el equivalente:</p>
+							<h3 class="fs-2-3"><span>50 mil millones</span><br>de botellas de plástico</h3>
+						</div>
+						<div class="uym4_botellas_horizontal uym4_botellas_horizontal1">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella1 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella2 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella3 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella4 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella5 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella6 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella7 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella8 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella9 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella10 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella11 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella12 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella13 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella14 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella15 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella16 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella17 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella18 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella19 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella20 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella21 uym4_botella">
+						</div>
+						<div class="uym4_botellas_horizontal uym4_botellas_horizontal2">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella1 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella2 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella3 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella4 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella5 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella6 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella7 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella8 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella9 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella10 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella11 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella12 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella13 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella14 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella15 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella16 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella17 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella18 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella19 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella20 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella21 uym4_botella">
+						</div>
+						<div class="uym4_botellas_horizontal uym4_botellas_horizontal3">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella1 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella2 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella3 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella4 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella5 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella6 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella7 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella8 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella9 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella10 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella11 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella12 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella13 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella14 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella15 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella16 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella17 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella18 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella19 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella20 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella21 uym4_botella">
+						</div>
+						<div class="uym4_botellas_horizontal uym4_botellas_horizontal4">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella1 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella2 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella3 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella4 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella5 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella6 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella7 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella8 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella9 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella10 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella11 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella12 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella13 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella14 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella15 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella16 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella17 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella18 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella19 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella20 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella21 uym4_botella">
+						</div>
+						<div class="uym4_botellas_horizontal uym4_botellas_horizontal5">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella1 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella2 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella3 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella4 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella5 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella6 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella7 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella8 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella9 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella10 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella11 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella12 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella13 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella14 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella15 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella16 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella17 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella18 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella19 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella20 uym4_botella">
+							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella21 uym4_botella">
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="usoyman_5">
+				<div class="aux_uym aux_uym5_1">1</div>
+				<div class="aux_uym aux_uym5_2">2</div>
+				<div class="aux_uym aux_uym5_3">3</div>
+				<div class="aux_uym aux_uym5_4">4</div>
+				<div class="usoyman5_container">
+					<div class="uym5_texto">
+						<h3 class="fs-2-3">Además</h3>
+						<p class="fs-09TT">Según el Foro Económico <br>Mundial</p>
+						<h3 class="fs-2-3">90%</h3>
+						<p class="fs-09TT">de toda la ropa que se tira tiene como causa el deterioro por el sobre lavado.</p>
+					</div>
+					<img loading="lazy" class="uym5_plancha" src="./img/usoYman/plancha.png" alt="">
+					<div class="uym5_verde">
+						<h4 class="uym5_verde_titulo fs-1-3">Guía básica de lavado</h4>
+						<p class="fs-08">Te presentamos una guía básica que señala qué tan seguido deberías lavar tu ropa según el tipo de prenda.</p>
+						<table class="uym5_table fs-07">
+							<thead>
+								<th class="uym5_table_th1">Tipo de prenda</th>
+								<th>Tipo de prenda</th>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="uym5_table_td1">Playeras y blusas</td>
+									<td>
+										<img loading="lazy" src="./img/usoYman/icono_playera.png" alt="">
+										<img loading="lazy" src="./img/usoYman/icono_playera.png" alt="">
+									</td>
+								</tr>
+								<tr>
+									<td class="uym5_table_td1">Pantalones</td>
+									<td>
+										<img loading="lazy" src="./img/usoYman/icono_pantalon.png" alt="">
+										<img loading="lazy" src="./img/usoYman/icono_pantalon.png" alt="">
+										<img loading="lazy" src="./img/usoYman/icono_pantalon.png" alt="">
+										<img loading="lazy" src="./img/usoYman/icono_pantalon.png" alt="">
+									</td>
+								</tr>
+								<tr>
+									<td class="uym5_table_td1">Suéteres</td>
+									<td>
+										<img loading="lazy" src="./img/usoYman/icono_sueter.png" alt="">
+										<img loading="lazy" src="./img/usoYman/icono_sueter.png" alt="">
+										<img loading="lazy" src="./img/usoYman/icono_sueter.png" alt="">
+										<img loading="lazy" src="./img/usoYman/icono_sueter.png" alt="">
+									</td>
+								</tr>
+								<tr>
+									<td class="uym5_table_td1">Trajes, sacos y chaquetas</td>
+									<td>
+										<img loading="lazy" src="./img/usoYman/icono_camisa.png" alt="">
+										<img loading="lazy" src="./img/usoYman/icono_camisa.png" alt="">
+										<img loading="lazy" src="./img/usoYman/icono_camisa.png" alt="">
+										<img loading="lazy" src="./img/usoYman/icono_camisa.png" alt="">
+									</td>
+								</tr>
+								<tr>
+									<td class="uym5_table_td1">Pijama</td>
+									<td>
+										<img loading="lazy" src="./img/usoYman/icono_pijama.png" alt="">
+										<img loading="lazy" src="./img/usoYman/icono_pijama.png" alt="">
+									</td>
+								</tr>
+								<tr>
+									<td class="uym5_table_td1">Calzones y calcetines</td>
+									<td>
+										
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="usoyman_6">
+				<div class="usoyman6_container">
+					<div class="uym6_texto">
+						<h3 class="fs-2-3">Prolongar la vida útil de la ropa</h3>
+						<p class="fs-09TT">Lo ideal es seguir los <span>cuidados básicos</span> indicados en la etiqueta que viene en cada una de las prendas. A continuación te mostramos qué significa</p>
+					</div>
+					<div id="uym_diagrama"></div>
+					<div class="uym6_footer">
+						<p class="fs-09TT">Tener este cuidado minucioso prolongará la vida de tu prenda y evitarás que llegué a los vertederos. </p>
+					</div>
+					<img loading="lazy" src="./img/usoYman/uym_footer@2x.png" alt="" class="uym6_footer_img">
+				</div>
+			</div>
+		</section>
+
 		<section class="section_nuevavida" >
 			<div class="nuevavida_1">
 				<div class="nv1_texto">
@@ -2183,272 +2456,6 @@
 			</div>
 		</section>
 
-		<section class="section_usoyman" >
-			<div class="usoyman_1">
-				<div class="aux_uym aux_uym1_1">1</div>
-				<div class="usoyman1_container">
-					<img loading="lazy" src="./img/usoYman/fondo_uso_y_man.png" alt="" class="uym1_fondo">
-					<div class="uym1_texto">
-						<h2 class="uym1_titulo fs-2-5" id="uso_y_manufactura">Uso <br>y mantenimiento</h2>
-						<p>Cuando una prenda finalmente es adquirida por el usuario, su tiempo de vida útil dependerá de su mantenimiento.</p><br>
-						<p>De no hacerse de manera responsable, tendrá un impacto en nuestras prendas y en el medio ambiente</p>
-					</div>
-				</div>
-			</div>
-			<div class="usoyman_2">
-				<div class="aux_uym aux_uym2_01">01</div>
-				<div class="aux_uym aux_uym2_1">1</div>
-				<div class="aux_uym aux_uym2_2">2</div>
-				<div class="aux_uym aux_uym2_3">3</div>
-				<div class="aux_uym aux_uym2_4">4</div>
-				<div class="aux_uym aux_uym2_5">5</div>
-				<div class="aux_uym aux_uym4_1">1</div>
-				<div class="aux_uym aux_uym4_2">2</div>
-				<div class="aux_uym aux_uym4_3">3</div>
-				<div class="aux_uym aux_uym4_4">4</div>
-				<div class="usoyman2_container">
-					<div class="uym2_texto1">
-						<p class="fs-09TT">En cada lavada todas las telas producen <span>microfibras</span> que van a las </p>
-						<h3 class="fs-2-3">aguas residuales</h3>
-					</div>
-					<div class="uym2_lavadora_div">
-						<img loading="lazy" class="uym2_lavadora_img" src="./img/usoYman/lavadora.png" alt="">
-						<img loading="lazy" class="uym2_lavadora_abierta_img" src="./img/usoYman/lavadora_abierta.png" alt="">
-						<img loading="lazy" class="uym2_ropasucia1" src="./img/usoYman/ropa_sucia.png" alt="">
-						<img loading="lazy" class="uym2_ropasucia2" src="./img/usoYman/ropa_sucia.png" alt="">
-						<img loading="lazy" class="uym2_ropasucia_adentro" src="./img/usoYman/ropa_sucia_adentro.png" alt="">
-						
-					</div>
-					<div class="uym2_texto2">
-						<p class="fs-09TT">Las plantas de tratamiento de agua pueden filtrar algunas pero el resto</p>
-						<h3 class="fs-2-3">llega a ríos y mares</h3>
-					</div>
-
-					<img loading="lazy" src="./img/usoYman/particulas.png" alt="" class="uym2_particulas uym2_particulas1">
-					<img loading="lazy" src="./img/usoYman/particulas.png" alt="" class="uym2_particulas uym2_particulas2">
-					<img loading="lazy" src="./img/usoYman/particulas.png" alt="" class="uym2_particulas uym2_particulas3">
-					<img loading="lazy" src="./img/usoYman/particulas.png" alt="" class="uym2_particulas uym2_particulas4">
-					<img loading="lazy" src="./img/usoYman/particulas.png" alt="" class="uym2_particulas uym2_particulas5">
-					<img loading="lazy" src="./img/usoYman/piedra.svg" alt="" class="uym2_piedra">
-
-				</div>
-				<div class="usoyman4_container">
-					<div class="uym4_container_container">
-						<img loading="lazy" src="./img/usoYman/fondo_oceano.png" alt="" class="uym4_fondo_img">
-						<div class="uym4_texto">
-							<p class="fs-09TT">Cada año se liberan <span>500 mil toneladas</span><br>de microfibras al océano, el equivalente:</p>
-							<h3 class="fs-2-3"><span>50 mil millones</span><br>de botellas de plástico</h3>
-						</div>
-						<div class="uym4_botellas_horizontal uym4_botellas_horizontal1">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella1 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella2 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella3 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella4 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella5 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella6 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella7 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella8 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella9 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella10 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella11 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella12 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella13 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella14 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella15 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella16 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella17 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella18 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella19 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella20 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella21 uym4_botella">
-						</div>
-						<div class="uym4_botellas_horizontal uym4_botellas_horizontal2">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella1 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella2 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella3 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella4 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella5 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella6 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella7 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella8 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella9 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella10 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella11 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella12 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella13 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella14 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella15 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella16 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella17 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella18 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella19 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella20 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella21 uym4_botella">
-						</div>
-						<div class="uym4_botellas_horizontal uym4_botellas_horizontal3">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella1 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella2 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella3 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella4 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella5 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella6 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella7 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella8 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella9 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella10 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella11 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella12 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella13 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella14 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella15 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella16 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella17 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella18 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella19 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella20 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella21 uym4_botella">
-						</div>
-						<div class="uym4_botellas_horizontal uym4_botellas_horizontal4">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella1 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella2 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella3 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella4 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella5 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella6 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella7 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella8 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella9 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella10 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella11 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella12 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella13 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella14 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella15 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella16 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella17 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella18 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella19 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella20 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella21 uym4_botella">
-						</div>
-						<div class="uym4_botellas_horizontal uym4_botellas_horizontal5">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella1 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella2 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella3 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella4 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella5 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella6 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella7 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella8 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella9 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella10 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella11 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella12 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella13 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella14 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella15 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella16 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella17 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella18 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella19 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella20 uym4_botella">
-							<img loading="lazy" src="./img/usoYman/botella_unica.png" alt="" class="uym4_botella21 uym4_botella">
-						</div>
-						
-					</div>
-				</div>
-			</div>
-			<div class="usoyman_5">
-				<div class="aux_uym aux_uym5_1">1</div>
-				<div class="aux_uym aux_uym5_2">2</div>
-				<div class="aux_uym aux_uym5_3">3</div>
-				<div class="aux_uym aux_uym5_4">4</div>
-				<div class="usoyman5_container">
-					<div class="uym5_texto">
-						<h3 class="fs-2-3">Además</h3>
-						<p class="fs-09TT">Según el Foro Económico <br>Mundial</p>
-						<h3 class="fs-2-3">90%</h3>
-						<p class="fs-09TT">de toda la ropa que se tira tiene como causa el deterioro por el sobre lavado.</p>
-					</div>
-					<img loading="lazy" class="uym5_plancha" src="./img/usoYman/plancha.png" alt="">
-					<div class="uym5_verde">
-						<h4 class="uym5_verde_titulo fs-1-3">Guía básica de lavado</h4>
-						<p class="fs-08">Te presentamos una guía básica que señala qué tan seguido deberías lavar tu ropa según el tipo de prenda.</p>
-						<table class="uym5_table fs-07">
-							<thead>
-								<th class="uym5_table_th1">Tipo de prenda</th>
-								<th>Tipo de prenda</th>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="uym5_table_td1">Playeras y blusas</td>
-									<td>
-										<img loading="lazy" src="./img/usoYman/icono_playera.png" alt="">
-										<img loading="lazy" src="./img/usoYman/icono_playera.png" alt="">
-									</td>
-								</tr>
-								<tr>
-									<td class="uym5_table_td1">Pantalones</td>
-									<td>
-										<img loading="lazy" src="./img/usoYman/icono_pantalon.png" alt="">
-										<img loading="lazy" src="./img/usoYman/icono_pantalon.png" alt="">
-										<img loading="lazy" src="./img/usoYman/icono_pantalon.png" alt="">
-										<img loading="lazy" src="./img/usoYman/icono_pantalon.png" alt="">
-									</td>
-								</tr>
-								<tr>
-									<td class="uym5_table_td1">Suéteres</td>
-									<td>
-										<img loading="lazy" src="./img/usoYman/icono_sueter.png" alt="">
-										<img loading="lazy" src="./img/usoYman/icono_sueter.png" alt="">
-										<img loading="lazy" src="./img/usoYman/icono_sueter.png" alt="">
-										<img loading="lazy" src="./img/usoYman/icono_sueter.png" alt="">
-									</td>
-								</tr>
-								<tr>
-									<td class="uym5_table_td1">Trajes, sacos y chaquetas</td>
-									<td>
-										<img loading="lazy" src="./img/usoYman/icono_camisa.png" alt="">
-										<img loading="lazy" src="./img/usoYman/icono_camisa.png" alt="">
-										<img loading="lazy" src="./img/usoYman/icono_camisa.png" alt="">
-										<img loading="lazy" src="./img/usoYman/icono_camisa.png" alt="">
-									</td>
-								</tr>
-								<tr>
-									<td class="uym5_table_td1">Pijama</td>
-									<td>
-										<img loading="lazy" src="./img/usoYman/icono_pijama.png" alt="">
-										<img loading="lazy" src="./img/usoYman/icono_pijama.png" alt="">
-									</td>
-								</tr>
-								<tr>
-									<td class="uym5_table_td1">Calzones y calcetines</td>
-									<td>
-										
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-			<div class="usoyman_6">
-				<div class="usoyman6_container">
-					<div class="uym6_texto">
-						<h3 class="fs-2-3">Prolongar la vida útil de la ropa</h3>
-						<p class="fs-09TT">Lo ideal es seguir los <span>cuidados básicos</span> indicados en la etiqueta que viene en cada una de las prendas. A continuación te mostramos qué significa</p>
-					</div>
-					<div id="uym_diagrama"></div>
-					<div class="uym6_footer">
-						<p class="fs-09TT">Tener este cuidado minucioso prolongará la vida de tu prenda y evitarás que llegué a los vertederos. </p>
-					</div>
-					<img loading="lazy" src="./img/usoYman/uym_footer@2x.png" alt="" class="uym6_footer_img">
-				</div>
-			</div>
-		</section>
-
-
-
 	</main>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
@@ -2490,7 +2497,7 @@
 	<script src="./js/gsap_usoyman.js"></script>
 
 	<script src="./js/force_data.js"></script>
-    <script src="./js/force.js"></script>
+    <!-- <script src="./js/force.js"></script> -->
 
 </body>
 </html>
