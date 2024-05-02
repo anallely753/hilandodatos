@@ -436,7 +436,7 @@
 		bottom: -10%;
 		z-index: -10;
 		width: 100vw;
-		border: solid red;
+		/*border: solid red;*/
 		object-fit: cover;
 	}
 	.man5_textos_img1_fuego{
