@@ -362,7 +362,10 @@ man5_2.to('.man5_marcador', {
   left:'calc(25% - 18px)'
 },'<');
 man5_2.to('.man5_grafica.man5_grafica1', {
-  top:'20%'
+  top:'50%'
+},'<');
+man5_2.to('.man5_textos_img1_fuego', {
+  opacity:1
 },'<');
 man5_2.to('.man5_grafica.man5_grafica2', {
   top:0
@@ -394,6 +397,9 @@ man5_3.to('.man5_marcador', {
   left:'calc(41.5% - 18px)'
 },'<');
 man5_3.to('.man5_textos_img1', {
+  opacity:0
+},'<');
+man5_3.to('.man5_textos_img1_fuego', {
   opacity:0
 },'<');
 man5_3.to('.man5_textos_img2', {
@@ -510,7 +516,7 @@ man5_5.to('.man5_texto5', {
   top:'20%'
 },'<');
 man5_5.to('.man5_marcador', {
-  left:'calc(74% - 18px)'
+  left:'calc(74% )'
 },'<');
 man5_5.to('.man5_textos_img3', {
   opacity:0
@@ -527,10 +533,10 @@ man5_5.to('.man5_grafica.man5_grafica4', {
 man5_5.to('.man5_grafica.man5_grafica5', {
   top:'0%'
 },'<');
-man5_1.to('.man5_lineas_fechas.fechas4', {
+man5_5.to('.man5_lineas_fechas.fechas4', {
   opacity:.6
 },'<');
-man5_1.to('.man5_lineas_fechas.fechas5', {
+man5_5.to('.man5_lineas_fechas.fechas5', {
   opacity:1
 },'<');
 
@@ -602,15 +608,15 @@ man5_6.to('.man5_textos_img5', {
   opacity:1
 },'<');
 man5_6.to('.man5_grafica.man5_grafica5', {
-  top:'20%'
+  top:'60%'
 },'<');
 man5_6.to('.man5_grafica.man5_grafica6', {
   top:'0%'
 },'<');
-man5_1.to('.man5_lineas_fechas.fechas5', {
+man5_6.to('.man5_lineas_fechas.fechas5', {
   opacity:.6
 },'<');
-man5_1.to('.man5_lineas_fechas.fechas6', {
+man5_6.to('.man5_lineas_fechas.fechas6', {
   opacity:1
 },'<');
 

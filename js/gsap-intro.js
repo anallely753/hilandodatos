@@ -458,6 +458,10 @@ const intro3 = gsap.timeline({
     top:'-25%',
     duration: totalScrollDuration3 * 0.1
   },'<');
+  intro3.to('.intro3_p_float', {
+    opacity:0,
+    duration: totalScrollDuration3 * 0.1
+  },'<');
   intro3.to('.intro2_planeta_mitad', {
     opacity:'0',
     duration: totalScrollDuration3 * 0.1
@@ -468,6 +472,7 @@ const intro3 = gsap.timeline({
     transformOrigin: 'center',
     duration: totalScrollDuration3 * 0.05
   },'<');
+
   intro3.to('.intro3_gotaverde', {
    display:'none',
    duration: totalScrollDuration3 * 0.1
