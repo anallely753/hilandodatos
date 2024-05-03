@@ -3,14 +3,12 @@
 	background-image: url('../img/fondos/textura-azul.png');
 	background-attachment: fixed;
 	position: relative;
-		/*border: solid 30px red;*/
-		height: 100%;
+	/*border: solid 10px red;*/
+	height: 600vw
 
 }
-.section_logistica{
-	height: 100vh;
-	/*background-color: pink;*/
-}
+
+
 
 /* Horizontal scrolling */
 	.container {
@@ -80,22 +78,22 @@
 		top: 80vw;
 	}
 	.dis_aux2{
-		top: 200vw;
+		top: 190vw;
 	}
 	.dis_aux3{
-		top: 300vw;
+		top: 240vw;
 	}
 	.dis_aux32{
-		top: 350vw;
+		top: 320vw;
 	}
 	.dis_aux4{
-		top: 450vw;
+		top: 400vw;
 	}
 	.dis_aux42{
-		top: 520vw;
+		top: 450vw;
 	}
 	.dis_aux5{
-		top: 580vw;
+		top: 520vw;
 	}
 	
 

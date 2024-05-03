@@ -31,6 +31,7 @@
 		top: 0;
 		background-image: url('../img/manufactura/fondo_taller.png');
 		background-size: cover;
+		min-height: 800px;
 	}
 	.man1_titulo{
 		color: var(--lima);
@@ -65,6 +66,7 @@
 	.man2_container{
 		height: 100vh;
 		position: sticky;
+		min-height: 800px;
 		top: 0;
 		background-color: #cdec51;
 		/*background-image: url('../img/manufactura/fondo_laguna_gris.png');*/
@@ -124,6 +126,7 @@
 		background-size: 100%;
 		height: 100vh;
 		position: sticky;
+		min-height: 800px;
 		top: 0;
 		overflow: hidden;
 	}
@@ -210,6 +213,7 @@
 	}*/
 	.man4_container{
 		height: 100vh;
+		min-height: 800px;
 		position: sticky;
 		top: 0;
 		padding-top: 3rem;
@@ -330,15 +334,15 @@
 		/*border: solid;*/
 	}
 	.man4_main_texto1{
-		left: -50vw;
+		top: 100%;
 		opacity: 0;
 	}
 	.man4_main_texto2{
-		left:-150vw;
+		top: 200%;
 		opacity: 0;
 	}
 	.man4_main_texto3{
-		left: -250vw;
+		top: 300%;
 		opacity: 0;
 		/*border: solid;*/
 	}
@@ -374,6 +378,7 @@
 
 	.man5_container{
 		height: 100vh;
+		min-height: 800px;
 		position: sticky;
 		top: 0;
 		display: grid;
@@ -381,8 +386,8 @@
 	}
 	.man5_textos_div{
 		overflow: hidden;
-		/*border: solid red;*/
 		position: relative;
+		color: var(--verde);
 	}
 	.man5_lineas_div{
 		overflow: hidden;
@@ -425,6 +430,7 @@
 		margin-bottom: 1rem;
 	}
 	.man5_texto_p1{
+		font-family: 'FilsonProBold', sans-serif;
 		margin-bottom: 1rem;
 	}
 	.man5_texto_p2{
@@ -436,7 +442,6 @@
 		bottom: -10%;
 		z-index: -10;
 		width: 100vw;
-		/*border: solid red;*/
 		object-fit: cover;
 	}
 	.man5_textos_img1_fuego{
@@ -462,10 +467,13 @@
 	.man5_textos_img4{
 		opacity: 0;
 		width: 100%;
+		top: 0;
+		height: 82vh;
 		left: 0%;
 		display: block;
 		margin: 0 auto;
 		z-index: -100;
+		object-fit: cover;
 	}
 	.man5_textos_img5{
 		opacity: 0;

@@ -156,7 +156,7 @@ man4_2.to('.man4_main2_1', {
 },'<');
 man4_2.to('.man4_main_texto1', {
   opacity:'1',
-  left:'0',
+  top:'0',
 },'<');
 man4_2.to('.man4_main_img1 .moneda, .man4_main_img3 .moneda', {
   bottom:'-2.5%'
@@ -176,15 +176,15 @@ man4_3.to('.man4_main_img1 .moneda, .man4_main_img3 .moneda', {
   bottom:'-45%'
 });
 man4_3.to('.man4_main_texto1', {
-  left:'100vw',
+  top:'-100%',
   opacity:0
 },'<');
 man4_3.to('.man4_main_texto2', {
-  left:'0',
+  top:'0',
   opacity:'1'
 },'<');
 man4_3.to('.man4_main_texto3', {
-  left:'-100vw'
+  top:'100%',
 },'<');
 man4_3.to('.man4_main2_1', {
   left:'calc(50% - 6.5px)'
@@ -213,11 +213,11 @@ man4_4.to('.man4_main_img1 .reloj, .man4_main_img3 .reloj', {
   bottom:'-45%'
 },'<');
 man4_4.to('.man4_main_texto2', {
-  left:'100vw',
+  top:'-100%',
   opacity:'0'
 },'<');
 man4_4.to('.man4_main_texto3', {
-  left:'0',
+  top:'0',
   opacity:'1'
 },'<');
 man4_4.to('.man4_main2_1', {

@@ -215,13 +215,12 @@
 		display: flex;
 		color: #fff;
 		column-gap: 3rem;
-		top: 8vh;
-		left: 18vh;
+		top: 12%;
+		left: 9vw;
 		font-family: 'FilsonProRegular', sans-serif;
-		/*border: solid pink;*/
 		opacity: 1;
-		width: 60%;
-		justify-content: center;
+		width: 50%;
+		justify-content: flex-start;
 		align-items: center;
 	}
 	.produccion_grafica_mil{
