@@ -183,6 +183,7 @@
 	.man4{
 		height: 520vh;
 		position: relative;
+		color: var(--verde);
 	}
 	.aux_man4_1{
 		top: 100vh;
@@ -679,6 +680,7 @@
 	.man6{
 		height: 260vh;
 		position: relative;
+		color: var(--verde);
 	}
 	.aux_man6_1{
 		top: 90vh;

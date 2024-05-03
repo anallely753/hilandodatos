@@ -1,30 +1,51 @@
 .section_logistica{
-	/*background-image: url('../img/fondos/textura_gris.png');*/
+	background-image: url('../img/fondos/textura_gris.png');
 	background-attachment: fixed;
 	height: 100%;
-	background-size: 100%;
+	background-size: 50%;
 	background-color: var(--gris);
 }
 .section_logistica_div{
 	height: 100vh;
 }
+.aux_log{
+	width: 50px;
+	height: 50px;
+	background-color: violet;
+	position: absolute;
+	left: 0;
+}
 
 /* Logistica 1 */
 	.logistica1{
+		height: 250vh;
+		position: relative;
+	}
+	.aux_log1{
+		top: 50vh;
+	}
+	.aux_log1_2{
+		top: 100vh;
+	}
+	.log1_container{
+		background-image: url('../img/logistica/logisitca_fondo_ciudad@2x.png');
 		background-size: cover;
-		background-image: url('../img/logistica/fondo_ciudad.png');
 		background-position: 0% -800%;
 		background-repeat: no-repeat;
+		height: 100vh;
+		min-height: 800px;
+		position: sticky;
+		top: 0;
 		display: flex;
 		justify-content: flex-end;
 		align-items: flex-end;
 		color: #fff;
-		padding: 10%;
+		padding: 5% 10%;
 	}
 	.log1_texto{
 		max-width: 750px;
 		position: relative;
-		top: 50%;
+		top: 100%;
 	}
 	.log1_titulo{
 		color: var(--lima);
@@ -34,20 +55,33 @@
 /* Logistica 2 */
 	.logistica2{
 		background-size: cover;
+		height: 230vh;
+		position: relative;
+		/*height: 800vh;*/
+	}
+	.aux_log2{
+		top: 50vh;
+	}
+	.aux_log2_2{
+		top: 180vh;
+	}
+	.log2_container{
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		color: #fff;
 		padding: 10%;
-		position: relative;
-		/*height: 800vh;*/
 		height: 100vh;
+		min-height: 800px;
+		position: sticky;
+		top: 0;
 	}
 	.log2_texto{
 		max-width: 590px;
 		color: #000;
 		position: relative;
 		/*left: 150vh;*/
+		top: 100%;
 	}
 	.log2_titulo{
 		color: var(--azul);
@@ -57,7 +91,7 @@
 		position: absolute;
 		height: 75vh;
 		bottom: 1%;
-		left: -250vh;
+		left: -200vh;
 	}
 
 /* Logistica 3 aux */
@@ -399,6 +433,7 @@
 			z-index: 100;
 			column-gap: 1.5rem;
 			height: 200px;
+			border: solid;
 		}
 		.log4_info_abajo_title{
 			margin-bottom: 1rem;
@@ -416,13 +451,10 @@
 			display: flex;
 			align-items: center;
 			flex-direction: column;
-			position: absolute;
-			right: 5%;
 			z-index: 100;
-			top: 50%;
 		}
 		.log4_img_medios{
-			width: 90%;
+			width: 100%;
 			margin: auto;
 		}
 		
@@ -547,9 +579,7 @@
 /*// X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 	/* Logistica 1 */
-		.logistica1{
-			padding: 5% 10%;
-		}
+		
 	/* Logistica 3 */
 		.log3_texto{
 			height: 100%;

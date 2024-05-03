@@ -101,7 +101,9 @@
     font-family: FilsonProRegular, serif;
 }
 
-
+.step4 h3{
+    font-family: 'FilsonProBlack', sans-serif;
+}
 .step4 img {
     width: 100%;
 }

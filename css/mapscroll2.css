@@ -89,6 +89,10 @@
     height: 80vh;
     /*background-color: red;*/
 }
+.step h3{
+    font-family: 'FilsonProBlack', sans-serif;
+    margin-bottom: .5rem;
+}
 .step.active {
     opacity: 0.9;
 }

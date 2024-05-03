@@ -1,35 +1,59 @@
 const log1 = gsap.timeline({
   scrollTrigger: {
-    trigger: '.logistica1',  
-    start: 'top top',
+    trigger: '.aux_log1',  
+    start: 'top center',
+    end: 'top top',
     scrub: 1,    
     markers: false, 
-    pin:true, 
   },
 });
-log1.to('.logistica1', {
+log1.to('.log1_container', {
   backgroundPosition:'0 0'
 },);
-log1.to('.log1_texto', {
-  top:0
+
+const log1_2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.aux_log1_2',  
+    start: 'top center',
+    end: 'top top',
+    scrub: 1,    
+    markers: false, 
+  },
+});
+log1_2.to('.log1_texto', {
+  top:'0'
 },);
 
 const log2 = gsap.timeline({
   scrollTrigger: {
-    trigger: '.logistica2',  
-    start: 'top top',
+    trigger: '.aux_log2',  
+    start: 'top center',
+    end: 'top top',
     scrub: 1,    
     markers: false,
-    pin:'.logistica2', 
   },
 });
-log2.to('.log2_van', {
-  visibility:'visible'
-},);
-log2.to('.log2_van', {
-  left:'250vh',
-},);
 log2.to('.log2_texto', {
+  top:'0'
+},'<');
+
+
+const log2_2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.aux_log2_2',  
+    start: 'top bottom',
+    end: 'top top',
+    scrub: 1,    
+    markers: false,
+  },
+});
+log2_2.to('.log2_van', {
+  visibility:'visible'
+},'<');
+log2_2.to('.log2_van', {
+  left:'250vh',
+},'<');
+log2_2.to('.log2_texto', {
   left:'250vh'
 },'<+.17');
 
