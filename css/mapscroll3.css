@@ -51,6 +51,7 @@
     padding-top: 10vh;
     padding-bottom: 10vh;   
     position: relative;
+    width: min-content;
     /*border: solid yellow;*/
     /*top: 300vh;*/
     /*background-color: yellow;*/
@@ -130,10 +131,14 @@
 }
 
 #mapboxgl-marker-id4{
-   display: none;
+   opacity: 0;
 }
 
 #fourth-chapter4{
     height: 200vh;
     padding-bottom: 50vh;
+}
+
+#map4 .mapboxgl-marker path {
+  cursor: pointer;
 }

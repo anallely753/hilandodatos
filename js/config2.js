@@ -2,7 +2,7 @@ var config = {
     style: 'mapbox://styles/anallelymtzc/clup0oxpb03ks01qfeamh41v6',
     accessToken: 'pk.eyJ1IjoiYW5hbGxlbHltdHpjIiwiYSI6ImNsdWkyajlyYzAwMGsyaW8xaHF0ODhrOTcifQ.a-49qQrQ7XlMxKMWxhnRMQ',
     showMarkers: true,
-    markerColor: '#4444e5',
+    markerColor: '#cfee51',
     markerBg:'',
     projection: 'equirectangular',
     //Read more about available projections here
@@ -39,7 +39,8 @@ var config = {
                 //     layer: 'layer-name',
                 //     opacity: 0
                 // }
-            ]
+            ],
+
         },
         {
             id: 'second-identifier',
@@ -61,7 +62,8 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
-            onChapterExit: []
+            onChapterExit: [],
+            markerDescription:'<p class="popup_marker_title">Texas - San Francisco</p><p class="popup_marker_p">Distancia: <span>2,253 <small>KM</small></span></p><p class="popup_marker_p">Energía consumida: <span>321,871 <small>WTW</small></span></p><p class="popup_marker_p">Emisión CO2: <span>24 <small>WTW</small></span></p><p class="popup_marker_p">Medio de Transporte: <span>Vehículo</span></p>'
         },
         {
             id: 'third-identifier',
@@ -79,7 +81,8 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
-            onChapterExit: []
+            onChapterExit: [],
+            markerDescription:'<p class="popup_marker_title">San Francisco - Shandong</p><p class="popup_marker_p">Distancia: <span>19,767 <small>KM</small></span></p><p class="popup_marker_p">Energía consumida: <span>226,109 <small>WTW</small></span></p><p class="popup_marker_p">Emisión CO2: <span>16 <small>WTW</small></span></p><p class="popup_marker_p">Medio de Transporte: <span>Barco</span></p>'
         },
         {
             id: 'fourth-chapter',
@@ -97,7 +100,9 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
-            onChapterExit: []
+            onChapterExit: [],
+            markerDescription:'<p class="popup_marker_title">Shandong - Bangladesh</p><p class="popup_marker_p">Distancia: <span>12,620 <small>KM</small></span></p><p class="popup_marker_p">Energía consumida: <span>506,747 <small>WTW</small></span></p><p class="popup_marker_p">Emisión CO2: <span>35 <small>WTW</small></span></p><p class="popup_marker_p">Medio de Transporte: <span>Tren</span></p>'
+
         },
         {
             id: 'fifth-identifier',
@@ -115,7 +120,9 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
-            onChapterExit: []
+            onChapterExit: [],
+            markerDescription:'<p class="popup_marker_title">Bangladesh- Shandong</p><p class="popup_marker_p">Distancia: <span>12,621 <small>KM</small></span></p><p class="popup_marker_p">Energía consumida: <span>60,647 <small>WTW</small></span></p><p class="popup_marker_p">Emisión CO2: <span>35 <small>WTW</small></span></p><p class="popup_marker_p">Medio de Transporte: <span>Tren</span></p>'
+
         },
         {
             id: 'sixth-identifier',
@@ -133,7 +140,9 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
-            onChapterExit: []
+            onChapterExit: [],
+            markerDescription:'<p class="popup_marker_title">Shandong - San Francisco</p><p class="popup_marker_p">Distancia: <span>12,621 <small>KM</small></span></p><p class="popup_marker_p">Energía consumida: <span>226,109 <small>WTW</small></span></p><p class="popup_marker_p">Emisión CO2: <span>16 <small>WTW</small></span></p><p class="popup_marker_p">Medio de Transporte: <span>Barco</span></p>'
+
         }
     ]
 };

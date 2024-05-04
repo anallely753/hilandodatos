@@ -2,7 +2,7 @@ var config4 = {
     style: 'mapbox://styles/anallelymtzc/clup0oxpb03ks01qfeamh41v6',
     accessToken: 'pk.eyJ1IjoiYW5hbGxlbHltdHpjIiwiYSI6ImNsdWkyajlyYzAwMGsyaW8xaHF0ODhrOTcifQ.a-49qQrQ7XlMxKMWxhnRMQ',
     showMarkers: true,
-    markerColor: '#4444e5',
+    markerColor: '#cfee51',
     markerBg:'',
     projection: 'equirectangular',
     //Read more about available projections here
@@ -53,7 +53,8 @@ var config4 = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
-            onChapterExit: []
+            onChapterExit: [],
+            markerDescription:'<p class="popup_marker_title">Tepito - Centro</p><p class="popup_marker_p">Distancia: <span>4.2 <small>KM</small></span></p><p class="popup_marker_p">Energía consumida: <span>305 <small>WTW</small></span></p><p class="popup_marker_p">Emisión CO2: <span>0.02 <small>WTW</small></span></p><p class="popup_marker_p">Medio de Transporte: <span>Vehículo</span></p>'
         },
         {
             id: 'third-identifier4',
@@ -71,7 +72,8 @@ var config4 = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
-            onChapterExit: []
+            onChapterExit: [],
+            markerDescription:'<p class="popup_marker_title">Centro - Iztapalapa</p><p class="popup_marker_p">Distancia: <span>18 <small>KM</small></span></p><p class="popup_marker_p">Energía consumida: <span>2,872 <small>WTW</small></span></p><p class="popup_marker_p">Emisión CO2: <span>0.19 <small>WTW</small></span></p><p class="popup_marker_p">Medio de Transporte: <span>Vehículo</span></p>'
         },
         {
             id: 'fourth-chapter4',
@@ -89,7 +91,8 @@ var config4 = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
-            onChapterExit: []
+            onChapterExit: [],
+            markerDescription:'<p class="popup_marker_title">Iztapalapa - Insurgentes</p><p class="popup_marker_p">Distancia: <span>37 <small>KM</small></span></p><p class="popup_marker_p">Energía consumida: <span>5,952 <small>WTW</small></span></p><p class="popup_marker_p">Emisión CO2: <span>0.39 <small>WTW</small></span></p><p class="popup_marker_p">Medio de Transporte: <span>Vehículo</span></p>'
         },
         // {
         //     id: 'fifth-identifier4',

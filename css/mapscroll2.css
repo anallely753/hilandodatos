@@ -22,6 +22,9 @@
     /*bordeR: solid blue;*/
   
 }
+.mapboxgl-marker path {
+  cursor: pointer;
+}
 #mapInset {
     bottom:50px;
     right:30px;
@@ -54,6 +57,7 @@
     /*border: solid yellow;*/
     /*top: 300vh;*/
     /*background-color: yellow;*/
+    width: min-content;
 }
 
 .hidden {
@@ -132,10 +136,36 @@
 }
 
 #mapboxgl-marker-id{
-   display: none;
+   opacity: 0;
 }
 
 #sixth-identifier{
     height: 200vh;
     padding-bottom: 50vh;
+}
+
+
+.mapboxgl-popup {
+    max-width: 400px;
+    position: relative;
+    top: -2rem;
+}
+
+
+.mapboxgl-popup-content {
+    max-width: 400px;
+    border-radius: 8px;
+}
+.mapboxgl-popup-content .popup_marker_title{
+    font-family: 'FilsonProBlack', sans-serif;
+}
+
+.mapboxgl-popup-content .popup_marker_p{
+    font-family: 'FilsonProRegular', sans-serif;
+}
+.mapboxgl-popup-content .popup_marker_p span{
+    font-family: 'FilsonProBold', sans-serif;
+}
+.mapboxgl-popup-content .popup_bold{
+    font-family: 'FilsonProBold', sans-serif;
 }

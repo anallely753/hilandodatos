@@ -48,7 +48,10 @@ const log2_2 = gsap.timeline({
   },
 });
 log2_2.to('.log2_van', {
-  visibility:'visible'
+  visibility:'visible',
+  // onStart : function(){
+  //   document.getElementById('mapboxgl-marker-id').style.display="none"
+  // }
 },'<');
 log2_2.to('.log2_van', {
   left:'250vh',
@@ -95,9 +98,9 @@ log3Top.to('.log3_indicadores', {
 });
 log3Top.to('.log3_info_abajo', {
   right:'5%',
-  onUpdate : function(){
-    document.getElementById('mapboxgl-marker-id').style.display="none"
-  },
+},'<');
+log3Top.to('#mapboxgl-marker-id', {
+  opacity:0
 },'<');
 
 
@@ -126,6 +129,10 @@ log3Texas.to('.log3_indicadores', {
     document.getElementById('mapboxgl-marker-proyeccion').style.visibility="hidden"
   },
 },'<');
+log3Texas.to('#mapboxgl-marker-id', {
+  opacity:1
+},'<');
+
 
 const log3SF1 = gsap.timeline({
   scrollTrigger: {
@@ -885,32 +892,52 @@ log3SF2.to('.log3_indicadores', {
 
 const log5 = gsap.timeline({
   scrollTrigger: {
-    trigger: '.logistica5',  
-    start: 'top top',
+    trigger: '.aux_log51',  
+    start: 'top center',
+    end: 'top top',
     scrub: 1,    
     markers: false,
-    pin:'.logistica5', 
   },
 });
 log5.to('.log5_texto', {
   top:'0'
 },);
-log5.to('.log5_grafica_rutas', {
+
+const log52 = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.aux_log52',  
+    start: 'top center',
+    end: 'top top',
+    scrub: 1,    
+    markers: false,
+  },
+});
+log52.to('.log5_grafica_rutas', {
   top:'0'
-},);
+},'<');
 
 const log6 = gsap.timeline({
   scrollTrigger: {
-    trigger: '.logistica6',  
-    start: 'top top',
+    trigger: '.aux_log61',  
+    start: 'top center',
+    end: 'top top',
     scrub: 1,    
     markers: false,
-    pin:'.logistica6', 
   },
 });
 log6.to('.log6_playeras_img', {
   left:'10%'
 },);
-log6.to('.log6_texto', {
+
+const log62 = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.aux_log62',  
+    start: 'top center',
+    end: 'top top',
+    scrub: 1,    
+    markers: false,
+  },
+});
+log62.to('.log6_texto', {
   top:'0'
 },);

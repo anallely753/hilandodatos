@@ -36,10 +36,10 @@ log4Top.to('.log4_indicadores', {
 });
 log4Top.to('.log4_info_abajo', {
   right:'5%',
-  onUpdate : function(){
-    // document.getElementById('mapboxgl-marker-id4').style.display="none"
-},
 },'<');
+log4Top.to('#mapboxgl-marker-id4', {
+ opacity:'0'
+});
 
 
 const log4Tepito = gsap.timeline({
@@ -67,6 +67,9 @@ log4Tepito.to('.log4_indicadores', {
     document.getElementById('mapboxgl-marker-proyeccion4').style.visibility="hidden"
 },
 },'<');
+log4Tepito.to('#mapboxgl-marker-id4', {
+ opacity:'1'
+});
 
 const log4Centro = gsap.timeline({
   scrollTrigger: {

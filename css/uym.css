@@ -4,6 +4,7 @@
 	background-size: 100%;
 	background-attachment: fixed;
 	position: relative;
+	border: solid blue;
 }
 .aux_uym{
 	position: absolute;
@@ -38,7 +39,9 @@
 	}
 	.uym1_fondo{
 		position: absolute;
+		height: 100%;
 		width: 100%;
+		object-fit: cover;
 		z-index: 10;
 	}
 	.uym1_texto{

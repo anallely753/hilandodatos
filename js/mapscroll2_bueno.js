@@ -127,11 +127,31 @@ var map = new mapboxgl.Map({
     projection: config.projection
 });
 
+// // Create a inset map if enabled in config.js
+// if (config.inset) {
+//  var insetMap = new mapboxgl.Map({
+//     container: 'mapInset', // container id
+//     style: 'mapbox://styles/anallelymtzc/clup0oxpb03ks01qfeamh41v6', //hosted style id
+//     center: config.chapters[0].location.center,
+//     // Hardcode above center value if you want insetMap to be static.
+//     zoom: 3, // starting zoom
+//     hash: false,
+//     interactive: false,
+//     attributionControl: false,
+//     //Future: Once official mapbox-gl-js has globe view enabled,
+//     //insetmap can be a globe with the following parameter.
+//     //projection: 'globe'
+//   });
+
+// }
 
 if (config.showMarkers) {
+    // var marker = new mapboxgl.Marker({ color: config.chapters.markerColor});
     var marker = new mapboxgl.Marker({ color: config.markerColor});
     marker.setLngLat(config.chapters[0].location.center).addTo(map);
-
+    // let description = config.chapters[0].description || "Default description for the first chapter";
+    // attachPopupToMarker(marker, description);
+    
 }
 
 function attachPopupToMarker(marker, description) {
@@ -150,7 +170,14 @@ function attachPopupToMarker(marker, description) {
     });
 }
 
+// config.chapters.forEach(chapter => {
+//     if (config.showMarkers) {
+//         const marker = new mapboxgl.Marker({ color: chapter.markerColor });
+//         marker.setLngLat(chapter.location.center).addTo(map);
+//     }
+// });
 
+// instantiate the scrollama
 var scroller = scrollama();
 
 const geojson = {
@@ -200,6 +227,11 @@ map.on("load", function() {
         response.element.classList.add('active');
 
         map[chapter.mapAnimation || 'flyTo'](chapter.location);
+
+        // Incase you do not want to have a dynamic inset map,
+        // rather want to keep it a static view but still change the
+        // bbox as main map move: comment out the below if section.
+       
         if (config.showMarkers) {
             marker.setLngLat(chapter.location.center);
         }
@@ -219,102 +251,71 @@ map.on("load", function() {
                 });
             });
         }
-       
-        if(response.direction === 'down'){
-           
-            
-            if (chapter.id === 'slug-style-id') {
-                document.querySelector('.mapboxgl-marker path').style.fill='#cfee51';
-                response.element.dataset.featureIndex = 0;
-                // alert("stepEnter: "+featureIndex)
-            }
-            if (chapter.id === 'second-identifier') {
-                const featureIndex = addNewLineFeature([-97.7431, 30.2672], [-122.41, 37.7749]);
-                animateLine(featureIndex, [-122.41, 37.7749]);
-                document.querySelector('.mapboxgl-marker path').style.fill='#ef774d';
-                attachPopupToMarker(marker, chapter.markerDescription);
-                response.element.dataset.featureIndex = featureIndex;
-                // alert("stepEnter: "+featureIndex)
-            }
-            // San francisco - Shandong
-            if (chapter.id === 'third-identifier') {
-               const featureIndex = addNewLineFeature([-122.41, 37.7749],[-241.2791, 36.0671]);
-               animateLine(featureIndex, [-241.2791, 36.0671]);
-                document.querySelector('.mapboxgl-marker path').style.fill='#4444e5',
-                attachPopupToMarker(marker, chapter.markerDescription);
-                response.element.dataset.featureIndex = featureIndex;
-                // alert("stepEnter: "+featureIndex)
-            }
-            if (chapter.id === 'fourth-chapter') {
-               const featureIndex = addNewLineFeature([119.2791, 36.0671], [90.4125, 23.8103]);
-               animateLine(featureIndex, [90.4125, 23.8103]);
-                document.querySelector('.mapboxgl-marker path').style.fill='#ef774d',
-                attachPopupToMarker(marker, chapter.markerDescription);
-                response.element.dataset.featureIndex = featureIndex;
-                // alert("stepEnter: "+featureIndex)
-            }
-            // Bangladesh - Shandong
-            if (chapter.id === 'fifth-identifier') {
-               const featureIndex = addNewLineFeature([90.4125, 23.8103],[119.2791, 36.0671], );
-               animateLine(featureIndex, [119.2791, 36.0671]);
-                document.querySelector('.mapboxgl-marker path').style.fill='#ef774d',
-                attachPopupToMarker(marker, chapter.markerDescription);
-                response.element.dataset.featureIndex = featureIndex;
-                // alert("stepEnter: "+featureIndex)
-            }
-            if (chapter.id === 'sixth-identifier') {
-               const featureIndex = addNewLineFeature([-241.2791, 36.0671],[-122.41, 37.7749], );
-               animateLine(featureIndex, [-122.41, 37.7749]);
-                document.querySelector('.mapboxgl-marker path').style.fill='#4444db',
-                attachPopupToMarker(marker, chapter.markerDescription);
-                response.element.dataset.featureIndex = featureIndex;
-                // alert("stepEnter: "+featureIndex)
-            }
+   
+        if (chapter.id === 'slug-style-id') {
+            document.querySelector('.mapboxgl-marker path').style.fill='#cfee51';
+            document.querySelector('.mapboxgl-marker path').style.fill='#fffff';
+        }
+        if (chapter.id === 'second-identifier') {
+            const featureIndex = addNewLineFeature([-97.7431, 30.2672], [-122.41, 37.7749]);
+            animateLine(featureIndex, [-122.41, 37.7749]);
+            document.querySelector('.mapboxgl-marker path').style.fill='#ef774d';
+            attachPopupToMarker(marker, chapter.markerDescription);
+        }
+        // San francisco - Shandong
+        if (chapter.id === 'third-identifier') {
+           const featureIndex = addNewLineFeature([-122.41, 37.7749],[-241.2791, 36.0671]);
+           animateLine(featureIndex, [-241.2791, 36.0671]);
+            document.querySelector('.mapboxgl-marker path').style.fill='#4444e5',
+            attachPopupToMarker(marker, chapter.markerDescription);
+        }
+        if (chapter.id === 'fourth-chapter') {
+           const featureIndex = addNewLineFeature([119.2791, 36.0671], [90.4125, 23.8103]);
+           animateLine(featureIndex, [90.4125, 23.8103]);
+            document.querySelector('.mapboxgl-marker path').style.fill='#ef774d',
+            attachPopupToMarker(marker, chapter.markerDescription);
+        }
+        // Bangladesh - Shandong
+        if (chapter.id === 'fifth-identifier') {
+           const featureIndex = addNewLineFeature([90.4125, 23.8103],[119.2791, 36.0671], );
+           animateLine(featureIndex, [119.2791, 36.0671]);
+            document.querySelector('.mapboxgl-marker path').style.fill='#ef774d',
+            attachPopupToMarker(marker, chapter.markerDescription);
+        }
+        if (chapter.id === 'sixth-identifier') {
+           const featureIndex = addNewLineFeature([-241.2791, 36.0671],[-122.41, 37.7749], );
+           animateLine(featureIndex, [-122.41, 37.7749]);
+            document.querySelector('.mapboxgl-marker path').style.fill='#4444db',
+            attachPopupToMarker(marker, chapter.markerDescription);
         }
     })
     .onStepExit(response => {
         var chapter = config.chapters.find(chap => chap.id === response.element.id);
-            response.element.classList.remove('active');
-            
-            if (chapter.onChapterExit.length > 0) {
-                chapter.onChapterExit.forEach(setLayerOpacity);
-            }
+        response.element.classList.remove('active');
+        if (chapter.onChapterExit.length > 0) {
+            chapter.onChapterExit.forEach(setLayerOpacity);
+        }
 
-            // Check if the scroll direction is up
-            if (response.direction === 'up') {
-                const featureIndex = response.element.dataset.featureIndex; // Retrieving the feature index
-                if (featureIndex) {
-                    if (chapter.id === 'second-identifier') {
-                        // animateReverseLine(1, geojson.features[1].geometry.coordinates[0]);
-                        animateReverseLine(featureIndex, [-97.7431, 30.2672], [-122.41, 37.7749]);
-                        // alert("stepExit: "+featureIndex)
-                    }
-                    if (chapter.id === 'third-identifier') {
-                        // animateReverseLine(2, geojson.features[2].geometry.coordinates[0]);
-                        animateReverseLine(featureIndex, [-122.41, 37.7749],[-241.2791, 36.0671]);
-                        // alert("stepExit: "+featureIndex)
-                    }
-                    if (chapter.id === 'fourth-chapter') {
-                        // animateReverseLine(3, geojson.features[3].geometry.coordinates[0]);
-                        animateReverseLine(featureIndex,[119.2791, 36.0671],[90.4125, 23.8103]);
-                        // alert("stepExit: "+featureIndex)
-                    }
-                    // Bangladesh - Shandong
-                    if (chapter.id === 'fifth-identifier') {
-                        // animateReverseLine(4, geojson.features[4].geometry.coordinates[0]);
-                        animateReverseLine(featureIndex, [90.4125, 23.8103],[119.2791, 36.0671]);
-                        // alert("stepExit: "+featureIndex)
-                    }
-                    if (chapter.id === 'sixth-identifier') {
-                        // animateReverseLine(5, geojson.features[5].geometry.coordinates[0]);
-                        animateReverseLine(featureIndex,[-241.2791, 36.0671],[-122.41, 37.7749]);
-                        // alert("stepExit: "+featureIndex)
-                    }
-                }
-                    // animateReverseLine(1, geojson.features[1].geometry.coordinates[0]);
-               
-            }
-
+        // if (chapter.id === 'slug-style-id') {
+        //     alert('1')
+        // }
+        // if (chapter.id === 'second-identifier') {
+        //  alert('2')
+        // }
+        // // San francisco - Shandong
+        // if (chapter.id === 'third-identifier') {
+        //    alert('3')
+        // }
+        // if (chapter.id === 'fourth-chapter') {
+        //    alert('4')
+        // }
+        // // Bangladesh - Shandong
+        // if (chapter.id === 'fifth-identifier') {
+        //   alert('5')
+        // }
+        // if (chapter.id === 'sixth-identifier') {
+        //   alert('6')
+        // }
     });
 
 
@@ -406,28 +407,6 @@ function animateLine(featureIndex, endCoord, duration = 1000, callback) {
 
     help = featureIndex;
 }
-function animateReverseLine(featureIndex, startCoord, endCoord, duration = 1000) {
-    let endTimestamp = null;
-    // const endCoord = geojson.features[featureIndex].geometry.coordinates[1];
-
-    function frame(timestamp) {
-        if (!endTimestamp) endTimestamp = timestamp;
-        const progress = (timestamp - endTimestamp) / duration;
-        const t = Math.max(1 - progress, 0);
-        const currentCoord = [
-            endCoord[0] * t + startCoord[0] * (1 - t),
-            endCoord[1] * t + startCoord[1] * (1 - t)
-        ];
-        geojson.features[featureIndex].geometry.coordinates = [startCoord, currentCoord];
-        map.getSource('line').setData(geojson);
-
-        if (t > 0) {
-            requestAnimationFrame(frame);
-        }
-    }
-
-    requestAnimationFrame(frame);
-}
 function updateSpanContent() {
     const markers = document.querySelectorAll('.mapboxgl-marker');
 
@@ -439,7 +418,135 @@ function updateSpanContent() {
     const element6 = document.getElementById('sixth-identifier');
 
     let span = document.querySelectorAll('.mapboxgl-marker span');
+
+
+      // Check if the element has the 'active' class
+     
+
+    // markers.forEach(marker => {
+    //     const span = marker.querySelector('span');
+    //     // if (!span) return;
+
+    //     // Example condition: you might want to use actual conditions based on your application's logic
+    //    if (element1 && element1.classList.contains('active')) {
+    //       // Send an alert if the class 'active' is found
+    //       spanValue = "Texas"
+    //       span.textContent = spanValue;
+    //     }
+    //     if (element2 && element2.classList.contains('active')) {
+    //       // Send an alert if the class 'active' is found
+    //       spanValue = "San Francisco"
+    //       span.textContent = spanValue;
+    //     }
+    //     if (element3 && element3.classList.contains('active')) {
+    //       // Send an alert if the class 'active' is found
+    //       spanValue = "Shandong"
+    //       span.textContent = spanValue;
+    //     }
+    //     if (element4 && element4.classList.contains('active')) {
+    //       // Send an alert if the class 'active' is found
+    //       spanValue = "Daca"
+    //       span.textContent = spanValue;
+    //     }
+    //     if (element5 && element5.classList.contains('active')) {
+    //       // Send an alert if the class 'active' is found
+    //       spanValue = "Shandong"
+    //       span.textContent = spanValue;
+    //     }
+    //     if (element6 && element6.classList.contains('active')) {
+    //       // Send an alert if the class 'active' is found
+    //       spanValue = "San Francisco"
+    //       span.textContent = spanValue;
+    //     }
+    // });
+
 }
+
+
+
+
+
+//Helper functions for insetmap
+function getInsetBounds() {
+            let bounds = map.getBounds();
+
+            let boundsJson = {
+                "type": "FeatureCollection",
+                "features": [{
+                    "type": "Feature",
+                    "properties": {},
+                    "geometry": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    bounds._sw.lng,
+                                    bounds._sw.lat
+                                ],
+                                [
+                                    bounds._ne.lng,
+                                    bounds._sw.lat
+                                ],
+                                [
+                                    bounds._ne.lng,
+                                    bounds._ne.lat
+                                ],
+                                [
+                                    bounds._sw.lng,
+                                    bounds._ne.lat
+                                ],
+                                [
+                                    bounds._sw.lng,
+                                    bounds._sw.lat
+                                ]
+                            ]
+                        ]
+                    }
+                }]
+            }
+
+            if (initLoad) {
+                addInsetLayer(boundsJson);
+                initLoad = false;
+            } else {
+                updateInsetLayer(boundsJson);
+            }
+
+        }
+
+function addInsetLayer(bounds) {
+    insetMap.addSource('boundsSource', {
+        'type': 'geojson',
+        'data': bounds
+    });
+
+    insetMap.addLayer({
+        'id': 'boundsLayer',
+        'type': 'fill',
+        'source': 'boundsSource', // reference the data source
+        'layout': {},
+        'paint': {
+            'fill-color': '#fff', // blue color fill
+            'fill-opacity': 0.2
+        }
+    });
+    // // Add a black outline around the polygon.
+    insetMap.addLayer({
+        'id': 'outlineLayer',
+        'type': 'line',
+        'source': 'boundsSource',
+        'layout': {},
+        'paint': {
+            'line-color': '#000',
+            'line-width': 1
+        }
+    });
+}
+
+function updateInsetLayer(bounds) {
+    insetMap.getSource('boundsSource').setData(bounds);
+}
+
 
 
 // setup resize event

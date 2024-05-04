@@ -149,21 +149,6 @@ if (config4.showMarkers) {
     var marker4 = new mapboxgl.Marker({ color: config.markerColor});
     marker4.setLngLat(config4.chapters[0].location.center).addTo(map4);
 }
-function attachPopupToMarker4(marker, description) {
-    const element = marker.getElement();
-
-    element.addEventListener('mouseenter', () => {
-        popup4.setLngLat(marker.getLngLat())
-             .setHTML(description)
-             .addTo(map4);
-        map4.getCanvas().style.cursor = 'pointer';
-    });
-
-    element.addEventListener('mouseleave', () => {
-        popup4.remove();
-        map4.getCanvas().style.cursor = '';
-    });
-}
 
 // instantiate the scrollama
 var scroller4 = scrollama();
@@ -237,25 +222,19 @@ map4.on("load", function() {
                 });
             });
         }
-         if(response.direction === 'down'){
-            if (chapter4.id === 'second-identifier4') {
-                const featureIndex4 = addNewLineFeature4([-99.1283, 19.44], [-99.1373,19.43]);
-                animateLine4(featureIndex4, [-99.1373,19.43]);
-                attachPopupToMarker4(marker4, chapter4.markerDescription);
-            }
-            // San francisco - Shandong
-            if (chapter4.id === 'third-identifier4') {
-               const featureIndex4 = addNewLineFeature4([-99.1373,19.43],[-99.0799, 19.3467]);
-               animateLine4(featureIndex4, [-99.0799, 19.3467]);
-                attachPopupToMarker4(marker4, chapter4.markerDescription);
-            }
-            if (chapter4.id === 'fourth-chapter4') {
-               const featureIndex4 = addNewLineFeature4([-99.0799, 19.3467], [-99.1633, 19.4236]);
-               animateLine4(featureIndex4, [-99.1633, 19.4236]);
-                attachPopupToMarker4(marker4, chapter4.markerDescription);
-            }
-         }
-       
+        if (chapter4.id === 'second-identifier4') {
+            const featureIndex4 = addNewLineFeature4([-99.1283, 19.44], [-99.1373,19.43]);
+            animateLine4(featureIndex4, [-99.1373,19.43]);
+        }
+        // San francisco - Shandong
+        if (chapter4.id === 'third-identifier4') {
+           const featureIndex4 = addNewLineFeature4([-99.1373,19.43],[-99.0799, 19.3467]);
+           animateLine4(featureIndex4, [-99.0799, 19.3467]);
+        }
+        if (chapter4.id === 'fourth-chapter4') {
+           const featureIndex4 = addNewLineFeature4([-99.0799, 19.3467], [-99.1633, 19.4236]);
+           animateLine4(featureIndex4, [-99.1633, 19.4236]);
+        }
         
     })
     .onStepExit(response => {
@@ -270,11 +249,6 @@ map4.on("load", function() {
         document.querySelectorAll('[data-scrollama-index="0"]')[0].scrollIntoView();
     }
 });
-
-const popup4 = new mapboxgl.Popup({
-            closeButton: false,
-            closeOnClick: false
-        });
 
 function addNewLineFeature4(startCoord, endCoord) {
    const feature = {

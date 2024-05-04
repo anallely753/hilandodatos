@@ -241,17 +241,20 @@ map4.on("load", function() {
             if (chapter4.id === 'second-identifier4') {
                 const featureIndex4 = addNewLineFeature4([-99.1283, 19.44], [-99.1373,19.43]);
                 animateLine4(featureIndex4, [-99.1373,19.43]);
+             alert('pop')
                 attachPopupToMarker4(marker4, chapter4.markerDescription);
             }
             // San francisco - Shandong
             if (chapter4.id === 'third-identifier4') {
                const featureIndex4 = addNewLineFeature4([-99.1373,19.43],[-99.0799, 19.3467]);
                animateLine4(featureIndex4, [-99.0799, 19.3467]);
+    alert('pop')
                 attachPopupToMarker4(marker4, chapter4.markerDescription);
             }
             if (chapter4.id === 'fourth-chapter4') {
                const featureIndex4 = addNewLineFeature4([-99.0799, 19.3467], [-99.1633, 19.4236]);
                animateLine4(featureIndex4, [-99.1633, 19.4236]);
+    alert('pop')
                 attachPopupToMarker4(marker4, chapter4.markerDescription);
             }
          }
