@@ -81,6 +81,18 @@
 	p{
 		line-height: 1.4;
 	}
+	.desktop_content{
+		display: none;
+	}
+	.mobile_content{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: var(--lima);
+		height: 100vh;
+		text-align: center;
+		padding: 5%;
+	}
 
 /* Font size */
 	.fs-07T{
@@ -433,7 +445,6 @@
 	.fs-2-5{
 		font-size: 3.4rem;
 	}
-	
 }
 
 /*// Large devices (desktops, 992px and up)*/
@@ -469,7 +480,12 @@
 	.fs-1-8{
 		font-size: 2rem;
 	}
-	
+	.mobile_content{
+		display: none;
+	}
+	.desktop_content{
+		display: block;
+	}
 }
 
 /*// X-Large devices (large desktops, 1200px and up)*/

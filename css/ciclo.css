@@ -71,7 +71,7 @@
 /* 2 */
 	.ciclo2{
 		height: 600vh;
-		 border: solid var(--lima);
+		 /*border: solid var(--lima);*/
 		position: relative;
 	}
 	.ciclo2_container{

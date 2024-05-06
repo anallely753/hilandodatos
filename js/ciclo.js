@@ -133,6 +133,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
 
         document.querySelector('.ciclo_texto_btn').style.display = 'block';
+        document.querySelector('.ciclo_texto_btn').setAttribute('href', '#produccion');;
 
         document.querySelector(".ciclo_texto").style.color="#fff";
         document.querySelector(".ciclo_texto_titulo").style.color="var(--lima)";
@@ -195,6 +196,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelector(".ciclo_texto_titulo").style.color="var(--lima)";
         document.querySelector(".ciclo_texto_btn").style.color="var(--lima)";
         document.querySelector(".ciclo_texto_btn").style.backgroundColor="rgba(206,241,115,.19)";
+        document.querySelector('.ciclo_texto_btn').setAttribute('href', '#diseno');
+
 
         document.querySelectorAll('.slice .span1').forEach((element) => {
             element.style.borderRadius = "0";
@@ -263,6 +266,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelector(".ciclo_texto_titulo").style.color="var(--verde)";
         document.querySelector(".ciclo_texto_btn").style.color="var(--verde)";
         document.querySelector(".ciclo_texto_btn").style.backgroundColor="rgba(44,76,81,.19)";
+        document.querySelector('.ciclo_texto_btn').setAttribute('href', '#manufactura');
+
 
 
         document.querySelectorAll('.slice .span1').forEach((element) => {
@@ -334,6 +339,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelector(".ciclo_texto_titulo").style.color="var(--azul)";
         document.querySelector(".ciclo_texto_btn").style.color="#000";
         document.querySelector(".ciclo_texto_btn").style.backgroundColor="rgba(68,68,229,.19)";
+        document.querySelector('.ciclo_texto_btn').setAttribute('href', '#logistica');
+
 
 
         document.querySelectorAll('.slice .span1').forEach((element) => {
@@ -403,6 +410,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelector(".ciclo_texto_titulo").style.color="var(--lima)";
         document.querySelector(".ciclo_texto_btn").style.color="#fff";
         document.querySelector(".ciclo_texto_btn").style.backgroundColor="rgba(207,238,81,.19)";
+        document.querySelector('.ciclo_texto_btn').setAttribute('href', '#uso_y_mantenimiento');
 
 
         document.querySelectorAll('.slice .span1').forEach((element) => {
@@ -471,6 +479,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelector(".ciclo_texto_titulo").style.color="var(--lima)";
         document.querySelector(".ciclo_texto_btn").style.color="#fff";
         document.querySelector(".ciclo_texto_btn").style.backgroundColor="rgba(207,238,81,.19)";
+        document.querySelector('.ciclo_texto_btn').setAttribute('href', '#nueva_vida');
+
 
 
         document.querySelectorAll('.slice .span1').forEach((element) => {
