@@ -108,7 +108,8 @@
 	}
 	.intro1_texto_70{
 		margin-left: .5rem;
-		font-family: FilsonProBlack, sans-serif;
+		/*font-family: FilsonProBlack, sans-serif;*/
+		font-family: 'FilsonProBlack', sans-serif;
 	}
 	.intro1_planeta_gota{
 		width: 7%;

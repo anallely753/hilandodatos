@@ -10,6 +10,9 @@ const man1_1 = gsap.timeline({
 man1_1.to('.man1_titulo', {
   top:'10%'
 },);
+man1_1.to('.man1_texto', {
+  bottom:'25%'
+},'<');
 
 
 const man1_2 = gsap.timeline({
@@ -21,9 +24,7 @@ const man1_2 = gsap.timeline({
   },
 });
 // Produccion 1
-man1_2.to('.man1_texto', {
-  bottom:'25%'
-},);
+
 
 const man2_1 = gsap.timeline({
   scrollTrigger: {

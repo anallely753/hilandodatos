@@ -117,9 +117,14 @@
 	.uym2_texto2 p{
 		line-height: 1.4;
 	}
+	.uym2_texto1 h3{
+		font-family: 'FilsonProBold', sans-serif;
+
+	}
 	.uym2_texto2 h3{
 		color: var(--lima);
 		margin-top: 1rem;
+		font-family: 'FilsonProBold', sans-serif;
 	}
 	.uym2_lavadora_div{
 		position: absolute;
@@ -269,6 +274,10 @@
 	.uym4_texto h3 span{
 		color: var(--lima);
 	}
+	.uym4_texto_titulo{
+		font-family: 'FilsonProBold', sans-serif;
+		margin-top: 1rem;
+	}
 	.uym4_botellas_horizontal{
 		position: absolute;
 		top: 0;
@@ -326,6 +335,9 @@
 		text-align: right;
 		width: 280px;
 	}
+	.uym5_texto_bold{
+		font-family: 'FilsonProBold', sans-serif;
+	}
 	.uym5_texto h3{
 		color: var(--lima);
 		margin: .5rem 0;
@@ -350,6 +362,7 @@
 		border-radius: 1.5rem;
 	}
 	.uym5_verde_titulo{
+		font-family: 'FilsonProBold', sans-serif;
 		color: var(--azul);
 		margin-bottom: 1rem;
 	}
@@ -358,6 +371,7 @@
 	}
 	.uym5_table thead{
 		color: var(--azul);
+		font-family: 'FilsonProBold', sans-serif;
 		line-height: 1.8;
 	}
 	.uym5_table_th1, .uym5_table_td1{
@@ -399,6 +413,7 @@
 	}
 	.uym6_texto h3{
 		color: var(--lima);
+		font-family: 'FilsonProBold', sans-serif;
 	}
 	.uym6_footer{
 		color: #fff;

@@ -30,7 +30,7 @@ function navBotonOscuro(){
       start: 'top bottom',
       end: 'top top',
       scrub: 1,    
-      markers: true, 
+      markers: false, 
       onEnter: navBotonOscuro,
       onEnterBack: navBotonOscuro,
     },
@@ -347,6 +347,7 @@ function navBotonOscuro(){
        gsapNavBotonesMan1.to('.portada_btn-xdata img', {
       opacity:1,
     },);
+
       const gsapNavBotonesMan2 = gsap.timeline({
         scrollTrigger: {
           trigger: '.man2_container',  
@@ -360,6 +361,7 @@ function navBotonOscuro(){
        gsapNavBotonesMan2.to('.portada_btn-xdata img', {
       opacity:1,
     },);
+       
       const gsapNavBotonesMan3 = gsap.timeline({
         scrollTrigger: {
           trigger: '.man3_container',  
@@ -668,7 +670,7 @@ function navBotonOscuro(){
         trigger: '.section_embajadores',  
         start: 'top bottom',
         end: 'top top',
-        markers: true, 
+        markers: false, 
         onEnter: navBotonOscuro,
         onEnterBack: navBotonOscuro,
       },

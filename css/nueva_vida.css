@@ -28,11 +28,12 @@
 		color: var(--lima);
 	}
 	.nv1_titulo{
+		font-family: 'FilsonProBold', sans-serif;
 		color: #fff;
 		margin-bottom: 2.5rem;
 	}
 	.nv1_texto p{
-		line-height: 1.4;
+		line-height: 1.5;
 	}
 	.p-lima{
 		color: var(--lima);
@@ -61,6 +62,7 @@
 	}
 	.nv2_titulo{
 		color: var(--lima);
+		font-family: 'FilsonProBold', sans-serif;
 		text-align: center;
 		position: relative;
 		top: 20%;
@@ -187,9 +189,11 @@
 		}
 		.nv3_titulo{
 			margin:1rem 0 1.5rem;
+			font-family: 'FilsonProBold', sans-serif;
 		}
 		.nv3_texto p{
 			width: 85%;
+			line-height: 1.4;
 		}
 		.nv3_camion_puerta_div{
 			box-sizing: content-box;
@@ -304,9 +308,12 @@
 			top: 50%;
 		}
 		.nv3_92_titulo{
+			font-family: 'FilsonProBold', sans-serif;
 			color: var(--lima);
 		}
-
+		.nv3_texto_92 p{
+			line-height: 1.4;
+		}
 		.nv3_texto_92 span{
 			color: var(--lima);
 		}
@@ -337,6 +344,7 @@
 			width: 160px;
 		}
 		.nv3_texto_1_titulo{
+			font-family: 'FilsonProBold', sans-serif;
 			color: var(--lima);
 		}
 		.nv3_texto_2{
@@ -348,6 +356,9 @@
 		}
 		.nv3_texto_2 p{
 			width: 200px;
+		}
+		.nv3_texto_2_titulo{
+			font-family: 'FilsonProBold', sans-serif;
 		}
 
 /* Nueva vida 4  */
@@ -392,10 +403,12 @@
 	}
 	.nv4_titulo{
 		color: var(--lima);
+		font-family: 'FilsonProBold', sans-serif;
 		margin-bottom: 1rem;
 	}
 	.nv4_texto p{
 		width: 75%;
+		line-height: 1.4;
 	}
 
 	.nuevavida4_main{
@@ -463,9 +476,11 @@
 	.nv5_titulo{
 		color: var(--lima);
 		margin: .5rem auto .8rem;
+		font-family: 'FilsonProBold', sans-serif;
 	}
 	.nv5_texto p{
 		width: 90%;
+		line-height: 1.4;
 		margin: 0 auto;
 	}
 	.nv5_fondo{

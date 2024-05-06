@@ -76,6 +76,9 @@
 		background-repeat: no-repeat;
 		/*background-position: 0 -100%;*/
 	}
+	.man2_titulo{
+		font-family: 'FilsonProBold', sans-serif;
+	}
 	.man2_fondo_gris{
 		position: absolute;
 		bottom: 0;
@@ -151,8 +154,8 @@
 		left: 30%;
 	}
 	.man3_titulo{
-		margin-bottom: 1rem;
 		font-family: 'FilsonProBold', sans-serif;
+		margin-bottom: 1rem;
 	}
 	.man3_texto1{
 		position: absolute;
@@ -233,6 +236,7 @@
 	}
 	.man4_texto1_titulo{
 		color: var(--azul);
+		font-family: 'FilsonProBold', sans-serif;
 	}
 	.man4_main{
 		position: relative;
@@ -351,7 +355,7 @@
 	.man4_main_texto_40{
 		margin: 0 auto;
 		width: 100%;
-		max-width: 500px;
+		max-width: 700px;
 	}
 
 /* man 5 */
@@ -430,13 +434,15 @@
 	.man5_titulo{
 		color: var(--azul);
 		margin-bottom: 1rem;
+		font-family: 'FilsonProBold', sans-serif;
 	}
 	.man5_texto_p1{
 		font-family: 'FilsonProBold', sans-serif;
 		margin-bottom: 1rem;
+		font-style: italic;
 	}
 	.man5_texto_p2{
-		width: 65%;
+		width: 80%;
 	}
 	.man5_textos_img{
 		/*height: 100%;*/
@@ -706,6 +712,7 @@
 	.man6_titulo{
 		color: var(--azul);
 		margin-bottom: 1rem;
+		font-family: 'FilsonProBold', sans-serif;
 	}
 	.man6_texto p{
 		line-height: 1.5;

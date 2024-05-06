@@ -78,6 +78,9 @@
 		/*max-width: 100vw;*/
 		/*overflow-x: hidden;*/
 	}
+	p{
+		line-height: 1.4;
+	}
 
 /* Font size */
 	.fs-07T{

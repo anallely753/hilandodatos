@@ -87,7 +87,8 @@
 	}
 	.log2_titulo{
 		color: var(--azul);
-		margin-bottom: 1rem;
+		margin-bottom: 1.2rem;
+		font-family: 'FilsonProBold', sans-serif;
 	}
 	.log2_van{
 		position: absolute;
@@ -131,6 +132,7 @@
 	.log3_titulo{
 		color: var(--azul);
 		margin-bottom: 1rem;
+		font-family: 'FilsonProBold', sans-serif;
 	}
 	.log3_texto p{
 		line-height: 1.4;
@@ -329,6 +331,7 @@
 	.log4_titulo{
 		color: var(--azul);
 		margin-bottom: 1rem;
+		font-family: 'FilsonProBold', sans-serif;
 	}
 	.log4_texto p{
 		line-height: 1.4;
@@ -530,6 +533,7 @@
 	.log5_titulo{
 		color: var(--azul);
 		margin-bottom: 1rem;
+		font-family: 'FilsonProBold', sans-serif;
 	}
 	.log5_texto p{
 		width: 80%;

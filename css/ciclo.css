@@ -48,6 +48,9 @@
 	.ciclo_texto_intro{
 		color: #fff;
 	}
+	.ciclo_texto_intro_titulo{
+		font-family: 'FilsonProBold', sans-serif;
+	}
 	.ciclo_texto_intro_p{
 		line-height: 1.5;
 		margin-bottom: .5rem;
