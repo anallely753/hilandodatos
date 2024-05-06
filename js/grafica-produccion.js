@@ -272,4 +272,4 @@ function loadGraficaProduccion(){
 
 }
 
-loadGraficaProduccion()
+// loadGraficaProduccion()

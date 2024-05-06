@@ -71,9 +71,11 @@
 }
 .aux_sale{
 	top: 20%;
+	visibility: hidden;
 }
 .aux_gota{
 	top: 35%;
+	visibility: hidden;
 }
 
 

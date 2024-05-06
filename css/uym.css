@@ -4,7 +4,6 @@
 	background-size: 100%;
 	background-attachment: fixed;
 	position: relative;
-	border: solid blue;
 }
 .aux_uym{
 	position: absolute;
@@ -13,6 +12,7 @@
 	background-color: beige;
 	z-index: 100;
 	/*opacity: 0;*/
+	visibility: hidden;
 }
 
 

@@ -130,7 +130,7 @@ const man4_1 = gsap.timeline({
     start: 'top center',  
     end: 'top top',  
     scrub: 1,    
-    markers: true, 
+    markers: false, 
   },
 });
 man4_1.to('.man4_texto1', {
@@ -148,7 +148,7 @@ const man4_2 = gsap.timeline({
     start: 'top center',  
     end: 'top top',  
     scrub: 1,    
-    markers: true, 
+    markers: false, 
   },
 });
 man4_2.to('.man4_main2_1', {
@@ -169,7 +169,7 @@ const man4_3 = gsap.timeline({
     start: 'top center',  
     end: 'top top',  
     scrub: 1,    
-    markers: true, 
+    markers: false, 
   },
 });
 man4_3.to('.man4_main_img1 .moneda, .man4_main_img3 .moneda', {
@@ -206,7 +206,7 @@ const man4_4 = gsap.timeline({
     start: 'top center',  
     end: 'top top',  
     scrub: 1,    
-    markers: true, 
+    markers: false, 
   },
 });
 man4_4.to('.man4_main_img1 .reloj, .man4_main_img3 .reloj', {
@@ -241,7 +241,7 @@ const man5_1 = gsap.timeline({
     start: 'top center',  
     end: 'top top',  
     scrub: 1,    
-    markers: true, 
+    markers: false, 
   },
 });
 man5_1.to('.man5_texto1', {
@@ -307,7 +307,7 @@ const man5_2 = gsap.timeline({
     start: 'top center',  
     end: 'top top',  
     scrub: 1,    
-    markers: true, 
+    markers: false, 
   },
 });
 man5_2.to('.man5_texto1', {
@@ -384,7 +384,7 @@ const man5_3 = gsap.timeline({
     start: 'top center',  
     end: 'top top',  
     scrub: 1,    
-    markers: true, 
+    markers: false, 
   },
 });
 man5_3.to('.man5_texto2', {
@@ -426,7 +426,7 @@ const man5_4 = gsap.timeline({
     start: 'top center',  
     end: 'top top',  
     scrub: 1,    
-    markers: true, 
+    markers: false, 
   },
 });
 man5_4.to('.man5_texto3', {
@@ -464,7 +464,7 @@ const man5_5 = gsap.timeline({
     start: 'top center',  
     end: 'top top',  
     scrub: 1,    
-    markers: true, 
+    markers: false, 
   },
 });
 man5_5.to('.man5_texto4', {
@@ -547,7 +547,7 @@ const man5_6 = gsap.timeline({
     start: 'top center',  
     end: 'top top',  
     scrub: 1,    
-    markers: true, 
+    markers: false, 
   },
 });
 man5_6.to('.man5_texto5', {
@@ -627,7 +627,7 @@ const man6_1 = gsap.timeline({
     start: 'top center',  
     end: 'top top',  
     scrub: 1,    
-    markers: true, 
+    markers: false, 
   },
 });
 man6_1.to('.man6_texto', {

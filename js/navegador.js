@@ -63,7 +63,7 @@ navLogistica.addEventListener('mouseleave', function() {
 });
 
 navNuevavida.addEventListener('mouseenter', function() {
-  navTexto.textContent = 'nueva vida';
+  navTexto.textContent = 'fin de vida';
 });
 
 navNuevavida.addEventListener('mouseleave', function() {

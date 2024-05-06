@@ -39,9 +39,9 @@
 	}
 	.sombra{
 		position: absolute;
-		width: 74%;
-		bottom: 10%;
-		left: 8%;
+		width: 68%;
+		bottom: 14%;
+		left: 17%;
 		/*bottom: 26%;
 		left: -17%;*/
 	}
@@ -376,7 +376,7 @@
 /* sec 4 */
 	.intro4{
 		background-color: var(--lima);
-		height: 300vh;
+		height: 350vh;
 		position: relative;
 		/*opacity: 0;*/
 		width: 100vw;
@@ -451,14 +451,20 @@
 	.intro5{
 		height: 200vh;
 		width: 100vw;
+		margin-top: 50vh;
+		
+		/*border: solid red;*/
+		position: relative;
+		/*opacity: 0;*/
+		/*border:  5px solid red;*/
+	}
+	.intro5_container{
+		height: 100vh;
+		position: sticky;
+		top: 0;
 		background:  url('../img/intro/fondo_negro63.png'), url('../img/intro/fondo_pared.svg');
 		background-size: 100%;
 		background-repeat: no-repeat;
-		/*border: solid red;*/
-		position: relative;
-		top: 100vh;
-		/*opacity: 0;*/
-		/*border:  5px solid red;*/
 	}
 	.intro5_planeta{
 		height: 100vh;

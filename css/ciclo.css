@@ -20,9 +20,16 @@
 	}
 	.ciclo1_aux1{
 		top: 50vh;
+		visibility: hidden;
 	}
 	.ciclo1_aux2{
 		top: 20vh;
+		visibility: hidden;
+	}
+	#nave_ciclo1{
+		position: absolute;
+		top: 0;
+		background-color: red;
 	}
 	.ciclo1_container{
 		height: 100vh;
@@ -392,7 +399,7 @@
 			position: absolute;
 			width: 50px;
 			height: 50px;
-			/*visibility: hidden;*/
+			visibility: hidden;
 			background-color: cadetblue;
 		}
 		.ciclo_aux_fibra{

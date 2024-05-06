@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('ciclo_aux_fibra').scrollIntoView({ behavior: 'smooth' });
         sectionCiclo.style.backgroundImage = 'url(./img/fondos/fondo_verde.png)';
 
-       
     });
 
     // Diseño
@@ -27,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('ciclo_aux_manufactura').scrollIntoView({ behavior: 'smooth' });
         sectionCiclo.style.backgroundImage = 'url(./img/fondos/fondo_lima.png)';
 
+
     });
 
     // Logística
@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         document.getElementById('ciclo_aux_uso').scrollIntoView({ behavior: 'smooth' });
         sectionCiclo.style.backgroundImage = 'url(./img/fondos/textura_naranja.png)';
+
 
     });
 
@@ -94,9 +95,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
           element.style.backgroundImage = 'url(./img/ciclo/fibra.png)';
         });
 
-        document.querySelector('.btn-main img').style.filter = 'invert(0%)';
-        document.querySelector('.portada_btn-xdata img').style.filter = 'invert(0%)';
-        document.querySelector('.btn-main').style.color = '#fff';
 
         document.querySelector(".circulo_grande").style.borderColor = "#1b3339";
         document.querySelector(".circulo_grande2").style.borderColor = "#1b3339";
@@ -179,9 +177,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
           element.style.backgroundImage = 'url(./img/ciclo/diseño.png)';
         });
 
-        document.querySelector('.btn-main img').style.filter = 'invert(0%)';
-        document.querySelector('.portada_btn-xdata img').style.filter = 'invert(0%)';
-        document.querySelector('.btn-main').style.color = '#fff';
 
         document.querySelector(".circulo_grande").style.borderColor = "#2b309e";
         document.querySelector(".circulo_grande2").style.borderColor = "#2b309e";
@@ -253,10 +248,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
           element.style.backgroundImage = 'url(./img/ciclo/manufactura.png)';
         });
 
-        document.querySelector('.btn-main img').style.filter = 'invert(80%)';
-        document.querySelector('.portada_btn-xdata img').style.filter = 'invert(80%)';
-        document.querySelector('.btn-main').style.color = '#383838';
-
         document.querySelector(".circulo_grande").style.borderColor = "#80a15a";
         document.querySelector(".circulo_grande2").style.borderColor = "#80a15a";
         document.querySelector(".circulo_grande").style.borderTopColor = "transparent";
@@ -324,11 +315,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelectorAll('#imagek0,#imagek1,#imagek2, #imagek3, #imagek4, #imagek5, #imagek6').forEach((element) => {
           element.style.backgroundImage = 'url(./img/ciclo/logistica.png)';
         });
-
-        document.querySelector('.btn-main img').style.filter = 'invert(80%)';
-        document.querySelector('.portada_btn-xdata img').style.filter = 'invert(80%)';
-        document.querySelector('.btn-main').style.color = '#383838';
-
 
         document.querySelector('.ciclo_texto_titulo').innerText = 'Logística y distribución';
         document.querySelector('.ciclo_texto_p').innerText = 'Una vez que la prenda está terminada, su distribución es esencial, y los medios de transporte juegan un papel fundamental en este proceso. Te mostramos la ruta que atraviesan tus prendas hasta llegar a ti.';
@@ -400,9 +386,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelector('.ciclo_texto_titulo').innerText = 'Uso y Mantenimiento';
         document.querySelector('.ciclo_texto_p').innerText = '¡Es el momento de actuar! ¿Quieres frenar este impacto desenfrenado? Puedes alargar la vida de tu prenda con un cuidado adecuado, y evitar desecharla mediante un consumo consciente.';
 
-        document.querySelector('.btn-main img').style.filter = 'invert(0%)';
-        document.querySelector('.portada_btn-xdata img').style.filter = 'invert(0%)';
-        document.querySelector('.btn-main').style.color = '#fff';
+        
 
         document.querySelector(".circulo_grande").style.borderColor = "#cfa353";
         document.querySelector(".circulo_grande2").style.borderColor = "#cfa353";
@@ -467,12 +451,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelectorAll('#imagek0,#imagek1,#imagek2, #imagek3, #imagek4, #imagek5, #imagek6').forEach((element) => {
           element.style.backgroundImage = 'url(./img/ciclo/nueva_vida.png)';
         });
-        document.querySelector('.ciclo_texto_titulo').innerText = 'Nueva vida';
+        document.querySelector('.ciclo_texto_titulo').innerText = 'Fin de vida';
         document.querySelector('.ciclo_texto_p').innerText = 'Siempre hay una alternativa para tus prendas: desde transformarlas en nuevas creaciones hasta venderlas. Adquirir ropa de segunda mano, es una excelente manera de extender el ciclo de vida de las prendas y contribuir a reducir el impacto ambiental de la industria de la moda. Te mostramos varias opciones.';
 
-        document.querySelector('.btn-main img').style.filter = 'invert(0%)';
-        document.querySelector('.portada_btn-xdata img').style.filter = 'invert(0%)';
-        document.querySelector('.btn-main').style.color = '#fff';
+       
 
         document.querySelector(".circulo_grande").style.borderColor = "#3f53c0";
         document.querySelector(".circulo_grande2").style.borderColor = "#3f53c0";

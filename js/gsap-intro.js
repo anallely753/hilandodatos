@@ -13,12 +13,7 @@ const intro1 = gsap.timeline({
   },
 });
 // intro1
-  intro1.to('.btn-main img, .portada_btn-xdata img', {
-      filter: 'invert(80%)',
-  }, );
-  intro1.to('.btn-main', {
-      color:'#383838',
-  }, '<');
+ 
   // 1
   intro1.to('.intro1_planeta_nuestro', {
     top: '20%',
@@ -27,8 +22,8 @@ const intro1 = gsap.timeline({
     duration: totalScrollDuration * 0.1
   }, );
   intro1.to('.sombra', {
-    bottom:'19%', 
-    left:'-17%',
+    bottom:'21%', 
+    left:'-13%',
     duration: totalScrollDuration * 0.1
   }, '<');
   // 2
@@ -119,12 +114,7 @@ const intro1 = gsap.timeline({
     bottom:'79.2%',
     duration: totalScrollDuration * 0.1
   },'<');
-  intro1.to('.btn-main img, .portada_btn-xdata img', {
-      filter: 'invert(0%)',
-  }, '<');
-  intro1.to('.btn-main', {
-      color:'#fff',
-  }, '<');
+ 
 
   // 6
   
@@ -142,12 +132,7 @@ const intro1 = gsap.timeline({
     backgroundColor:'var(--lima)',
     // duration: totalScrollDuration * 0.1
   });
-  intro1.to('.btn-main img, .portada_btn-xdata img', {
-      filter: 'invert(80%)',
-  }, '<');
-  intro1.to('.btn-main', {
-      color:'#383838',
-  }, '<');
+ 
   intro1.to('.intro1_planeta_abajo', {
     bottom:'150%',
   },'<');
@@ -185,14 +170,7 @@ const intro2 = gsap.timeline({
   },
 });
 // intro 2
-  intro2.to('.btn-main img, .portada_btn-xdata img', {
-      filter: 'invert(80%)',
-    duration: totalScrollDuration2 * 0.1
-  }, );
-  intro2.to('.btn-main', {
-      color:'#383838',
-    duration: totalScrollDuration2 * 0.1
-  },'<' );
+ 
   intro2.to('.intro2', {
     opacity:'1',
     duration: totalScrollDuration2 * 0.1
@@ -301,12 +279,7 @@ const intro2 = gsap.timeline({
     backgroundColor:'var(--azul)',
     duration: totalScrollDuration2 * 0.1
   });
-  intro2.to('.btn-main img, .portada_btn-xdata img', {
-      filter: 'invert(0%)',
-  }, );
-  intro2.to('.btn-main', {
-      color:'#fff',
-  },'<' );
+ 
   intro2.to('.intro', {
     backgroundColor:'var(--azul)',
     backgroundImage:'none',
@@ -481,14 +454,7 @@ const intro3 = gsap.timeline({
     backgroundColor:'var(--lima)',
     duration: totalScrollDuration3 * 0.1
   },'<');
-  intro3.to('.btn-main img, .portada_btn-xdata img', {
-      filter: 'invert(80%)',
-      duration: totalScrollDuration3 * 0.1
-  }, '<');
-  intro3.to('.btn-main', {
-      color:'#383838',
-      duration: totalScrollDuration3 * 0.1
-  }, '<');
+ 
 
 const totalScrollDuration4 = document.querySelector('.intro4').offsetHeight; // or a custom value
 
@@ -544,18 +510,12 @@ const totalScrollDuration5 = document.querySelector('.intro5').offsetHeight; // 
 const intro5 = gsap.timeline({
   scrollTrigger: {
     trigger: '.intro5',  
-    start: 'top top',  
-    scrub: 2,    
+    start: 'top center',  
+    scrub: 1,    
     markers: false, 
-    pin:true,
   },
 });
-intro5.to('.btn-main img, .portada_btn-xdata img', {
-    filter: 'invert(0%)',
-}, );
-intro5.to('.btn-main', {
-    color:'#fff',
-},'<' );
+
 intro5.to('.intro5_inicio', {
   opacity:'1',
       duration: totalScrollDuration5 * 0.1
