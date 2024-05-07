@@ -32,10 +32,10 @@ log4Top.to('.section_map4', {
   visibility:'visible'
 });
 log4Top.to('.log4_indicadores', {
-  right:'5%'
+  right:'0%'
 });
 log4Top.to('.log4_info_abajo', {
-  right:'5%',
+  right:'1%',
 },'<');
 log4Top.to('#mapboxgl-marker-id4', {
  opacity:'0'

@@ -8,5 +8,5 @@ const gsapCiclo1 = gsap.timeline({
   },
 });
 gsapCiclo1.to('.ciclo_texto_intro_div', {
-   top:'25%',
+   top:'0',
 },);

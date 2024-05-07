@@ -285,7 +285,7 @@ const produccionHilos2 = gsap.timeline({
   },
 });
 produccionHilos2.to('.produccion3_texto_div', {
-  top:'30%'
+  top:'30%',
 },);
 // produccionHilos2.to('.produccion3_art,.produccion3_lineas_art', {
 //   opacity:'1'
@@ -305,26 +305,8 @@ const produccionHilos3 = gsap.timeline({
   },
 });
 produccionHilos3.to('.produccion3_texto_div', {
-  top:'-30%'
+  top:'-60%',
 },);
-// produccionHilos3.to('.produccion3_art,.produccion3_lineas_art,.produccion3_nat,.produccion3_lineas_nat', {
-//   opacity:'1'
-// },);
-// produccionHilos3.to('.lateral_fibra', {
-//   opacity:'1'
-// },);
-// produccionHilos3.to('#tipos_poliester', {
-//   opacity:'1'
-// },);
-// produccionHilos3.to('#tipos_algodon', {
-//   opacity:'1'
-// },);
-// produccionHilos3.to('#tipos_celulosas', {
-//   opacity:'1'
-// },);
-// produccionHilos3.to('#tipos_poliamida', {
-//   opacity:'1'
-// },);
 
 
 const produccionHilos4 = gsap.timeline({

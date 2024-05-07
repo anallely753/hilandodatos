@@ -246,7 +246,7 @@ const man5_1 = gsap.timeline({
   },
 });
 man5_1.to('.man5_texto1', {
-  top:'20%',
+  top:'0%',
   onStart: function(){
     // Counter for log3_distancia
     let objDistancia = document.getElementById('man5_counter'),
@@ -357,7 +357,7 @@ man5_2.to('.man5_texto1', {
   }
 },'<');
 man5_2.to('.man5_texto2', {
-  top:'20%'
+  top:'0%'
 },'<');
 man5_2.to('.man5_marcador', {
   left:'calc(25% - 18px)'
@@ -392,7 +392,7 @@ man5_3.to('.man5_texto2', {
   top:'-120%'
 },'<');
 man5_3.to('.man5_texto3', {
-  top:'20%'
+  top:'0%'
 },'<');
 man5_3.to('.man5_marcador', {
   left:'calc(41.5% - 18px)'
@@ -407,7 +407,7 @@ man5_3.to('.man5_textos_img2', {
   opacity:1
 },'<');
 man5_3.to('.man5_grafica.man5_grafica2', {
-  top:'20%'
+  top:'40%'
 },'<');
 man5_3.to('.man5_grafica.man5_grafica3', {
   top:'0%'
@@ -434,7 +434,7 @@ man5_4.to('.man5_texto3', {
   top:'-120%'
 },'<');
 man5_4.to('.man5_texto4', {
-  top:'20%'
+  top:'0%'
 },'<');
 man5_4.to('.man5_marcador', {
   left:'calc(58.2% - 18px)'
@@ -446,7 +446,7 @@ man5_4.to('.man5_textos_img3', {
   opacity:1
 },'<');
 man5_4.to('.man5_grafica.man5_grafica3', {
-  top:'20%'
+  top:'40%'
 },'<');
 man5_4.to('.man5_grafica.man5_grafica4', {
   top:'0%'
@@ -514,7 +514,7 @@ man5_5.to('.man5_texto4', {
   }
 },'<');
 man5_5.to('.man5_texto5', {
-  top:'20%'
+  top:'0%'
 },'<');
 man5_5.to('.man5_marcador', {
   left:'calc(74% )'
@@ -529,7 +529,7 @@ man5_5.to('.man5_grafica.man5_grafica5', {
   top:0
 },'<');
 man5_5.to('.man5_grafica.man5_grafica4', {
-  top:'20%'
+  top:'40%'
 },'<');
 man5_5.to('.man5_grafica.man5_grafica5', {
   top:'0%'
@@ -597,7 +597,7 @@ man5_6.to('.man5_texto5', {
   }
 },'<');
 man5_6.to('.man5_texto6', {
-  top:'20%'
+  top:'0%'
 },'<');
 man5_6.to('.man5_marcador', {
   left:'calc(91.5% - 18px)'
@@ -632,7 +632,7 @@ const man6_1 = gsap.timeline({
   },
 });
 man6_1.to('.man6_texto', {
-  top:'20%'
+  top:'0%'
 },'<');
 man6_1.to('.contract1', {
   bottom:'-20%'

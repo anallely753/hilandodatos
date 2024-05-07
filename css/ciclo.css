@@ -30,6 +30,7 @@
 		position: absolute;
 		top: 0;
 		background-color: red;
+		visibility: hidden;
 	}
 	.ciclo1_container{
 		height: 100vh;
@@ -39,27 +40,29 @@
 	.ciclo_texto_intro_div{
 		/*border: solid;*/
 		position: absolute;
-		/*border: solid;*/
-		width: 50%;
-		max-width: 600px;
+		width: 60%;
+		max-width: 700px;
 		left: 10%;
 		top: 95%;
+		height: 70vh;
+		padding-top: 5%;
 	}
 	.ciclo_texto_intro{
 		color: #fff;
 	}
 	.ciclo_texto_intro_titulo{
 		font-family: 'FilsonProBold', sans-serif;
+		line-height: 1;
 	}
 	.ciclo_texto_intro_p{
-		line-height: 1.5;
+		line-height: 1.4;
 		margin-bottom: .5rem;
 	}
 	.ciclo_texto_intro_lima{
 		text-transform: uppercase;
 		color: var(--lima);
 		letter-spacing: 2px;
-		margin-top: 3rem;
+		margin-top: 2rem;
 	}
 	.ciclo1_mostrador{
 		position: absolute;
@@ -494,8 +497,8 @@
 @media (min-width: 1200px) {
 	.kaleidos_div{
 		/*border: solid pink;*/
-		width: 40vw;
-		height: 40vw;
+		width: 32vw;
+		height: 32vw;
 		margin: 0 auto;
 		position: absolute;
 		left: 30vw;
@@ -519,6 +522,7 @@
 		top: 125%;
 	}
 	
+	
 }
 
 /*// XX-Large devices (larger desktops, 1400px and up)*/
@@ -540,6 +544,9 @@
 	}
 	.ciclo_texto_p{
 		margin-bottom: 1rem;
+	}
+	.ciclo_texto_intro_div{
+		padding-top: 10%;
 	}
 }
 

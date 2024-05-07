@@ -394,7 +394,7 @@
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 	.fs-07{
-		font-size: .8rem;
+		font-size: .7rem;
 	}
 	.fs-08{
 		font-size: .9rem;
@@ -425,7 +425,7 @@
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 	.fs-07{
-		font-size: .8rem;
+		font-size: .7rem;
 	}
 	.fs-08{
 		font-size: 1rem;
@@ -450,7 +450,7 @@
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 	.fs-07T{
-		font-size: .8rem;
+		font-size: .7rem;
 	}
 	.fs-07{
 		font-size: .9rem;
@@ -491,16 +491,16 @@
 /*// X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
 	.fs-07T{
-		font-size: .8rem;
+		font-size: .7rem;
 	}
 	.fs-07{
-		font-size: .9rem;
+		font-size: .7rem;
 	}
 	.fs-08{
 		font-size: 1rem;
 	}
 	.fs-09{
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 	}
 	.fs-13{
 		font-size: 1.8rem;
@@ -521,7 +521,7 @@
 		font-size: 3.6rem;
 	}
 	.fs-2-5{
-		font-size: 3.8rem;
+		font-size: 3.3rem;
 	}
 	.fs-1-8{
 		font-size: 2.3rem;
@@ -535,7 +535,7 @@
 		font-size: .8rem;
 	}
 	.fs-07{
-		font-size: .9rem;
+		font-size: .8rem;
 	}
 	.fs-2{
 		font-size: 4rem;
@@ -554,7 +554,7 @@
 /*// XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1700px) {
 	.fs-07{
-		font-size: .9rem;
+		font-size: .8rem;
 	}
 	.fs-2{
 		font-size: 4.2rem;

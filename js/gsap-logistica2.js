@@ -57,7 +57,10 @@ log2_2.to('.log2_van', {
   left:'250vh',
 },'<');
 log2_2.to('.log2_texto', {
-  left:'250vh'
+  opacity:0
+},'<');
+log2_2.to('.log2_texto', {
+  left:'350vh',
 },'<+.17');
 
 const log3Top = gsap.timeline({
@@ -94,10 +97,10 @@ log3Top.to('.section_map', {
   visibility:'visible'
 });
 log3Top.to('.log3_indicadores', {
-  right:'5%'
+  right:'0%'
 });
 log3Top.to('.log3_info_abajo', {
-  right:'5%',
+  right:'0%',
 },'<');
 log3Top.to('#mapboxgl-marker-id', {
   opacity:0

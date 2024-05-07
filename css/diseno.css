@@ -820,38 +820,10 @@
 			transform: rotate(5deg);
 		}
 
-	/* Aux */
-		/*.dis_aux1{
-			top: 62vh;
-			stroke-width: 8;
-		}
-		.dis_aux12{
-			top: 120vh;
-		}
-		.dis_aux2{
-			top: 220vh;
-		}
-		.dis_aux3{
-			top: 300vh;
-		}
-		.dis_aux32{
-			top: 380vh;
-		}
-		.dis_aux4{
-			top: 460vh;
-		}
-		.dis_aux42{
-			top: 530vh;
-		}
-		
-		.dis_aux5{
-			top: 600vh;
-		}*/
-
 	/* 2 */
 		.dis2_tela_div{
 			right: 40%;
-			bottom: 15%;
+			bottom: 5%;
 			width: 25%;
 			max-width: 500px;
 		}
@@ -860,9 +832,9 @@
 		}
 		.dis2_reveal{
 			width: 80%;
-			left: 25%;
+			left: 15%;
 			padding: 3rem;
-			top: 10%;
+			top: -20%;
 		}
 
 	/* Panels */
@@ -884,10 +856,10 @@
 	
 	/* 3 */
 		.dis3_reveal1{
-			width: 80%;
+			width: 100%;
 			padding: 3rem 2rem;
 			left: 10%;
-			top: 20%;
+			top: 0%;
 		}
 		.dis3_reveal1_container{
 			display: grid;
@@ -903,7 +875,7 @@
 			width: 80%;
 			padding:3rem 2rem;
 			left: 10%;
-			top: 20%;
+			top: 10%;
 		}
 		.dis3_reveal2 img{
 			margin: 2rem 0;
@@ -913,8 +885,8 @@
 	/* 4 */
 		.dis4_reveal2{
 			padding: 3rem 2rem;
-			width: 70%;
-			left: 15%;
+			width: 100%;
+			left: 0%;
 		}
 		.dis4_reveal2 img{
 			width: 100%;
@@ -936,12 +908,12 @@
 			left: -3%;
 		}
 		.dis5_reveal1{
-			padding: 3rem 2rem;
-			width: 90%;
-			left: 5%;
+			padding: 3rem 1rem;
+			width: 100%;
+			left: 0%;
 		}
 		.dis5_reveal1 img{
-			width: 95%;
+			width: 100%;
 			margin: 3rem auto 0;
 		}
 }
@@ -981,32 +953,35 @@
 			z-index: 10;
 		}
 
-	/* Aux */
-		/*.dis_aux1{
-			top: 62vh;
+		.dis2_reveal{
+			width: 80%;
+			left: 20%;
+			padding: 3rem;
+			top: 15%;
 		}
-		.dis_aux12{
-			top: 120vh;
+		.dis2_tela_div{
+			right: 40%;
+			bottom: 15%;
+			width: 25%;
+			max-width: 500px;
 		}
-		.dis_aux2{
-			top: 280vh;
+		.dis3_reveal1{
+			width: 80%;
+			padding: 3rem 2rem;
+			left: 10%;
+			top: 20%;
 		}
-		.dis_aux3{
-			top: 330vh;
+		.dis4_reveal2{
+			padding: 3rem 2rem;
+			width: 90%;
+			left: 5%;
 		}
-		.dis_aux32{
-			top: 420vh;
+		.dis5_reveal1{
+			padding: 3rem 1rem;
+			width: 90%;
+			left: 5%;
 		}
-		.dis_aux4{
-			top: 530vh;
-		}
-		.dis_aux42{
-			top: 580vh;
-		}
-		
-		.dis_aux5{
-			top: 700vh;
-		}*/
+	
 }
 
 @media (min-width: 1700px) {

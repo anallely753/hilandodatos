@@ -48,6 +48,10 @@ const intro1 = gsap.timeline({
     top:'20%',
     duration: totalScrollDuration * 0.1
   },'<');
+  intro1.to('.ovalo1', {
+    zIndex:'55',
+    duration: totalScrollDuration * 0.1
+  },'<');
   intro1.to('.intro1_planeta_ballena', {
     top: '23%',
     left: '46%',
@@ -177,8 +181,8 @@ const intro2 = gsap.timeline({
   },'<');
   intro2.to('.intro2_texto1', {
     opacity:1,
-      top:'50%',
-      left:'-32%',
+      top:'45%',
+      left:'-37%',
     duration: totalScrollDuration2 * 0.1
   });
   intro2.to('.intro2_planeta_abajo', {
@@ -186,18 +190,18 @@ const intro2 = gsap.timeline({
     duration: totalScrollDuration2 * 0.1
   });
   intro2.to('.oval_azul', {
-    top:'80.2%',
+    top:'75.2%',
     left:'29.8%',
     transform:'rotate(19.5deg)',
     duration: totalScrollDuration2 * 0.1
   },'<');
   intro2.to('.intro2_planeta_gota', {
-      top:'86%',
+      top:'81%',
       duration: totalScrollDuration2 * 0.1
   });
   intro2.to('.intro2_texto2', {
-      top:'80%',
-      left:'-20%',
+      top:'70%',
+      left:'-40%',
       opacity:1,
       duration: totalScrollDuration2 * 0.1
   });
@@ -206,7 +210,7 @@ const intro2 = gsap.timeline({
       duration: totalScrollDuration2 * 0.1
     });
   intro2.to('.intro2_planeta_gota', {
-      top:'88%',
+      top:'83%',
       left:'65.7%',
       width:'5%',
       duration: totalScrollDuration2 * 0.1
@@ -334,8 +338,8 @@ const intro3 = gsap.timeline({
 
   intro3.to('.intro3_texto2', {
     opacity:1,
-    top:'53%',
-    left:'-14%',
+    top:'48%',
+    left:'-30%',
     duration: totalScrollDuration3 * 0.1
   });
   intro3.to('.intro3_gota3', {
@@ -352,8 +356,8 @@ const intro3 = gsap.timeline({
   },'<');
   intro3.to('.intro3_texto3', {
     visibility:'visible',
-    top:'76%',
-    left:'-26%',
+    top:'70%',
+    left:'-56%',
     duration: totalScrollDuration3 * 0.1
   });
     intro3.to('.oval_verde', {
@@ -476,7 +480,7 @@ const intro4 = gsap.timeline({
 
   },'<');
   intro4.to('.intro4_agua, .intro4_verde', {
-    right:'0',
+    right:'-0.5%',
       duration: totalScrollDuration4 * 0.1
 
   });
@@ -491,7 +495,7 @@ const intro4 = gsap.timeline({
       duration: totalScrollDuration4 * 0.1
   });
   intro4.to('.intro4_texto', {
-    bottom:'32%',
+    bottom:'35%',
       duration: totalScrollDuration4 * 0.1
 
   });

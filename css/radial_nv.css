@@ -36,7 +36,7 @@ text{
   display: block;
 	/*border: solid blue;*/
   margin: 0 auto;
-  height: 100%;
+  height: 150%;
   position: relative;
   /*top: 60%;*/
 }
@@ -48,4 +48,33 @@ text{
 }
 #level3{
 	transform: rotate(195deg) translateX(110px) translateY(-26px);
+}
+
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  #radial_graph svg{
+  }
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+  #radial_graph svg{
+    display: block;
+    /*border: solid blue;*/
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    /*top: 60%;*/
+  }
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1700px) {
+  
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 2000px) {
+  
 }

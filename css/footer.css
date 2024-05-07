@@ -1,11 +1,13 @@
 .section_footer{
-	height: 300vh;
 	background-image: url('../img/fondos/fondo_lima.png');
 	background-attachment: fixed;
 	background-size: 100%;
 	position: relative;
+	width: 100%;
 }
-.footer_container{
+
+.footer1_container{
+	width: 100%;
 	height: 100vh;
 	min-height: 800px;
 	position: sticky;
@@ -26,12 +28,52 @@
 	top: 100vh;
 }
 
+/*gracias*/
+
+	.gracias_container{
+		height: 100vh;
+		min-height: 600px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: var(--verde);
+		text-align: center;
+		position: relative;
+	}
+	.gracias_titulo{
+		width: 70%;
+		display: block;
+		margin: 0 auto;
+		font-family: 'FilsonProBold', sa;
+	}
+	.gracias_p{
+		width: 50%;
+		display: block;
+		margin: 0 auto;
+		margin-top: 1.5rem;
+	}
+	.gracias_container img{
+		position: absolute;
+	}
+	.linea_corazon{
+		width: 40%;
+		top: -15%;
+		left: 12%;
+	}
+	.linea_footer2{
+		width: 40%;
+		bottom: -15%;
+		right: -6%;
+	}
+
 /* 1 */
 	.footer1{
 		display: grid;
 		grid-template-columns: 65% 35%;
 		height: 75%;
 		padding: 5%;
+		/*border: solid;*/
 	}
 
 	/* 1 1 */

@@ -36,7 +36,6 @@
 }
 .logo_xdata{
 	width: 98%;
-	cursor: pointer;
 }
 
 .portada_pregunta_titulo{
@@ -50,7 +49,9 @@
 	letter-spacing: 1px;
 	margin-top: 4rem;
 	color: var(--lima);
-	line-height: 2;
+}
+.portada_pregunta_p p{
+	line-height: 1.8;
 }
 .portada_pregunta_centro{
 	position: relative;
@@ -115,8 +116,8 @@
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 	.portadapregunta_logos{
-		margin-bottom: 4rem;
-		width: 23rem;
+		margin-bottom: 2rem;
+		width: 20rem;
 	}
 	
 }
@@ -126,12 +127,20 @@
 	.portada_pregunta_titulo{
 		width: 68%;
 	}
-		
+	.portada_pregunta{
+		border: solid lightblue;
+	}
 }
 
 /*// XX-Large devices (larger desktops, 1400px and up)*/
 @media (min-width: 1400px) {
-	
+	.portadapregunta_logos{
+		margin-bottom: 4rem;
+		width: 23rem;
+	}
+	.portada_pregunta{
+		border: solid violet;
+	}
 }
 
 /*// XX-Large devices (larger desktops, 1400px and up)*/
